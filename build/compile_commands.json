@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/yyc/sylar/sylar/log.cc",
+  "file": "/home/yyc/sylar/sylar/log.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/yyc/sylar/sylar/util.cc",
+  "file": "/home/yyc/sylar/sylar/util.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/yyc/sylar/sylar/config.cc",
+  "file": "/home/yyc/sylar/sylar/config.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/yyc/sylar/tests/test.cc",
+  "file": "/home/yyc/sylar/tests/test.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/yyc/sylar/tests/test_config.cc",
+  "file": "/home/yyc/sylar/tests/test_config.cc"
+}
+]

@@ -1,0 +1,1 @@
+/usr/bin/g++  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -rdynamic CMakeFiles/test_config.dir/tests/test_config.cc.o -o ../bin/test_config   -L/home/yyc/sylar/../lib  -Wl,-rpath,/home/yyc/sylar/../lib:/home/yyc/sylar/lib ../lib/libsylar.so -lyaml-cpp 
