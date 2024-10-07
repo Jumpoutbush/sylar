@@ -935,18 +935,53 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: ../sylar/config.cc \
   /usr/local/include/boost/integer.hpp \
   /usr/local/include/boost/integer_fwd.hpp \
   /usr/local/include/boost/detail/basic_pointerbuf.hpp \
-  ../sylar/log.h \
+  /usr/local/include/yaml-cpp/yaml.h \
+  /usr/local/include/yaml-cpp/parser.h \
+  /usr/local/include/yaml-cpp/dll.h \
+  /usr/local/include/yaml-cpp/noncopyable.h \
+  /usr/local/include/yaml-cpp/emitter.h \
+  /usr/local/include/yaml-cpp/binary.h \
+  /usr/local/include/yaml-cpp/emitterdef.h \
+  /usr/local/include/yaml-cpp/emittermanip.h \
+  /usr/local/include/yaml-cpp/null.h \
+  /usr/local/include/yaml-cpp/ostream_wrapper.h \
+  /usr/local/include/yaml-cpp/emitterstyle.h \
+  /usr/local/include/yaml-cpp/stlemitter.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/local/include/yaml-cpp/exceptions.h \
+  /usr/local/include/yaml-cpp/mark.h \
+  /usr/local/include/yaml-cpp/traits.h \
+  /usr/local/include/yaml-cpp/node/node.h \
+  /usr/local/include/yaml-cpp/node/detail/bool_type.h \
+  /usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+  /usr/local/include/yaml-cpp/node/ptr.h \
+  /usr/local/include/yaml-cpp/node/type.h \
+  /usr/local/include/yaml-cpp/node/impl.h \
+  /usr/local/include/yaml-cpp/node/iterator.h \
+  /usr/local/include/yaml-cpp/node/detail/iterator.h \
+  /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+  /usr/local/include/yaml-cpp/node/detail/memory.h \
+  /usr/local/include/yaml-cpp/node/detail/node.h \
+  /usr/local/include/yaml-cpp/node/detail/node_ref.h \
+  /usr/local/include/yaml-cpp/node/detail/node_data.h \
+  /usr/local/include/yaml-cpp/node/convert.h \
+  /usr/local/include/yaml-cpp/node/detail/impl.h \
+  /usr/local/include/yaml-cpp/node/parse.h \
+  /usr/local/include/yaml-cpp/node/emit.h \
+  ../sylar/log.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/iostream \
   ../sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
@@ -1299,21 +1334,51 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 ../sylar/util.h:
 
-/usr/include/c++/11/bits/stl_map.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/map:
-
 /usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/fstream:
 
+../sylar/log.h:
+
+/usr/local/include/yaml-cpp/node/convert.h:
+
+/usr/local/include/yaml-cpp/node/detail/node_data.h:
+
+/usr/local/include/yaml-cpp/node/iterator.h:
+
+/usr/local/include/yaml-cpp/node/impl.h:
+
+/usr/local/include/yaml-cpp/node/ptr.h:
+
+/usr/local/include/yaml-cpp/node/detail/iterator_fwd.h:
+
+/usr/local/include/yaml-cpp/node/detail/bool_type.h:
+
+/usr/local/include/yaml-cpp/mark.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/c++/11/map:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
 /usr/include/c++/11/list:
 
-../sylar/log.h:
+/usr/local/include/yaml-cpp/stlemitter.h:
+
+/usr/local/include/yaml-cpp/emitterstyle.h:
+
+/usr/local/include/yaml-cpp/ostream_wrapper.h:
+
+/usr/local/include/yaml-cpp/noncopyable.h:
+
+/usr/local/include/yaml-cpp/parser.h:
 
 /usr/local/include/boost/integer_fwd.hpp:
 
@@ -1322,6 +1387,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/detail/endian.hpp:
 
 /usr/local/include/boost/config/no_tr1/complex.hpp:
+
+/usr/local/include/yaml-cpp/node/detail/impl.h:
 
 /usr/include/c++/11/stdlib.h:
 
@@ -1334,6 +1401,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/mpl/greater.hpp:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+
+/usr/local/include/yaml-cpp/node/detail/node_ref.h:
 
 /usr/local/include/boost/math/special_functions/detail/fp_traits.hpp:
 
@@ -1356,6 +1425,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/mpl/advance_fwd.hpp:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/plus.hpp:
+
+/usr/local/include/yaml-cpp/exceptions.h:
 
 /usr/local/include/boost/mpl/vector/aux_/iterator.hpp:
 
@@ -1501,9 +1572,13 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/local/include/boost/predef/os/bsd/bsdi.h:
 
+/usr/local/include/yaml-cpp/emitterdef.h:
+
 /usr/local/include/boost/predef/os/bsd.h:
 
 /usr/local/include/boost/predef/os.h:
+
+/usr/local/include/yaml-cpp/node/emit.h:
 
 /usr/local/include/boost/predef/library/std/stlport.h:
 
@@ -1779,6 +1854,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/local/include/boost/type_traits/is_integral.hpp:
 
+/usr/local/include/yaml-cpp/yaml.h:
+
 /usr/local/include/boost/type_traits/is_volatile.hpp:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/list.hpp:
@@ -1803,6 +1880,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/include/c++/11/clocale:
 
+/usr/local/include/yaml-cpp/node/node.h:
+
 /usr/local/include/boost/mpl/find.hpp:
 
 /usr/local/include/boost/mpl/bool_fwd.hpp:
@@ -1818,6 +1897,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/local/include/boost/preprocessor/facilities/empty.hpp:
+
+/usr/local/include/yaml-cpp/dll.h:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
 
@@ -1869,6 +1950,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/local/include/boost/config/user.hpp:
 
+/usr/local/include/yaml-cpp/node/type.h:
+
 /usr/local/include/boost/predef/architecture.h:
 
 /usr/include/c++/11/bits/istream.tcc:
@@ -1876,6 +1959,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/local/include/yaml-cpp/emittermanip.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -2046,6 +2131,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
+
+/usr/local/include/yaml-cpp/binary.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -2305,9 +2392,13 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
+/usr/local/include/yaml-cpp/node/detail/memory.h:
+
 /usr/local/include/boost/mpl/aux_/preprocessor/params.hpp:
 
 /usr/local/include/boost/concept/detail/has_constraints.hpp:
+
+/usr/local/include/yaml-cpp/node/detail/node.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -2338,6 +2429,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/local/include/yaml-cpp/node/detail/node_iterator.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -2416,6 +2509,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/mpl/tag.hpp:
 
 /usr/local/include/boost/config/compiler/gcc.hpp:
+
+/usr/local/include/yaml-cpp/null.h:
 
 /usr/local/include/boost/mpl/vector/aux_/push_front.hpp:
 
@@ -2537,6 +2632,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/include/linux/limits.h:
 
+/usr/include/c++/11/set:
+
 /usr/local/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
@@ -2556,6 +2653,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/mpl/empty_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/local/include/yaml-cpp/traits.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -2881,9 +2980,13 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 
 /usr/local/include/boost/mpl/arg.hpp:
 
+/usr/local/include/yaml-cpp/node/parse.h:
+
 /usr/local/include/boost/mpl/assert.hpp:
 
 /usr/local/include/boost/type_traits/is_member_function_pointer.hpp:
+
+/usr/local/include/yaml-cpp/emitter.h:
 
 /usr/local/include/boost/static_assert.hpp:
 
@@ -3132,6 +3235,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 /usr/local/include/boost/range/detail/misc_concept.hpp:
 
 /usr/local/include/boost/type_traits/is_signed.hpp:
+
+/usr/local/include/yaml-cpp/node/detail/iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 

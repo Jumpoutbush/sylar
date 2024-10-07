@@ -50,14 +50,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-0b37c8a89b62d4c22049.json",
+					"jsonFile" : "target-test-Debug-28cd1ab61e485a0192bf.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_config::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_config-Debug-7e01573e89193d058862.json",
+					"jsonFile" : "target-test_config-Debug-aa836e86ecb99abc1df6.json",
 					"name" : "test_config",
 					"projectIndex" : 0
 				}

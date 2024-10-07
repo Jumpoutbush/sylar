@@ -18,15 +18,16 @@ include_directories(.)
 include_directories(../include)
 link_directories(../lib)
 
-find_library(YAMLCPP yaml-cpp)
+find_library(YAMLCPP yaml-cpp.)
+message("***", ${YAMLCPP})
 
 add_executable(test tests/test.cc)
 add_dependencies(test sylar)
-target_link_libraries(test sylar)
+target_link_libraries(test sylar ${YAMLCPP})
 
 add_executable(test_config tests/test_config.cc)
 add_dependencies(test_config sylar)
-target_link_libraries(test_config sylar yaml-cpp)
+target_link_libraries(test_config sylar ${YAMLCPP})
 
 #add_executable(test_util tests/test_util.cc)
 #add_dependencies(test_util sylar)

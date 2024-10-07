@@ -28,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -40,13 +40,13 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 24,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -116,12 +116,17 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/yyc/sylar/../lib:/home/yyc/sylar/lib",
+				"fragment" : "-Wl,-rpath,/home/yyc/sylar/../lib:/home/yyc/sylar/lib:/usr/local/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
 				"fragment" : "../lib/libsylar.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libyaml-cpp.so",
 				"role" : "libraries"
 			}
 		],
