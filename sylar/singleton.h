@@ -7,7 +7,8 @@ namespace sylar{
     class Singleton {
     public:
         static T* GetInstance() {
-            static T v;
+            static T v;  // 这步为什么会知道去找LoggerManager的: [log.h]typedef sylar::Singleton<LoggerManager>
+                         // T为需要被单例化的类, 即LoggerManager
             return &v;
         }
     };

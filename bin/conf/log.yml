@@ -1,3 +1,4 @@
+#nodes = [logs, system]
 logs:
   - name: root
     level: info
@@ -16,7 +17,47 @@ logs:
 
 system:
     port: 9900
-    value: 15
+    value: 12.34
     int_vec:
         - 10
         - 20
+    int_list: [12, 23, 34]
+    int_set: [56, 78, 90, 90]
+    int_uset: [56, 78, 90, 90]
+    str_int_map: 
+        yyc3: 200
+        yyc4: 728
+    str_int_umap: 
+        yyc4: 100
+        yyc5: 221
+
+class:
+    person:
+        name: yyc
+        age: 24
+        sex: true
+    map:
+        uvw:
+            name: uvw
+            age: 23
+            sex: true
+        wxy:
+            name: wxy
+            age: 24
+            sex: false
+        xyz:
+            name: xyz
+            age: 25
+            sex: false
+    vec_map:
+        k1:
+            - name: m1
+              age: 23
+              sex: true
+            - name: m2
+              age: 44
+              sex: false
+        k2: 
+            - name: n2
+              age: 34
+              sex: false

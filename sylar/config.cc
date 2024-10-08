@@ -24,7 +24,8 @@ static void ListAllMember(const std::string& prefix,
                     ListAllMember(prefix.empty() ? it->first.Scalar() : prefix + "." + it->first.Scalar(), it->second, output);
                 }
         }
-                            }
+}
+
 void Config::LoadFromYaml(const YAML::Node& root){
     std::list<std::pair<std::string, YAML::Node> > all_nodes;
     ListAllMember("", root, all_nodes);

@@ -20,7 +20,7 @@
  			sylar::LogEventWrap(logger, sylar::LogEvent::ptr(new sylar::LogEvent(   \
                            logger->getName(), level, __FILE__, __LINE__, 0,   \
                            sylar::GetThreadId(), sylar::GetFiberId(), time(0)))).getSS()  //改为从util中获取线程和协程id
-                           //解决报错initialize...是改了编译器为c++17
+                           //解决报错initialize..., 改了makelists为c++17
 
 #define LOG_DEBUG(logger) LOG_LEVEL(logger, sylar::LogLevel::DEBUG)
 #define LOG_INFO(logger) LOG_LEVEL(logger, sylar::LogLevel::INFO)
@@ -301,6 +301,9 @@ private:
 };
 
 
+// 以下两个类相当于把Logger中的功能和Event中的事件打包，在开头用宏定义简化输出
+// 所以需要传入Logger和LogEvent两个内容
+// 宏中，Logger一般是SYLAR_LOG_ROOT声明的Logger::ptr m_root
 class LogEventWrap {
 public:
   LogEventWrap(Logger::ptr logger, LogEvent::ptr e);
