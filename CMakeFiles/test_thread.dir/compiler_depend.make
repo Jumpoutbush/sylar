@@ -998,7 +998,9 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: tests/test_thread.cc \
   /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h
 
 
 /usr/include/c++/11/ratio:
@@ -1200,6 +1202,8 @@ sylar/thread.h:
 /usr/local/include/boost/predef/other.h:
 
 /usr/local/include/boost/predef/os/unix.h:
+
+/usr/include/semaphore.h:
 
 /usr/local/include/boost/predef/os/solaris.h:
 
@@ -1926,6 +1930,8 @@ sylar/sylar.h:
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/climits:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 

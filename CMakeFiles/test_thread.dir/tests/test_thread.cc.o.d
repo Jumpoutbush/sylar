@@ -927,4 +927,5 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /home/yyc/sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h
+ /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h

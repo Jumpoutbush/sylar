@@ -48,15 +48,15 @@ LogLevel::Level LogLevel::FromString(const std::string& str){
 }
 #undef XX
 
-Logger::Logger(const std::string& name )
+Logger::Logger(const std::string& name)
     :m_name(name)
     ,m_level(LogLevel::DEBUG){
 
     m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
 
-    if(name == "root"){
-        m_appenders.push_back(StdoutLogAppender::ptr(new StdoutLogAppender));
-    }
+    // if(name == "root"){
+    //     m_appenders.push_back(StdoutLogAppender::ptr(new StdoutLogAppender));
+    // }
 }
 void Logger::setFormatter(LogFormatter::ptr val){
     m_formatter = val;
@@ -377,7 +377,7 @@ LogEventWrap::LogEventWrap(Logger::ptr logger, LogEvent::ptr e)
 }
 
 LogEventWrap::~LogEventWrap() { 
-    m_logger->log( m_event); 
+    m_logger->log(m_event); 
 }
 
 std::stringstream &LogEventWrap::getSS() { return m_event->getSS(); }

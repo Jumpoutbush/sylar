@@ -307,7 +307,7 @@ public:
 private:
 };
 
-//输出到文件的Appender
+// 输出到文件的Appender
 class FileoutLogAppender : public LogAppender{
 public:
     typedef std::shared_ptr<FileoutLogAppender> ptr;

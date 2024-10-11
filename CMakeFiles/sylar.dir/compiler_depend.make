@@ -2190,6 +2190,8 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: sylar/thread.cc \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   sylar/log.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
@@ -2555,6 +2557,8 @@ sylar/util.cc:
 /usr/local/include/boost/predef/other.h:
 
 /usr/local/include/boost/predef/os/unix.h:
+
+/usr/include/semaphore.h:
 
 /usr/local/include/boost/predef/os/solaris.h:
 
@@ -3641,6 +3645,8 @@ sylar/config.cc:
 /usr/include/assert.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
