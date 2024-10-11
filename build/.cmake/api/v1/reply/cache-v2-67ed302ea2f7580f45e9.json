@@ -1118,6 +1118,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "PTHREAD",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libpthread.a"
+		},
+		{
 			"name" : "YAMLCPP",
 			"properties" : 
 			[

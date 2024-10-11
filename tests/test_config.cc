@@ -60,7 +60,7 @@ void print_yaml(const YAML::Node& node, int level){
     }
 }
 void test_yaml(){
-    YAML::Node root = YAML::LoadFile("../bin/conf/log.yaml");   //导入yaml文件为一个node
+    YAML::Node root = YAML::LoadFile("../bin/conf/log.yml");   //导入yaml文件为一个node
     print_yaml(root, 0);
     
     //LOG_INFO(SYLAR_LOG_ROOT()) << root;
@@ -88,7 +88,7 @@ void test_config(){
             LOG_INFO(SYLAR_LOG_ROOT()) << #prefix " " #name ": {" \
             << i.first << " - " << i.second << "}"; \
         } \
-        LOG_INFO(SYLAR_LOG_ROOT()) << #prefix " " #name " yaml: " << g_var->toString(); \
+        LOG_INFO(SYLAR_LOG_ROOT()) << #prefix " " #name " yml: " << g_var->toString(); \
     }
     XX(g_int_vec_config, int_vec, before);
     XX(g_int_list_config, int_list, before);
@@ -125,6 +125,11 @@ public:
            << " sex = " << m_sex
            << "]";
         return ss.str();
+    }
+    bool operator==(const Person& oth) const{
+        return m_name == oth.m_name
+            && m_age == oth.m_age
+            && m_sex == oth.m_sex;
     }
 };
 
@@ -184,10 +189,17 @@ void test_class(){
         LOG_INFO(SYLAR_LOG_ROOT()) << prefix << ": size = " << m.size(); \
     }
 
+    // 回调函数会在LoadFromYaml下一步执行, 因为配置内容变更了
+    // lambda表达式拿回调函数作为参数
+    g_person->addListener(10, [](const Person& old_value, const Person& new_value){
+        LOG_INFO(SYLAR_LOG_ROOT()) << "old_value = " << old_value.toString()
+                                   << "new_value = " << new_value.toString();
+    });
+
     XX_PM(g_person_map, "class.map before");
     LOG_INFO(SYLAR_LOG_ROOT()) << "before yaml: " << g_person_vector_map->toString();
 
-    YAML::Node root = YAML::LoadFile("../bin/conf/log.yml");
+    YAML::Node root = YAML::LoadFile("../bin/conf/test.yml");
     sylar::Config::LoadFromYaml(root);
     
     //person
@@ -199,11 +211,26 @@ void test_class(){
     LOG_INFO(SYLAR_LOG_ROOT()) << "after yaml : " << g_person_vector_map->toString();
 }
 
+void test_log() {
+    static sylar::Logger::ptr system_log = SYLAR_LOG_NAME("system");
+    LOG_INFO(system_log) << "hello system" << std::endl;
+    std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+    YAML::Node root = YAML::LoadFile("../bin/conf/test.yml");
+    sylar::Config::LoadFromYaml(root);
+    std::cout << "==================" << std::endl;
+    std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+    std::cout << "==================" << std::endl;
+    std::cout << root << std::endl;
+
+    system_log->setFormatter("%d - %m%n");
+    LOG_INFO(system_log) << "hello system" << std::endl;
+}
 int main(int argc,char** argv){
     
     //test_yaml();
     //test_config();
-    test_class();
+    //test_class();
+    test_log();
     return 0;
 }
 

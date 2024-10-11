@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
                                   time(0)              //当前时间
                                   ));
 
-  sylar::LogFormatter::ptr formatter(new sylar::LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
+  sylar::LogFormatter::ptr formatter(new sylar::LogFormatter(""));
   //string = "%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"
   //添加控制台输出适配器
   sylar::StdoutLogAppender::ptr stdApd(new sylar::StdoutLogAppender());

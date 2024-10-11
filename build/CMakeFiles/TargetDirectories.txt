@@ -1,5 +1,4 @@
 /home/yyc/sylar/build/CMakeFiles/sylar.dir
-/home/yyc/sylar/build/CMakeFiles/test.dir
-/home/yyc/sylar/build/CMakeFiles/test_config.dir
+/home/yyc/sylar/build/CMakeFiles/test_thread.dir
 /home/yyc/sylar/build/CMakeFiles/edit_cache.dir
 /home/yyc/sylar/build/CMakeFiles/rebuild_cache.dir

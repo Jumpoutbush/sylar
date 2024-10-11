@@ -1,7 +1,16 @@
-name: YYC
-sex: male
-age: 24
-system:
-  port: 0
-  value: 0
-  int_vec: [10, 20]
+logs:
+  - name: root
+    level: info
+    formatter: '%d%T%m%n'
+    appenders:
+      - type: FileoutLogAppender
+        file: log.txt
+      - type: StdoutLogAppender
+  - name: system
+    level: debug
+    formatter: '%d%T%m%n'
+    appenders:
+      - type: FileoutLogAppender
+        file: system.txt
+        formatter: '%d%T[%p]%T%m%n'
+      - type: StdoutLogAppender
