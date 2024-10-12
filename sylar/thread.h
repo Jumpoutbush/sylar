@@ -47,7 +47,7 @@ public:
 
     void unlock(){
         if(m_locked){
-            m_mutex.lock();
+            m_mutex.unlock();
             m_locked = false;
         }
     }
@@ -62,6 +62,7 @@ public:
     Mutex() {
         pthread_mutex_init(&m_mutex, nullptr);
     }
+
     ~Mutex() {
         pthread_mutex_destroy(&m_mutex);
     }
@@ -69,12 +70,20 @@ public:
     void lock() {
         pthread_mutex_lock(&m_mutex);
     }
-    
+
     void unlock() {
         pthread_mutex_unlock(&m_mutex);
     }
 private:
     pthread_mutex_t m_mutex;
+};
+class NullMutex {
+public:
+    typedef ScopedLockImpl<NullMutex> Lock;
+    NullMutex() {}
+    ~NullMutex() {}
+    void lock() {}
+    void unlock() {}
 };
 
 template<class T>
@@ -163,6 +172,19 @@ public:
     }
 private:
     pthread_rwlock_t m_lock;
+};
+
+class NullRWMutex {
+public:
+    typedef ReadScopedLockImpl<NullRWMutex> ReadLock;
+    typedef WriteScopedLockImpl<NullRWMutex> WriteLock;
+
+    NullRWMutex() {}
+    ~NullRWMutex() {}
+
+    void rdlock() {}
+    void wrlock() {}
+    void unlock() {}
 };
 
 class Thread {

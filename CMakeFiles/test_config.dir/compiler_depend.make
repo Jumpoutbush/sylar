@@ -991,8 +991,23 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: tests/test_config.cc \
   /usr/include/c++/11/bits/fstream.tcc \
   sylar/util.h \
   sylar/singleton.h \
+  sylar/thread.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   sylar/log.h
 
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/chrono:
+
+sylar/thread.h:
 
 sylar/util.h:
 
@@ -1070,7 +1085,11 @@ sylar/util.h:
 
 /usr/local/include/boost/mpl/fold.hpp:
 
+/usr/include/c++/11/thread:
+
 /usr/local/include/boost/mpl/same_as.hpp:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
 
@@ -1148,6 +1167,8 @@ sylar/util.h:
 
 /usr/local/include/boost/predef/os/unix.h:
 
+/usr/include/semaphore.h:
+
 /usr/local/include/boost/predef/os/solaris.h:
 
 /usr/local/include/boost/mpl/vector/vector20.hpp:
@@ -1191,6 +1212,8 @@ sylar/util.h:
 /usr/local/include/boost/predef/detail/_exception.h:
 
 /usr/local/include/boost/predef/library/c/zos.h:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/local/include/boost/mpl/list/aux_/push_front.hpp:
 
@@ -2310,6 +2333,8 @@ tests/test_config.cc:
 
 /usr/include/c++/11/bits/basic_string.h:
 
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
@@ -2409,6 +2434,8 @@ tests/test_config.cc:
 /usr/local/include/boost/config/suffix.hpp:
 
 /usr/local/include/boost/concept/assert.hpp:
+
+/usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/local/include/boost/assert.hpp:
 

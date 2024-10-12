@@ -21,6 +21,16 @@
 },
 {
   "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/yyc/sylar/tests/test.cc",
+  "file": "/home/yyc/sylar/tests/test.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/yyc/sylar/tests/test_config.cc",
+  "file": "/home/yyc/sylar/tests/test_config.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/yyc/sylar/tests/test_thread.cc",
   "file": "/home/yyc/sylar/tests/test_thread.cc"
 }

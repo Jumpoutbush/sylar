@@ -990,7 +990,16 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: sylar/config.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
-  sylar/singleton.h
+  sylar/singleton.h \
+  sylar/thread.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h
 
 CMakeFiles/sylar.dir/sylar/log.cc.o: sylar/log.cc \
   /usr/include/stdc-predef.h \
@@ -1232,6 +1241,15 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: sylar/log.cc \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
   sylar/singleton.h \
+  sylar/thread.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
@@ -1243,6 +1261,8 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: sylar/log.cc \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   sylar/config.h \
   /usr/local/include/boost/lexical_cast.hpp \
   /usr/local/include/boost/config.hpp \
@@ -1502,7 +1522,6 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: sylar/log.cc \
   /usr/local/include/boost/concept/detail/concept_undef.hpp \
   /usr/local/include/boost/iterator/iterator_concepts.hpp \
   /usr/local/include/boost/limits.hpp \
-  /usr/include/c++/11/limits \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/local/include/boost/range/value_type.hpp \
@@ -1655,7 +1674,6 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: sylar/log.cc \
   /usr/include/c++/11/cstring \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/c++/11/ctime \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
@@ -2330,15 +2348,15 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: sylar/util.cc \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
 
 
+sylar/thread.cc:
+
+sylar/log.cc:
+
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/chrono:
 
 sylar/thread.h:
-
-sylar/thread.cc:
-
-sylar/log.cc:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 

@@ -215,14 +215,14 @@ void test_log() {
     static sylar::Logger::ptr system_log = SYLAR_LOG_NAME("system");
     LOG_INFO(system_log) << "hello system" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
-    YAML::Node root = YAML::LoadFile("../bin/conf/test.yml");
+    YAML::Node root = YAML::LoadFile("../bin/conf/log2.yml");
     sylar::Config::LoadFromYaml(root);
     std::cout << "==================" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
     std::cout << "==================" << std::endl;
     std::cout << root << std::endl;
 
-    system_log->setFormatter("%d - %m%n");
+    system_log->setFormatter("%d%T%m%n");
     LOG_INFO(system_log) << "hello system" << std::endl;
 }
 int main(int argc,char** argv){

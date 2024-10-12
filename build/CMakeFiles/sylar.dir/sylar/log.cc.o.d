@@ -194,8 +194,12 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/yyc/sylar/sylar/singleton.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/std_function.h \
+ /home/yyc/sylar/sylar/singleton.h /home/yyc/sylar/sylar/thread.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
@@ -203,7 +207,8 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /home/yyc/sylar/sylar/config.h /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
@@ -457,8 +462,7 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/local/include/boost/preprocessor/seq/enum.hpp \
  /usr/local/include/boost/concept/detail/concept_undef.hpp \
  /usr/local/include/boost/iterator/iterator_concepts.hpp \
- /usr/local/include/boost/limits.hpp /usr/include/c++/11/limits \
- /usr/include/c++/11/algorithm \
+ /usr/local/include/boost/limits.hpp /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/local/include/boost/range/value_type.hpp \
  /usr/local/include/boost/range/detail/misc_concept.hpp \
@@ -604,7 +608,7 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/local/include/boost/move/detail/std_ns_end.hpp \
  /usr/local/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
  /usr/include/c++/11/cstring /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
