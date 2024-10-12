@@ -261,7 +261,7 @@ public:
             //return boost::lexical_cast<std::string>(m_val);
             return ToStr() (m_val); 
         }catch (std::exception& e){ 
-            LOG_ERROR(SYLAR_LOG_ROOT()) << "ConfigVar::toString exception"
+            SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "ConfigVar::toString exception"
             << e.what() << " convert: " << typeid(m_val).name() << " to string";
         }
         return "";
@@ -272,7 +272,7 @@ public:
             //m_val = boost::lexical_cast<T>(val);
             setValue(FromStr()(val));
         }catch (std::exception& e){
-            LOG_ERROR(SYLAR_LOG_ROOT()) << "ConfigVar::toString exception"
+            SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "ConfigVar::toString exception"
             << e.what() << " convert: string to " << typeid(m_val).name();
         }
         return false;
@@ -326,10 +326,10 @@ public:
                 if(it != GetDatas().end()){
                     auto tmp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);
                     if(tmp){
-                        LOG_INFO(SYLAR_LOG_ROOT()) << "Lookup name = " << name << "exists";  //root()返回一个logger::ptr, 第二个参数为level
+                        SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "Lookup name = " << name << "exists";  //root()返回一个logger::ptr, 第二个参数为level
                         return tmp;
                     } else{
-                        LOG_ERROR(SYLAR_LOG_ROOT()) << "Lookup name = " << name << "exists but type not "
+                        SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Lookup name = " << name << "exists but type not "
                                                     <<  typeid(T).name() << "real_type = " << it->second->getTypeName()
                                                     << " " << it->second->toString();
                         return nullptr;
@@ -339,7 +339,7 @@ public:
                 //报错原因少打了一个u
                 if(name.find_first_not_of("abcdefghijklmnopqrstuvwxyz._0123456789")
                         != std::string::npos){
-                            LOG_ERROR(SYLAR_LOG_ROOT()) << "Lookup name invalid " << name;
+                            SYLAR_LOG_ERROR(SYLAR_LOG_ROOT()) << "Lookup name invalid " << name;
                             throw std::invalid_argument(name);
                         }
                         typename ConfigVar<T>::ptr v(new ConfigVar<T>(name, default_value, description));

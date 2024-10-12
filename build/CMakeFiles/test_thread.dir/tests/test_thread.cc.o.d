@@ -192,7 +192,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iostream \
+ /usr/include/c++/11/bits/erase_if.h \
  /home/yyc/sylar/tests/../sylar/singleton.h \
  /home/yyc/sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \

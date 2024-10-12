@@ -182,14 +182,14 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iostream \
+ /usr/include/c++/11/bits/erase_if.h /home/yyc/sylar/sylar/util.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /home/yyc/sylar/sylar/util.h \
+ /usr/include/linux/close_range.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -209,7 +209,9 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/atomic \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/yyc/sylar/sylar/config.h /usr/local/include/boost/lexical_cast.hpp \
+ /usr/include/c++/11/iostream /usr/include/string.h \
+ /usr/include/strings.h /home/yyc/sylar/sylar/config.h \
+ /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
  /usr/local/include/boost/config/select_compiler_config.hpp \
@@ -436,8 +438,8 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/local/include/boost/range/end.hpp \
  /usr/local/include/boost/range/detail/implementation_help.hpp \
  /usr/local/include/boost/range/detail/common.hpp \
- /usr/local/include/boost/range/detail/sfinae.hpp /usr/include/string.h \
- /usr/include/strings.h /usr/local/include/boost/range/size.hpp \
+ /usr/local/include/boost/range/detail/sfinae.hpp \
+ /usr/local/include/boost/range/size.hpp \
  /usr/local/include/boost/range/size_type.hpp \
  /usr/local/include/boost/range/difference_type.hpp \
  /usr/local/include/boost/range/has_range_iterator.hpp \

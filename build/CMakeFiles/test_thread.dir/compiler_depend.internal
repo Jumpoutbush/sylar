@@ -241,7 +241,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o
  /usr/include/c++/11/bits/stl_map.h
  /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/erase_if.h
- /usr/include/c++/11/iostream
  /home/yyc/sylar/sylar/singleton.h
  /home/yyc/sylar/sylar/thread.h
  /usr/include/c++/11/thread

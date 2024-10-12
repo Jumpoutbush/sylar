@@ -240,7 +240,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iostream \
   ../sylar/singleton.h \
   ../sylar/thread.h \
   /usr/include/c++/11/thread \
@@ -1548,8 +1547,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 
 /usr/local/include/boost/range/detail/has_member_size.hpp:
 
-/usr/local/include/boost/type_traits/add_volatile.hpp:
-
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
@@ -1683,6 +1680,10 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 /usr/include/c++/11/typeinfo:
 
 /usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/local/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
 /usr/local/include/yaml-cpp/node/detail/node.h:
 
@@ -2000,6 +2001,8 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 
 /usr/local/include/boost/mpl/placeholders.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
 /usr/include/libintl.h:
 
 /usr/include/c++/11/bits/char_traits.h:
@@ -2104,13 +2107,9 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
+/usr/local/include/boost/type_traits/add_volatile.hpp:
+
 /usr/local/include/boost/mpl/identity.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/c++/11/bits/node_handle.h:
 
 /usr/local/include/boost/mpl/comparison.hpp:
 
@@ -2173,6 +2172,8 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -2371,10 +2372,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: ../tests/test_thread.cc \
 /usr/local/include/boost/predef/os/amigaos.h:
 
 /usr/include/locale.h:
-
-/usr/local/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/c++/11/atomic:
 

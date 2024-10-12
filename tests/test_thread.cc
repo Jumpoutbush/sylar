@@ -10,7 +10,7 @@ volatile int count = 0;
 sylar::Mutex s_mutex;
 
 void func1() {
-    LOG_INFO(g_logger) << "thread_id" << sylar::Thread::GetName()
+    SYLAR_LOG_INFO(g_logger) << "thread_id" << sylar::Thread::GetName()
                        << " this.name: " << sylar::Thread::GetThis()->getName()
                        << " id: " << sylar::GetThreadId()
                        << " this.id: " << sylar::Thread::GetThis()->getId();
@@ -23,20 +23,20 @@ void func1() {
 
 void func2() {
     while(true) {
-        LOG_INFO(g_logger) << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        SYLAR_LOG_INFO(g_logger) << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
     }
 }
 
 void func3() {
     while(true) {
-        LOG_INFO(g_logger) << "=======================================";
+        SYLAR_LOG_INFO(g_logger) << "=======================================";
     }
 }
 
 int main(int argc, char** argv){
-    LOG_INFO(g_logger) << "thread test begin";
-    // YAML::Node root = YAML::LoadFile("../bin/conf/log2.yml");
-    // sylar::Config::LoadFromYaml(root);
+    SYLAR_LOG_INFO(g_logger) << "thread test begin";
+    YAML::Node root = YAML::LoadFile("../bin/conf/log2.yml");
+    sylar::Config::LoadFromYaml(root);
 
     std::vector<sylar::Thread::ptr> thrs;
     for(int i = 0; i < 2; i++){
@@ -48,7 +48,7 @@ int main(int argc, char** argv){
     for(size_t i = 0; i < thrs.size(); i++){
         thrs[i]->join();
     }
-    LOG_INFO(g_logger) << "thread test end" << std::endl;
-    LOG_INFO(g_logger) << "count = " << count << std::endl;
+    SYLAR_LOG_INFO(g_logger) << "thread test end" << std::endl;
+    SYLAR_LOG_INFO(g_logger) << "count = " << count << std::endl;
     return 0;
 }

@@ -1,39 +1,29 @@
 #include <iostream>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/syscall.h>
-#include "../sylar/log.h"
-#include "../sylar/singleton.h"
+#include "sylar/log.h"
+#include "sylar/util.h"
 
-int main(int argc, char **argv) {
-  std::cout << "======START======" << std::endl;
-  sylar::Logger::ptr lg(new sylar::Logger("yyc"));
-  lg->addAppender(sylar::LogAppender::ptr(new sylar::StdoutLogAppender));
-  sylar::FileoutLogAppender::ptr file_appender(new sylar::FileoutLogAppender("./log.txt"));
-  sylar::LogEvent::ptr event(new sylar::LogEvent(
-                                  lg->getName(),
-                                  sylar::LogLevel::INFO,      //日志级别
-                                  __FILE__,            //文件名称
-                                  __LINE__,            //行号
-                                  1234567,             //运行时间
-                                  sylar::GetThreadId(), //线程ID
-                                  sylar::GetFiberId(), //协程ID
-                                  time(0)              //当前时间
-                                  ));
+int main(int argc, char** argv) {
+    sylar::Logger::ptr logger(new sylar::Logger);
+    logger->addAppender(sylar::LogAppender::ptr(new sylar::StdoutLogAppender));
 
-  sylar::LogFormatter::ptr formatter(new sylar::LogFormatter(""));
-  //string = "%d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"
-  //添加控制台输出适配器
-  sylar::StdoutLogAppender::ptr stdApd(new sylar::StdoutLogAppender());
-  stdApd->setFormatter(formatter);
-  lg->addAppender(stdApd);
-  LOG_LEVEL(lg, sylar::LogLevel::INFO) << "[hello logger yyc]";  //event->getSS() << ...
-  // lg->log(event);
-  LOG_LEVEL(lg, sylar::LogLevel::INFO) << "追加内容";    //sylar::LogEventWrap(lg, event).getSS() is an annoymous object
-  
-  auto l = sylar::LoggerMgr::GetInstance()->getLogger("xx");
-  LOG_LEVEL(l, sylar::LogLevel::ERROR) << "xxx";
+    sylar::FileLogAppender::ptr file_appender(new sylar::FileLogAppender("./log.txt"));
+    sylar::LogFormatter::ptr fmt(new sylar::LogFormatter("%d%T%p%T%m%n"));
+    file_appender->setFormatter(fmt);
+    file_appender->setLevel(sylar::LogLevel::ERROR);
 
-  std::cout << "=======END=======" << std::endl;
-  return 0;
+    logger->addAppender(file_appender);
+
+    //sylar::LogEvent::ptr event(new sylar::LogEvent(__FILE__, __LINE__, 0, sylar::GetThreadId(), sylar::GetFiberId(), time(0)));
+    //event->getSS() << "hello sylar log";
+    //logger->log(sylar::LogLevel::DEBUG, event);
+    std::cout << "hello sylar log" << std::endl;
+
+    SYLAR_LOG_INFO(logger) << "test macro";
+    SYLAR_LOG_ERROR(logger) << "test macro error";
+
+    SYLAR_LOG_FMT_ERROR(logger, "test macro fmt error %s", "aa");
+
+    auto l = sylar::LoggerMgr::GetInstance()->getLogger("xx");
+    SYLAR_LOG_INFO(l) << "xxx";
+    return 0;
 }

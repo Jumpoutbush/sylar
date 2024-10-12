@@ -1,7 +1,6 @@
 CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /home/yyc/sylar/tests/test_thread.cc /usr/include/stdc-predef.h \
- /home/yyc/sylar/tests/../sylar/sylar.h \
- /home/yyc/sylar/tests/../sylar/util.h /usr/include/pthread.h \
+ sylar/sylar.h sylar/util.h /usr/include/pthread.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -72,8 +71,8 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/string \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h sylar/log.h \
+ /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
@@ -192,10 +191,8 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iostream \
- /home/yyc/sylar/tests/../sylar/singleton.h \
- /home/yyc/sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/erase_if.h sylar/singleton.h sylar/thread.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
@@ -207,10 +204,9 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/yyc/sylar/tests/../sylar/config.h \
- /usr/local/include/boost/lexical_cast.hpp \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/atomic \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ sylar/config.h /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
  /usr/local/include/boost/config/select_compiler_config.hpp \

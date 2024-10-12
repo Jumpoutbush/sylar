@@ -38,7 +38,7 @@ Thread::Thread(std::function<void()> cb, const std::string& name)
     }
     int rt = pthread_create(&m_thread, nullptr, &Thread::run, this);
     if(rt) {
-        LOG_ERROR(g_logger) << "pthread_create thread fail, rt="
+        SYLAR_LOG_ERROR(g_logger) << "pthread_create thread fail, rt="
                             << rt << " name = " << name;
         throw std::logic_error("pthread_create error");
     }
@@ -71,7 +71,7 @@ void Thread::join() {
     if(m_thread) {
         int rt = pthread_join(m_thread, nullptr);
         if(rt) {
-            LOG_ERROR(g_logger) << "pthread_join thread fail, rt="
+            SYLAR_LOG_ERROR(g_logger) << "pthread_join thread fail, rt="
                             << rt << " name = " << m_name;
             throw std::logic_error("pthread_join error");
         }

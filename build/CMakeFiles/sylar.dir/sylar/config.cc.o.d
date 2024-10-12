@@ -915,8 +915,8 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: /home/yyc/sylar/sylar/config.cc \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/iostream \
- /home/yyc/sylar/sylar/util.h /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/c++/11/bits/fstream.tcc /home/yyc/sylar/sylar/util.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \

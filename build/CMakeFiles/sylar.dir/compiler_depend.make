@@ -984,7 +984,6 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: ../sylar/config.cc \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
-  /usr/include/c++/11/iostream \
   ../sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
@@ -1227,7 +1226,7 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: ../sylar/log.cc \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iostream \
+  ../sylar/util.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -1236,7 +1235,6 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: ../sylar/log.cc \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  ../sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -1265,6 +1263,9 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: ../sylar/log.cc \
   /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../sylar/config.h \
   /usr/local/include/boost/lexical_cast.hpp \
   /usr/local/include/boost/config.hpp \
@@ -1496,8 +1497,6 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: ../sylar/log.cc \
   /usr/local/include/boost/range/detail/implementation_help.hpp \
   /usr/local/include/boost/range/detail/common.hpp \
   /usr/local/include/boost/range/detail/sfinae.hpp \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/local/include/boost/range/size.hpp \
   /usr/local/include/boost/range/size_type.hpp \
   /usr/local/include/boost/range/difference_type.hpp \
@@ -2251,7 +2250,7 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: ../sylar/thread.cc \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/iostream \
+  ../sylar/util.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -2260,7 +2259,6 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: ../sylar/thread.cc \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
-  ../sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
