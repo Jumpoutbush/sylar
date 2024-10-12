@@ -998,10 +998,13 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../sylar/log.h
 
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/ratio:
 

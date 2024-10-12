@@ -924,4 +924,5 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: /home/yyc/sylar/sylar/config.cc \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h
+ /usr/include/c++/11/atomic /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h

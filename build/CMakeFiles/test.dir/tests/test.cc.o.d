@@ -206,6 +206,6 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/yyc/sylar/tests/test.cc \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/atomic \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /home/yyc/sylar/tests/../sylar/singleton.h

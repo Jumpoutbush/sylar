@@ -205,7 +205,17 @@ bool FileoutLogAppender::reopen(){
 }
 
 void FileoutLogAppender::log(LogEvent::ptr event){
-    std::cout << "输出到文件" << m_filename << std::endl;
+    if(event->getLevel() >= m_level){
+        uint64_t now = time(0);
+        if(now != m_lastTime){
+            reopen();
+            m_lastTime = now;
+        }
+        MutexType::Lock lock(m_mutex);
+        if(!m_formatter->format(m_filestream, event)) {
+            std::cout << "error" << std::endl;
+        }
+    }
 }
 
 void StdoutLogAppender::log(LogEvent::ptr event){
@@ -260,6 +270,13 @@ std::string LogFormatter::format(LogEvent::ptr event){
         i->format(ss,event);
     }
     return ss.str();
+}
+
+std::ostream& LogFormatter::format(std::ostream& ofs, LogEvent::ptr event){
+    for(auto& i : m_items) {
+        i->format(ofs, event);
+    }
+    return ofs;
 }
 
 // %d{%Y-%m-%d %H:%M:%S}%T%t%T%F%T[%p]%T[%c]%T%f%l%T%m%n

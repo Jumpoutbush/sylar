@@ -262,6 +262,7 @@ CMakeFiles/test.dir/tests/test.cc.o
  /usr/include/c++/11/bits/algorithmfwd.h
  /usr/include/c++/11/bits/stl_heap.h
  /usr/include/c++/11/bits/uniform_int_dist.h
+ /usr/include/c++/11/atomic
  /usr/include/semaphore.h
  /usr/include/x86_64-linux-gnu/bits/semaphore.h
  /home/yyc/sylar/sylar/singleton.h

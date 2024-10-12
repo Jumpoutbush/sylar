@@ -207,8 +207,8 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: /home/yyc/sylar/sylar/log.cc \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/atomic \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /home/yyc/sylar/sylar/config.h /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \

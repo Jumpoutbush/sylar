@@ -14,7 +14,7 @@ void func1() {
                        << " this.name: " << sylar::Thread::GetThis()->getName()
                        << " id: " << sylar::GetThreadId()
                        << " this.id: " << sylar::Thread::GetThis()->getId();
-    for(int i = 0; i < 1000000; ++i) {
+    for(int i = 0; i < 100; ++i) {
         // sylar::RWMutex::WriteLock lock(s_mutex);
         sylar::Mutex::Lock lock(s_mutex);
         ++count;
@@ -35,7 +35,7 @@ void func3() {
 
 int main(int argc, char** argv){
     LOG_INFO(g_logger) << "thread test begin";
-    // YAML::Node root = YAML::LoadFile("../sylar/bin/conf/log2.yml");
+    // YAML::Node root = YAML::LoadFile("../bin/conf/log2.yml");
     // sylar::Config::LoadFromYaml(root);
 
     std::vector<sylar::Thread::ptr> thrs;

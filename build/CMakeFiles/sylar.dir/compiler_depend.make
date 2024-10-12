@@ -998,6 +998,7 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: ../sylar/config.cc \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h
 
@@ -1261,6 +1262,7 @@ CMakeFiles/sylar.dir/sylar/log.cc.o: ../sylar/log.cc \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../sylar/config.h \
@@ -2208,6 +2210,7 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: ../sylar/thread.cc \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../sylar/log.h \
@@ -2353,6 +2356,8 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: ../sylar/util.cc \
 ../sylar/thread.cc:
 
 ../sylar/log.cc:
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/ratio:
 

@@ -261,10 +261,13 @@ CMakeFiles/test.dir/tests/test.cc.o: ../tests/test.cc \
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   ../sylar/singleton.h
 
+
+/usr/include/c++/11/atomic:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 

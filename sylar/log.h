@@ -114,7 +114,7 @@ public:
 
     //不同转义符对应的格式
     std::string format(LogEvent::ptr event);
-
+    std::ostream& format(std::ostream& ofs, LogEvent::ptr event);
     void init();
 
     bool isError() const {return m_error;}
@@ -324,6 +324,7 @@ public:
 private:
     std::string m_filename;
     std::ofstream m_filestream;
+    uint64_t m_lastTime = 0;
 };
 
 
@@ -344,7 +345,7 @@ private:
 
 class LoggerManager {
 public:
-    typedef Mutex MutexType;
+    typedef CASLock MutexType;
     LoggerManager();
     Logger::ptr getLogger(const std::string& name);
 
