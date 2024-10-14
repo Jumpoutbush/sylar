@@ -1,5 +1,5 @@
-#include "sylar/config.h"
-#include "sylar/log.h"
+#include "../sylar/config.h"
+#include "../sylar/log.h"
 #include <yaml-cpp/yaml.h>
 #include <iostream>
 
@@ -206,7 +206,7 @@ void test_log() {
     static sylar::Logger::ptr system_log = SYLAR_LOG_NAME("system");
     SYLAR_LOG_INFO(system_log) << "hello system" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
-    YAML::Node root = YAML::LoadFile("../bin/conf/log.yml");
+    YAML::Node root = YAML::LoadFile("../bin/conf/test.yml");
     sylar::Config::LoadFromYaml(root);
     std::cout << "=============" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
@@ -222,7 +222,14 @@ int main(int argc, char** argv) {
     //test_yaml();
     //test_config();
     //test_class();
-    //test_log();
+    test_log();
+
+    sylar::Config::Visit([](sylar::ConfigVarBase::ptr var){
+        SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "name = " << var->getName()
+                                 << "description = " << var->getName()
+                                 << "typename = " << var->getTypeName()
+                                 << "value = " << var->toString();
+    });
 
     return 0;
 }

@@ -50,5 +50,6 @@ int main(int argc, char** argv){
     }
     SYLAR_LOG_INFO(g_logger) << "thread test end" << std::endl;
     SYLAR_LOG_INFO(g_logger) << "count = " << count << std::endl;
+
     return 0;
 }

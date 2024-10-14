@@ -1,11 +1,3 @@
-/**
- * @file log.h
- * @brief 日志模块封装
- * @author sylar.yin
- * @email 564628276@qq.com
- * @date 2019-05-23
- * @copyright Copyright (c) 2019年 sylar.yin All rights reserved (www.sylar.top)
- */
 #ifndef __SYLAR_LOG_H__
 #define __SYLAR_LOG_H__
 
@@ -197,15 +189,15 @@ public:
     /**
      * @brief 返回线程名称
      */
-    const std::string& getThreadName() const { return m_threadName;}
+    const std::string& getThreadName() const {return m_threadName; }
 
     /**
-     * @brief 返回日志内容
+     * @brief 返回日志内容      
      */
     std::string getContent() const { return m_ss.str();}
 
     /**
-     * @brief 返回日志器
+     * @brief 返回日志器        
      */
     std::shared_ptr<Logger> getLogger() const { return m_logger;}
 

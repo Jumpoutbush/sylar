@@ -4,7 +4,9 @@
 #include <functional>
 #include <time.h>
 #include <string.h>
+#include <string>
 #include "config.h"
+#include "macro.h"
 #include "util.h"
 
 namespace sylar {

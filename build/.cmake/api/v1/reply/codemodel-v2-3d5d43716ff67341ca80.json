@@ -16,9 +16,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						2,
-						3
+						1
 					]
 				}
 			],
@@ -34,9 +32,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						1,
-						2,
-						3
+						1
 					]
 				}
 			],
@@ -45,29 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sylar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sylar-Debug-aeaf6792b7b4b6808661.json",
+					"jsonFile" : "target-sylar-Debug-6318f05bd828b09b383f.json",
 					"name" : "sylar",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-709d9150b18f5947faad.json",
-					"name" : "test",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "test_config::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_config-Debug-d1c8a58a5b8dfdee3109.json",
-					"name" : "test_config",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "test_thread::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_thread-Debug-7d302e733145842540fe.json",
-					"name" : "test_thread",
+					"id" : "test_fiber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_fiber-Debug-25740e05151719c37d3a.json",
+					"name" : "test_fiber",
 					"projectIndex" : 0
 				}
 			]
