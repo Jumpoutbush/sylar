@@ -28,13 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 23,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
@@ -44,10 +38,22 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 18,
+				"line" : 19,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 2,
@@ -252,6 +258,40 @@
 			[
 				4
 			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "__FILE__=\"sylar/scheduler.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/yyc/sylar/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/yyc/sylar/../include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				5
+			]
 		}
 	],
 	"id" : "sylar::@6890427a1f51a3e7e1df",
@@ -283,7 +323,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -317,6 +358,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 4,
 			"path" : "sylar/fiber.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 5,
+			"path" : "sylar/scheduler.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

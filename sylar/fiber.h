@@ -36,6 +36,7 @@ public:
     // EXEC in the background
     void swapOut();
     uint64_t getId() const { return m_id;}
+    State getState() { return m_state;}
 public:
     static void SetThis(Fiber* f);
     // return to current fiber

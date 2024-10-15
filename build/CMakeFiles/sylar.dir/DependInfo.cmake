@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yyc/sylar/sylar/config.cc" "CMakeFiles/sylar.dir/sylar/config.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/config.cc.o.d"
   "/home/yyc/sylar/sylar/fiber.cc" "CMakeFiles/sylar.dir/sylar/fiber.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/fiber.cc.o.d"
   "/home/yyc/sylar/sylar/log.cc" "CMakeFiles/sylar.dir/sylar/log.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/log.cc.o.d"
+  "/home/yyc/sylar/sylar/scheduler.cc" "CMakeFiles/sylar.dir/sylar/scheduler.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/scheduler.cc.o.d"
   "/home/yyc/sylar/sylar/thread.cc" "CMakeFiles/sylar.dir/sylar/thread.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/thread.cc.o.d"
   "/home/yyc/sylar/sylar/util.cc" "CMakeFiles/sylar.dir/sylar/util.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
   )

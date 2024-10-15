@@ -1006,9 +1006,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: tests/test_fiber.cc \
   /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  sylar/macro.h \
-  sylar/fiber.h \
-  sylar/log.h
+  sylar/macro.h
 
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
