@@ -8,5 +8,6 @@
 #include "singleton.h"
 #include "thread.h"
 #include "macro.h"
+#include "scheduler.h"
 
 #endif

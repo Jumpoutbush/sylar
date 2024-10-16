@@ -33,5 +33,10 @@
   "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/yyc/sylar/tests/test_fiber.cc",
   "file": "/home/yyc/sylar/tests/test_fiber.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/yyc/sylar/tests/test_scheduler.cc",
+  "file": "/home/yyc/sylar/tests/test_scheduler.cc"
 }
 ]

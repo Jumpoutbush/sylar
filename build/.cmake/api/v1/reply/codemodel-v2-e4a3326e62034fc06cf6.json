@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -50,6 +52,13 @@
 					"id" : "test_fiber::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-test_fiber-Debug-f1276bbc8717813a2cc0.json",
 					"name" : "test_fiber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_scheduler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_scheduler-Debug-a3176c9039dddae31afb.json",
+					"name" : "test_scheduler",
 					"projectIndex" : 0
 				}
 			]

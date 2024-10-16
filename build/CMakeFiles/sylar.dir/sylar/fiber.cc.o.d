@@ -930,4 +930,5 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/yyc/sylar/sylar/fiber.cc \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/yyc/sylar/sylar/singleton.h /home/yyc/sylar/sylar/macro.h
+ /home/yyc/sylar/sylar/singleton.h /home/yyc/sylar/sylar/macro.h \
+ /home/yyc/sylar/sylar/scheduler.h

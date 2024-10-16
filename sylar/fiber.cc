@@ -2,6 +2,7 @@
 #include "config.h"
 #include "macro.h"
 #include "log.h"
+#include "scheduler.h"
 #include <atomic>
 
 namespace sylar
@@ -11,6 +12,11 @@ static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 static std::atomic<uint64_t> s_fiber_id {0};
 static std::atomic<uint64_t> s_fiber_count {0};
 
+// thread_local修饰过的变量，变量的生存周期不再以程序为准，而是以线程生命周期
+// thread_local声明的变量存储在线程开始时分配，线程结束时销毁
+// 当使用thread_local描述类成员变量时，必须是static的
+// static thread_local修饰的时候会变成在线程内共享，线程间不是共享的
+// thread_local不需要锁，这个变量本身就不用与其他线程共享数据
 static thread_local Fiber* t_fiber = nullptr;
 static thread_local Fiber::ptr t_threadFiber = nullptr;
 
@@ -36,10 +42,11 @@ Fiber::Fiber(){
         SYLAR_ASSERT2(false, "getcontext");
     }
     ++s_fiber_count;
+
     SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber main";
 }
 
-Fiber::Fiber(std::function<void()> cb, size_t stacksize)
+Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)
         :m_id(++s_fiber_id)
         , m_cb(cb) {
     ++s_fiber_count;
@@ -53,7 +60,11 @@ Fiber::Fiber(std::function<void()> cb, size_t stacksize)
     m_ctx.uc_stack.ss_sp = m_stack;
     m_ctx.uc_stack.ss_size = m_stacksize;
 
-    makecontext(&m_ctx, &Fiber::MainFunc, 0);
+    if(!use_caller) {
+        makecontext(&m_ctx, &Fiber::MainFunc, 0);
+    } else {
+        makecontext(&m_ctx, &Fiber::CallerMainFunc, 0);
+    }
     SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber id = " << m_id;
 }
 Fiber::~Fiber(){
@@ -70,10 +81,11 @@ Fiber::~Fiber(){
             SetThis(nullptr);
         }
     }
-    SYLAR_LOG_DEBUG(g_logger) << "Fiber::~Fiber id = " << m_id;
+    SYLAR_LOG_DEBUG(g_logger) << "Fiber::~Fiber id = " << m_id << " total=" << s_fiber_count;
 }
 
-// INIT, TERM
+// 重置协程函数，并重置状态
+// INIT，TERM, EXCEPT
 void Fiber::reset(std::function<void()> cb){
     SYLAR_ASSERT(m_stack);
     SYLAR_ASSERT(m_state == TERM
@@ -92,29 +104,49 @@ void Fiber::reset(std::function<void()> cb){
     m_state = INIT;
 }
 // EXEC
-void Fiber::swapIn(){
+void Fiber::swapIn() {
     SetThis(this);
     SYLAR_ASSERT(m_state != EXEC);
     m_state = EXEC;
-
+    // &Scheduler::GetMainFiber()->m_ctx    or
+    // &t_threadFiber->m_ctx     v
     if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)){
         SYLAR_ASSERT2(false, "swapcontext");
     }
 }
 // EXEC in the background
-void Fiber::swapOut(){
-    SetThis(t_threadFiber.get());
+void Fiber::swapOut() {
+    SetThis(Scheduler::GetMainFiber());
     if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
+        SYLAR_ASSERT2(false, "swapcontext");
+    }    
+}
+/**
+ * @brief 将当前线程切换到执行状态
+ * @pre 执行的为当前线程的主协程
+*/
+void Fiber::call() {
+    m_state = EXEC;
+    SYLAR_ASSERT(GetThis() == t_threadFiber);
+    if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
         SYLAR_ASSERT2(false, "swapcontext");
     }
 }
 
-void Fiber::SetThis(Fiber* f){
+void Fiber::back() {
+    SetThis(t_threadFiber.get());
+    if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
+        SYLAR_ASSERT2(false, "swapcontext");
+    }
+
+}
+
+void Fiber::SetThis(Fiber* f) {
     t_fiber = f;
 }
 
 // return to current fiber
-Fiber::ptr Fiber::GetThis(){
+Fiber::ptr Fiber::GetThis() {
     if(t_fiber){
         return t_fiber->shared_from_this();
     }
@@ -125,7 +157,7 @@ Fiber::ptr Fiber::GetThis(){
 
 }
 
-uint64_t Fiber::GetFiberId(){
+uint64_t Fiber::GetFiberId() {
     if(t_fiber) {
         return t_fiber->getId();
     }
@@ -133,25 +165,25 @@ uint64_t Fiber::GetFiberId(){
 }
 
 // READY
-void Fiber::YieldToReady(){
+void Fiber::YieldToReady() {
     Fiber::ptr cur = GetThis();
     SYLAR_ASSERT(cur->m_state == EXEC);
     cur->m_state = READY;
     cur->swapOut();
 }
 // HOLD
-void Fiber::YieldToHold(){
+void Fiber::YieldToHold() {
     Fiber::ptr cur = GetThis();
     // SYLAR_ASSERT(cur->m_state == EXEC);
     cur->m_state = HOLD;
     cur->swapOut();
 }
 // total numbers
-uint64_t Fiber::TotalFibers(){
+uint64_t Fiber::TotalFibers() {
     return s_fiber_count;
 }
 
-void Fiber::MainFunc(){
+void Fiber::MainFunc() {
     Fiber::ptr cur = GetThis();
     SYLAR_ASSERT(cur);
     try{
@@ -175,6 +207,33 @@ void Fiber::MainFunc(){
     cur.reset();
     raw_ptr->swapOut();
 
-    SYLAR_ASSERT2(false, "never reach");
+    SYLAR_ASSERT2(false, "never reach fiber_id = " + std::to_string(raw_ptr->getId()));
 }    
+
+void Fiber::CallerMainFunc() {
+    Fiber::ptr cur = GetThis();
+    SYLAR_ASSERT(cur);
+    try{
+        cur->m_cb();
+        cur->m_cb = nullptr;
+        cur->m_state = TERM;
+    } catch (std::exception& ex) {
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what()
+            << "fiber_id = " << cur->getId()
+            << std::endl
+            << sylar::BacktraceToString();
+    } catch(...){
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except"
+            << "fiber_id = " << cur->getId()
+            << std::endl
+            << sylar::BacktraceToString();
+    }
+    auto raw_ptr = cur.get();
+    cur.reset();
+    raw_ptr->back();
+
+    SYLAR_ASSERT2(false, "never reach fiber_id = " + std::to_string(raw_ptr->getId()));
+}
 }

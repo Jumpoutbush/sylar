@@ -10,10 +10,9 @@
 #include <stdint.h>
 #include <semaphore.h>
 
+namespace sylar {
 
-namespace sylar{
-
-class Semaphore{
+class Semaphore {
 public:
     Semaphore(uint32_t count = 0);
     ~Semaphore();
@@ -29,26 +28,26 @@ private:
 };
 
 template<class T>
-struct ScopedLockImpl{
+struct ScopedLockImpl {
 public:
     ScopedLockImpl(T& mutex)
-            : m_mutex(mutex){
+            : m_mutex(mutex) {
                 m_mutex.lock();
                 m_locked = true;
             }
-    ~ScopedLockImpl(){
+    ~ScopedLockImpl() {
         unlock();
     }
 
-    void lock(){
-        if(!m_locked){
+    void lock() {
+        if(!m_locked) {
             m_mutex.lock();
             m_locked = true;
         }
     }
 
-    void unlock(){
-        if(m_locked){
+    void unlock() {
+        if(m_locked) {
             m_mutex.unlock();
             m_locked = false;
         }
@@ -79,6 +78,7 @@ public:
 private:
     pthread_mutex_t m_mutex;
 };
+
 class NullMutex {
 public:
     typedef ScopedLockImpl<NullMutex> Lock;
@@ -89,26 +89,26 @@ public:
 };
 
 template<class T>
-struct ReadScopedLockImpl{
+struct ReadScopedLockImpl {
 public:
     ReadScopedLockImpl(T& mutex)
-            : m_mutex(mutex){
+            : m_mutex(mutex) {
                 m_mutex.rdlock();
                 m_locked = true;
             }
-    ~ReadScopedLockImpl(){
+    ~ReadScopedLockImpl() {
         unlock();
     }
 
-    void lock(){
-        if(!m_locked){
+    void lock() {
+        if(!m_locked) {
             m_mutex.rdlock();
             m_locked = true;
         }
     }
 
-    void unlock(){
-        if(m_locked){
+    void unlock() {
+        if(m_locked) {
             m_mutex.unlock();
             m_locked = false;
         }
@@ -119,26 +119,26 @@ private:
 };
 
 template<class T>
-struct WriteScopedLockImpl{
+struct WriteScopedLockImpl {
 public:
     WriteScopedLockImpl(T& mutex)
             : m_mutex(mutex){
                 m_mutex.wrlock();
                 m_locked = true;
             }
-    ~WriteScopedLockImpl(){
+    ~WriteScopedLockImpl() {
         unlock();
     }
 
-    void lock(){
-        if(!m_locked){
+    void lock() {
+        if(!m_locked) {
             m_mutex.wrlock();
             m_locked = true;
         }
     }
 
-    void unlock(){
-        if(m_locked){
+    void unlock() {
+        if(m_locked) {
             m_mutex.unlock();
             m_locked = false;
         }
@@ -147,7 +147,11 @@ private:
     T& m_mutex;
     bool m_locked;
 };
-
+/*
+读写锁是一对互斥锁，分为读锁和写锁。
+读锁和写锁互斥，让一个线程在进行读操作时，不允许其他线程的写操作，但是不影响其他线程的读操作。
+当一个线程在进行写操作时，不允许任何线程进行读操作或者写操作。
+*/
 class RWMutex {
 public:
     typedef ReadScopedLockImpl<RWMutex> ReadLock;
@@ -157,7 +161,7 @@ public:
         pthread_rwlock_init(&m_lock, nullptr);
     }
 
-    ~RWMutex(){
+    ~RWMutex() {
         pthread_rwlock_destroy(&m_lock);
     }
 
@@ -195,32 +199,32 @@ public:
     Spinlock() {
         pthread_spin_init(&m_mutex, 0);
     }
-    ~Spinlock(){
+    ~Spinlock() {
         pthread_spin_destroy(&m_mutex);
     }
-    void lock(){
+    void lock() {
         pthread_spin_lock(&m_mutex);
     }
-    void unlock(){
+    void unlock() {
         pthread_spin_unlock(&m_mutex);
     }
 private:
     pthread_spinlock_t m_mutex;
 };
 
-class CASLock{
+class CASLock {
 public:
     typedef ScopedLockImpl<CASLock> Lock;
-    CASLock(){
+    CASLock() {
         m_mutex.clear();
     }
-    ~CASLock(){
+    ~CASLock() {
 
     }
-    void lock(){
+    void lock() {
         while(std::atomic_flag_test_and_set_explicit(&m_mutex, std::memory_order_acquire));
     }
-    void unlock(){
+    void unlock() {
         std::atomic_flag_clear_explicit(&m_mutex, std::memory_order_release);
     }
 private:
@@ -237,7 +241,7 @@ public:
     pid_t getId() const { return m_id;}
     const std::string& getName() const { return m_name;}
 
-    void join();
+    void join();    //连接线程，用于阻塞
 
     static Thread* GetThis();
     static const std::string& GetName();

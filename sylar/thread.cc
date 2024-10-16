@@ -25,6 +25,10 @@ void Semaphore::wait() {
                 throw std::logic_error("sem_wait error");
     }
 }
+/*
+    作用是给信号量的值加上一个“1” 
+    当有线程阻塞在这个信号量上时，调用这个函数会使其中一个线程不在阻塞，选择机制是有线程的调度策略决定的
+ */
 void Semaphore::notify() {
     if(sem_post(&m_semaphore)) {
         throw std::logic_error("sem_post error");
@@ -46,13 +50,13 @@ Thread::Thread(std::function<void()> cb, const std::string& name)
     m_semaphore.wait();
 }
 
-Thread::~Thread(){
-    if(m_thread){
+Thread::~Thread() {
+    if(m_thread) {
         pthread_detach(m_thread);
     }
 }
 
-void* Thread::run(void* arg){
+void* Thread::run(void* arg) {
     Thread* thread = (Thread*)arg;
     t_thread = thread;
     t_thread_name = thread->m_name;
@@ -62,8 +66,8 @@ void* Thread::run(void* arg){
     std::function<void()> cb;
     cb.swap(thread->m_cb);
 
+    //执行完成后发起通知
     thread->m_semaphore.notify();
-
     cb();
     return 0;
 }
@@ -88,14 +92,13 @@ const std::string& Thread::GetName() {
     return t_thread_name;
 }
 
-void Thread::SetName (const std::string& name){
+void Thread::SetName(const std::string& name) {
     if(name.empty()) {
         return;
     }
-
     if(t_thread) {
         t_thread->m_name = name;
-    }   
+    }
     t_thread_name = name;
 }
 
