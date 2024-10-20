@@ -1007,7 +1007,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: tests/test_scheduler.cc
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   sylar/macro.h \
-  sylar/scheduler.h
+  sylar/scheduler.h \
+  /usr/include/c++/11/iostream
 
 
 sylar/scheduler.h:
@@ -1921,6 +1922,8 @@ sylar/sylar.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/local/include/boost/mpl/placeholders.hpp:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 

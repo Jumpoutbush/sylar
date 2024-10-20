@@ -934,4 +934,5 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /home/yyc/sylar/tests/../sylar/macro.h
+ /home/yyc/sylar/tests/../sylar/macro.h \
+ /home/yyc/sylar/tests/../sylar/scheduler.h /usr/include/c++/11/iostream

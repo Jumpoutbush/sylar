@@ -1,6 +1,6 @@
 CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /home/yyc/sylar/tests/test_config.cc /usr/include/stdc-predef.h \
- sylar/config.h /usr/include/c++/11/memory \
+ /home/yyc/sylar/tests/../sylar/config.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -912,19 +912,21 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
  /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h sylar/log.h \
- /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc sylar/util.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/yyc/sylar/tests/../sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h sylar/singleton.h \
- sylar/thread.h /usr/include/c++/11/thread \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h \
+ /home/yyc/sylar/tests/../sylar/singleton.h \
+ /home/yyc/sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/atomic /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h sylar/log.h \
- /usr/include/c++/11/iostream
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/iostream
