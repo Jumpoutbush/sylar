@@ -930,7 +930,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h sylar/macro.h \
  sylar/scheduler.h /usr/include/c++/11/iostream sylar/iomanager.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
+ sylar/timer.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
  /usr/include/x86_64-linux-gnu/bits/socket_type.h \

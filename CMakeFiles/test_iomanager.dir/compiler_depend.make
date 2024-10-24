@@ -1010,6 +1010,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: tests/test_iomanager.cc
   sylar/scheduler.h \
   /usr/include/c++/11/iostream \
   sylar/iomanager.h \
+  sylar/timer.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -1593,6 +1594,8 @@ sylar/scheduler.h:
 /usr/local/include/boost/mpl/numeric_cast.hpp:
 
 /usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp:
+
+sylar/timer.h:
 
 /usr/local/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 

@@ -209,7 +209,7 @@ bool IOManager::delEvent(int fd, Event event) {
     if(SYLAR_UNLIKELY(!(fd_ctx->events & event))) {
         return false;
     }
-
+    
     Event new_events = (Event)(fd_ctx->events & ~event);
     int op = new_events ? EPOLL_CTL_MOD : EPOLL_CTL_DEL;
     epoll_event epevent;

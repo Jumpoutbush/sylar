@@ -44,13 +44,12 @@ void test_fiber() {
     } else {
         SYLAR_LOG_INFO(g_logger) << "else " << errno << " " << strerror(errno);
     }
-
 }
 
 void test1() {
     std::cout << "EPOLLIN=" << EPOLLIN
               << " EPOLLOUT=" << EPOLLOUT << std::endl;
-    sylar::IOManager iom(2, false);
+    sylar::IOManager iom(3, false);
     iom.schedule(&test_fiber);
 }
 
@@ -68,7 +67,7 @@ void test_timer() {
 }
 
 int main(int argc, char** argv) {
-    // test1();
-    test_timer();
+    test1();
+    // test_timer();
     return 0;
 }
