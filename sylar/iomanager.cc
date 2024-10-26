@@ -329,8 +329,8 @@ bool IOManager::stopping() {
 
 void IOManager::idle() {
     SYLAR_LOG_DEBUG(g_logger) << "idle";
-    const uint64_t MAX_EVNETS = 256;
-    epoll_event* events = new epoll_event[MAX_EVNETS]();
+    const uint64_t MAX_EVENTS = 256;
+    epoll_event* events = new epoll_event[MAX_EVENTS]();
     std::shared_ptr<epoll_event> shared_events(events, [](epoll_event* ptr){
         delete[] ptr;
     });
@@ -352,7 +352,7 @@ void IOManager::idle() {
             } else {
                 next_timeout = MAX_TIMEOUT;
             }
-            rt = epoll_wait(m_epfd, events, MAX_EVNETS, (int)next_timeout);
+            rt = epoll_wait(m_epfd, events, MAX_EVENTS, (int)next_timeout);
             if(rt < 0 && errno == EINTR) {
             } else {
                 break;
@@ -367,7 +367,7 @@ void IOManager::idle() {
             cbs.clear();
         }
 
-        //if(SYLAR_UNLIKELY(rt == MAX_EVNETS)) {
+        //if(SYLAR_UNLIKELY(rt == MAX_EVENTS)) {
         //    SYLAR_LOG_INFO(g_logger) << "epoll wait events=" << rt;
         //}
 

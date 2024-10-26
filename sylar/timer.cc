@@ -30,7 +30,7 @@ Timer::Timer(uint64_t ms, std::function<void()> cb,
     ,m_ms(ms)
     ,m_cb(cb)
     ,m_manager(manager) {
-    m_next = sylar::GetCurrentMS() + m_ms;
+    m_next = sylar::GetElapsedMS() + m_ms;
 }
 
 Timer::Timer(uint64_t next)

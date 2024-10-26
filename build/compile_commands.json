@@ -1,43 +1,8 @@
 [
 {
   "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/log.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/yyc/sylar/sylar/log.cc",
-  "file": "/home/yyc/sylar/sylar/log.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/yyc/sylar/sylar/util.cc",
-  "file": "/home/yyc/sylar/sylar/util.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/config.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/yyc/sylar/sylar/config.cc",
   "file": "/home/yyc/sylar/sylar/config.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/yyc/sylar/sylar/thread.cc",
-  "file": "/home/yyc/sylar/sylar/thread.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/yyc/sylar/sylar/fiber.cc",
-  "file": "/home/yyc/sylar/sylar/fiber.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/scheduler.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/scheduler.cc.o -c /home/yyc/sylar/sylar/scheduler.cc",
-  "file": "/home/yyc/sylar/sylar/scheduler.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/iomanager.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/iomanager.cc.o -c /home/yyc/sylar/sylar/iomanager.cc",
-  "file": "/home/yyc/sylar/sylar/iomanager.cc"
-},
-{
-  "directory": "/home/yyc/sylar/build",
-  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/timer.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/timer.cc.o -c /home/yyc/sylar/sylar/timer.cc",
-  "file": "/home/yyc/sylar/sylar/timer.cc"
 },
 {
   "directory": "/home/yyc/sylar/build",
@@ -48,6 +13,41 @@
   "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fd_manager.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/fd_manager.cc.o -c /home/yyc/sylar/sylar/fd_manager.cc",
   "file": "/home/yyc/sylar/sylar/fd_manager.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/yyc/sylar/sylar/fiber.cc",
+  "file": "/home/yyc/sylar/sylar/fiber.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/iomanager.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/iomanager.cc.o -c /home/yyc/sylar/sylar/iomanager.cc",
+  "file": "/home/yyc/sylar/sylar/iomanager.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/log.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/yyc/sylar/sylar/log.cc",
+  "file": "/home/yyc/sylar/sylar/log.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/scheduler.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/scheduler.cc.o -c /home/yyc/sylar/sylar/scheduler.cc",
+  "file": "/home/yyc/sylar/sylar/scheduler.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/yyc/sylar/sylar/thread.cc",
+  "file": "/home/yyc/sylar/sylar/thread.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/timer.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/timer.cc.o -c /home/yyc/sylar/sylar/timer.cc",
+  "file": "/home/yyc/sylar/sylar/timer.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/yyc/sylar/sylar/util.cc",
+  "file": "/home/yyc/sylar/sylar/util.cc"
 },
 {
   "directory": "/home/yyc/sylar/build",

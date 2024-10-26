@@ -20,5 +20,9 @@ std::string BacktraceToString(int size = 64, int skip = 2, const std::string& pr
 // Time ms
 uint64_t GetCurrentMS();
 uint64_t GetCurrentUS();
+
+//获取当前启动的毫秒数
+uint64_t GetElapsedMS();
+
 }
 #endif

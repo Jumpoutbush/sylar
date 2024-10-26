@@ -48,4 +48,12 @@ uint64_t GetCurrentUS(){
     gettimeofday(&tv, NULL);
     return tv.tv_sec * 1000 * 1000ul + tv.tv_usec; 
 }
+
+uint64_t GetElapsedMS(){
+    struct timespec ts = {0};
+    clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
+	
+	//秒*1000 变成毫秒(失精部分) + 纳秒/六个零 变成毫秒(精确部分) 
+    return ts.tv_sec * 1000 + ts.tv_nsec / 1000000;
+}
 }

@@ -7,16 +7,16 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
 
 set(LIB_SRC
-    sylar/log.cc
-    sylar/util.cc
     sylar/config.cc
-    sylar/thread.cc
-    sylar/fiber.cc
-    sylar/scheduler.cc
-    sylar/iomanager.cc
-    sylar/timer.cc
     sylar/hook.cc
     sylar/fd_manager.cc
+    sylar/fiber.cc
+    sylar/iomanager.cc
+    sylar/log.cc
+    sylar/scheduler.cc
+    sylar/thread.cc
+    sylar/timer.cc
+    sylar/util.cc
     )
 
 add_library(sylar SHARED ${LIB_SRC})

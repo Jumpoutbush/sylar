@@ -66,6 +66,7 @@
         "unordered_set": "cpp",
         "condition_variable": "cpp",
         "mutex": "cpp",
-        "executor": "cpp"
+        "executor": "cpp",
+        "io_context": "cpp"
     }
 }
