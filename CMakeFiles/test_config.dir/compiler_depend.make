@@ -979,17 +979,6 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: tests/test_config.cc \
   /usr/local/include/yaml-cpp/node/emit.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  sylar/log.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
-  sylar/util.h \
-  /usr/include/x86_64-linux-gnu/sys/syscall.h \
-  /usr/include/x86_64-linux-gnu/asm/unistd.h \
-  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
-  /usr/include/x86_64-linux-gnu/bits/syscall.h \
-  sylar/singleton.h \
   sylar/thread.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
@@ -1000,17 +989,27 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: tests/test_config.cc \
   /usr/include/c++/11/atomic \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  sylar/noncopyable.h \
   sylar/log.h \
-  /usr/include/c++/11/iostream
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  sylar/util.h \
+  /usr/include/c++/11/cxxabi.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/iostream \
+  sylar/singleton.h \
+  sylar/log.h
 
 
-/usr/include/c++/11/atomic:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/chrono:
-
-sylar/thread.h:
+/usr/include/c++/11/iomanip:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
@@ -1021,6 +1020,16 @@ sylar/util.h:
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/fstream:
+
+sylar/noncopyable.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/chrono:
+
+sylar/thread.h:
 
 /usr/local/include/yaml-cpp/node/convert.h:
 
@@ -2040,6 +2049,8 @@ sylar/log.h:
 
 /usr/include/c++/11/functional:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
+
 /usr/local/include/boost/predef/os/windows.h:
 
 /usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp:
@@ -2480,6 +2491,8 @@ sylar/config.h:
 
 /usr/local/include/boost/preprocessor/inc.hpp:
 
+/usr/include/c++/11/bits/quoted_string.h:
+
 /usr/local/include/boost/mpl/aux_/static_cast.hpp:
 
 /usr/local/include/boost/preprocessor/arithmetic/inc.hpp:
@@ -2587,6 +2600,8 @@ sylar/config.h:
 /usr/local/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
 
 /usr/local/include/boost/type_traits/is_convertible.hpp:
+
+/usr/include/c++/11/cxxabi.h:
 
 /usr/local/include/boost/type_traits/intrinsics.hpp:
 

@@ -31,7 +31,7 @@ void test_sock() {
     memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
     addr.sin_port = htons(80);
-    inet_pton(AF_INET, "202.108.22.5", &addr.sin_addr.s_addr);
+    inet_pton(AF_INET, "20.205.243.166", &addr.sin_addr.s_addr);
 
     SYLAR_LOG_INFO(g_logger) << "begin connect";
     int rt = connect(sock, (const sockaddr*)&addr, sizeof(addr));
@@ -64,9 +64,9 @@ void test_sock() {
 }
 
 int main(int argc, char** argv) {
-    //test_sleep();
-    // sylar::IOManager iom;
-    // iom.schedule(test_sock);
-    test_sock();
+    // test_sleep();
+    sylar::IOManager iom;
+    iom.schedule(test_sock);
+    // test_sock();
     return 0;
 }

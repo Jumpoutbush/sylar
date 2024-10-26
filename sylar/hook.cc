@@ -55,12 +55,11 @@ struct _HookIniter {
         hook_init();
         s_connect_timeout = g_tcp_connect_timeout->getValue();
 
-        g_tcp_connect_timeout->addListener(10, [](const int& old_value, const int& new_value){
+        g_tcp_connect_timeout->addListener([](const int& old_value, const int& new_value){
                 SYLAR_LOG_INFO(g_logger) << "tcp connect timeout changed from "
                                          << old_value << " to " << new_value;
                 s_connect_timeout = new_value;
         });
-        
     }
 };
 

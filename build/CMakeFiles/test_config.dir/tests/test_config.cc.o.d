@@ -913,20 +913,23 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /usr/local/include/yaml-cpp/node/emit.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/fstream \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /home/yyc/sylar/tests/../sylar/util.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/include/x86_64-linux-gnu/asm/unistd.h \
- /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/yyc/sylar/tests/../sylar/singleton.h \
  /home/yyc/sylar/tests/../sylar/thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/atomic /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/iostream
+ /home/yyc/sylar/tests/../sylar/noncopyable.h \
+ /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/yyc/sylar/tests/../sylar/util.h /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/iostream \
+ /home/yyc/sylar/tests/../sylar/singleton.h \
+ /home/yyc/sylar/tests/../sylar/log.h

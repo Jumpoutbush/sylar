@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sylar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sylar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sylar-Debug-c5c91f42f7f018cf7e4d.json",
+					"name" : "sylar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-43cf4a12ec158adacfbe.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_config::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_config-Debug-ee3d2a152ba3a295f8e9.json",
+					"name" : "test_config",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_fiber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_fiber-Debug-b0b05a2ce1044c70a6b0.json",
+					"name" : "test_fiber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_hook::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_hook-Debug-0d9eafbd111ad4190454.json",
+					"name" : "test_hook",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_iomanager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_iomanager-Debug-70afc449b33a391a7bf5.json",
+					"name" : "test_iomanager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_scheduler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_scheduler-Debug-a3a2f539818430669f5b.json",
+					"name" : "test_scheduler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_thread-Debug-d9a89951621864f71d22.json",
+					"name" : "test_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_util::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_util-Debug-7e83919f04e77df67cff.json",
+					"name" : "test_util",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yyc/sylar/build",
+		"source" : "/home/yyc/sylar"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

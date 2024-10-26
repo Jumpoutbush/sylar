@@ -10,9 +10,11 @@
 #include <stdint.h>
 #include <semaphore.h>
 
+#include "noncopyable.h"
+
 namespace sylar {
 
-class Semaphore {
+class Semaphore : Noncopyable {
 public:
     Semaphore(uint32_t count = 0);
     ~Semaphore();
@@ -57,7 +59,7 @@ private:
     bool m_locked;
 };
 
-class Mutex {
+class Mutex : Noncopyable {
 public:
     typedef ScopedLockImpl<Mutex> Lock;
     Mutex() {
@@ -79,7 +81,7 @@ private:
     pthread_mutex_t m_mutex;
 };
 
-class NullMutex {
+class NullMutex : Noncopyable {
 public:
     typedef ScopedLockImpl<NullMutex> Lock;
     NullMutex() {}
@@ -152,7 +154,7 @@ private:
 读锁和写锁互斥，让一个线程在进行读操作时，不允许其他线程的写操作，但是不影响其他线程的读操作。
 当一个线程在进行写操作时，不允许任何线程进行读操作或者写操作。
 */
-class RWMutex {
+class RWMutex : Noncopyable {
 public:
     typedef ReadScopedLockImpl<RWMutex> ReadLock;
     typedef WriteScopedLockImpl<RWMutex> WriteLock;
@@ -180,7 +182,7 @@ private:
     pthread_rwlock_t m_lock;
 };
 
-class NullRWMutex {
+class NullRWMutex : Noncopyable {
 public:
     typedef ReadScopedLockImpl<NullRWMutex> ReadLock;
     typedef WriteScopedLockImpl<NullRWMutex> WriteLock;
@@ -193,7 +195,7 @@ public:
     void unlock() {}
 };
 
-class Spinlock {
+class Spinlock : Noncopyable {
 public:
     typedef ScopedLockImpl<Spinlock> Lock;
     Spinlock() {
@@ -212,7 +214,7 @@ private:
     pthread_spinlock_t m_mutex;
 };
 
-class CASLock {
+class CASLock : Noncopyable {
 public:
     typedef ScopedLockImpl<CASLock> Lock;
     CASLock() {
