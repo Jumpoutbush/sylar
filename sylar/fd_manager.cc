@@ -4,22 +4,21 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-namespace sylar{
+namespace sylar {
 
-FdCtx::FdCtx(int fd) 
-        :m_isInit(false)
-        ,m_isSocket(false)
-        ,m_sysNonblock(false)
-        ,m_userNonblock(false)
-        ,m_isClosed(false)
-        ,m_fd(fd)
-        ,m_recvTimeout(-1)
-        ,m_sendTimeout(-1){
+FdCtx::FdCtx(int fd)
+    :m_isInit(false)
+    ,m_isSocket(false)
+    ,m_sysNonblock(false)
+    ,m_userNonblock(false)
+    ,m_isClosed(false)
+    ,m_fd(fd)
+    ,m_recvTimeout(-1)
+    ,m_sendTimeout(-1) {
     init();
 }
 
 FdCtx::~FdCtx() {
-
 }
 
 bool FdCtx::init() {
@@ -69,11 +68,10 @@ uint64_t FdCtx::getTimeout(int type) {
     }
 }
 
-// FdManager
 FdManager::FdManager() {
     m_datas.resize(64);
-}   
-    
+}
+
 FdCtx::ptr FdManager::get(int fd, bool auto_create) {
     if(fd == -1) {
         return nullptr;

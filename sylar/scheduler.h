@@ -88,7 +88,7 @@ public:
      * @brief 批量调度协程
      * @param[in] begin 协程数组的开始
      * @param[in] end 协程数组的结束
-    */
+     */
     template<class InputIterator>
     void schedule(InputIterator begin, InputIterator end) {
         bool need_tickle = false;
@@ -243,6 +243,14 @@ protected:
     bool m_autoStop = false;
     /// 主线程id(use_caller)
     int m_rootThread = 0;
+};
+
+class SchedulerSwitcher : public Noncopyable {
+public:
+    SchedulerSwitcher(Scheduler* target = nullptr);
+    ~SchedulerSwitcher();
+private:
+    Scheduler* m_caller;
 };
 
 }

@@ -1,7 +1,7 @@
 #include "scheduler.h"
-#include "hook.h"
-#include "macro.h"
 #include "log.h"
+#include "macro.h"
+#include "hook.h"
 
 namespace sylar {
 
@@ -152,8 +152,7 @@ void Scheduler::run() {
         {
             MutexType::Lock lock(m_mutex);
             auto it = m_fibers.begin();
-
-            while(it != m_fibers.end()) { // 按顺序调度FCFS
+            while(it != m_fibers.end()) {
                 if(it->thread != -1 && it->thread != sylar::GetThreadId()) {
                     ++it;
                     tickle_me = true;
@@ -191,8 +190,8 @@ void Scheduler::run() {
                 ft.fiber->m_state = Fiber::HOLD;
             }
             ft.reset();
-        } else if(ft.cb) { 
-            if(cb_fiber) { 
+        } else if(ft.cb) {
+            if(cb_fiber) {
                 cb_fiber->reset(ft.cb);
             } else {
                 cb_fiber.reset(new Fiber(ft.cb));
@@ -200,7 +199,6 @@ void Scheduler::run() {
             ft.reset();
             cb_fiber->swapIn();
             --m_activeThreadCount;
-
             if(cb_fiber->getState() == Fiber::READY) {
                 schedule(cb_fiber);
                 cb_fiber.reset();
@@ -224,7 +222,6 @@ void Scheduler::run() {
             ++m_idleThreadCount;
             idle_fiber->swapIn();
             --m_idleThreadCount;
-            
             if(idle_fiber->getState() != Fiber::TERM
                     && idle_fiber->getState() != Fiber::EXCEPT) {
                 idle_fiber->m_state = Fiber::HOLD;
@@ -275,6 +272,19 @@ std::ostream& Scheduler::dump(std::ostream& os) {
         os << m_threadIds[i];
     }
     return os;
+}
+
+SchedulerSwitcher::SchedulerSwitcher(Scheduler* target) {
+    m_caller = Scheduler::GetThis();
+    if(target) {
+        target->switchTo();
+    }
+}
+
+SchedulerSwitcher::~SchedulerSwitcher() {
+    if(m_caller) {
+        m_caller->switchTo();
+    }
 }
 
 }

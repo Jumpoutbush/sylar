@@ -183,50 +183,13 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /home/yyc/sylar/sylar/thread.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
+ /home/yyc/sylar/sylar/thread.h /home/yyc/sylar/sylar/mutex.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/atomic /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/yyc/sylar/sylar/noncopyable.h /home/yyc/sylar/sylar/hook.h \
- /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/sys/ioctl.h \
- /usr/include/x86_64-linux-gnu/bits/ioctls.h \
- /usr/include/x86_64-linux-gnu/asm/ioctls.h \
- /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/x86_64-linux-gnu/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h \
- /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /home/yyc/sylar/sylar/macro.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/atomic /home/yyc/sylar/sylar/noncopyable.h \
  /home/yyc/sylar/sylar/log.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/fstream \
  /usr/include/c++/11/bits/codecvt.h \
@@ -237,6 +200,13 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/include/c++/11/bits/stl_multimap.h /home/yyc/sylar/sylar/util.h \
  /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -247,11 +217,19 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/quoted_string.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/json/json.h \
+ /usr/include/json/config.h /usr/include/c++/11/cstddef \
+ /usr/include/json/allocator.h /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h /usr/include/json/version.h \
+ /usr/include/json/json_features.h /usr/include/json/forwards.h \
+ /usr/include/json/reader.h /usr/include/json/value.h \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/stack \
+ /usr/include/c++/11/bits/stl_stack.h /usr/include/json/writer.h \
  /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
  /usr/local/include/yaml-cpp/dll.h \
  /usr/local/include/yaml-cpp/noncopyable.h \
- /usr/local/include/yaml-cpp/emitter.h /usr/include/c++/11/cstddef \
+ /usr/local/include/yaml-cpp/emitter.h \
  /usr/local/include/yaml-cpp/binary.h \
  /usr/local/include/yaml-cpp/emitterdef.h \
  /usr/local/include/yaml-cpp/emittermanip.h \
@@ -294,7 +272,7 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/local/include/boost/config/suffix.hpp \
  /usr/local/include/boost/range/iterator_range_core.hpp \
  /usr/local/include/boost/detail/workaround.hpp \
- /usr/local/include/boost/assert.hpp \
+ /usr/local/include/boost/assert.hpp /usr/include/assert.h \
  /usr/local/include/boost/iterator/iterator_traits.hpp \
  /usr/local/include/boost/detail/iterator.hpp \
  /usr/local/include/boost/iterator/iterator_facade.hpp \
@@ -677,7 +655,6 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/local/include/boost/move/detail/std_ns_begin.hpp \
  /usr/local/include/boost/move/detail/std_ns_end.hpp \
  /usr/local/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
- /usr/include/c++/11/cstring \
  /usr/local/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
  /usr/local/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
  /usr/local/include/boost/lexical_cast/detail/inf_nan.hpp \
@@ -960,4 +937,33 @@ CMakeFiles/sylar.dir/sylar/scheduler.cc.o: \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
- /home/yyc/sylar/sylar/singleton.h
+ /home/yyc/sylar/sylar/singleton.h /home/yyc/sylar/sylar/macro.h \
+ /home/yyc/sylar/sylar/hook.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h

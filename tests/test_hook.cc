@@ -1,6 +1,6 @@
-#include "sylar/hook.h"
-#include "sylar/log.h"
-#include "sylar/iomanager.h"
+#include "../sylar/hook.h"
+#include "../sylar/log.h"
+#include "../sylar/iomanager.h"
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>

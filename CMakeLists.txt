@@ -8,13 +8,16 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-de
 
 set(LIB_SRC
     sylar/address.cc
+    sylar/bytearray.cc
     sylar/config.cc
     sylar/hook.cc
     sylar/fd_manager.cc
     sylar/fiber.cc
     sylar/iomanager.cc
     sylar/log.cc
+    sylar/mutex.cc
     sylar/scheduler.cc
+    sylar/socket.cc
     sylar/thread.cc
     sylar/timer.cc
     sylar/util.cc
@@ -36,11 +39,17 @@ find_library(PTHREAD pthread)
 #set(LIBS ${LIBS} dl)
 #message("***", ${YAMLCPP})
 
+find_package(OpenSSL REQUIRED)
+if(OPENSSL_FOUND)
+    include_directories(${OPENSSL_INCLUDE_DIR})
+endif()
+
 set(LIB_LIB
         sylar
         dl
         pthread
         yaml-cpp
+        ${OPENSSL_LIBRARIES}
     )
 
 add_executable(test tests/test.cc)
@@ -82,6 +91,16 @@ add_executable(test_hook tests/test_hook.cc)
 add_dependencies(test_hook sylar)
 force_redefine_file_macro_for_sources(test_hook)
 target_link_libraries(test_hook sylar ${LIB_LIB})
+
+add_executable(test_address tests/test_address.cc)
+add_dependencies(test_address sylar)
+force_redefine_file_macro_for_sources(test_address)
+target_link_libraries(test_address sylar ${LIB_LIB})
+
+add_executable(test_socket tests/test_socket.cc)
+add_dependencies(test_socket sylar)
+force_redefine_file_macro_for_sources(test_socket)
+target_link_libraries(test_socket sylar ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

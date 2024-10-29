@@ -10,6 +10,8 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-u
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/address.cc.o_DEFINES = __FILE__="sylar/address.cc"
 
+# Custom defines: CMakeFiles/sylar.dir/sylar/bytearray.cc.o_DEFINES = __FILE__="sylar/bytearray.cc"
+
 # Custom defines: CMakeFiles/sylar.dir/sylar/config.cc.o_DEFINES = __FILE__="sylar/config.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/hook.cc.o_DEFINES = __FILE__="sylar/hook.cc"
@@ -22,7 +24,11 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-u
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/log.cc.o_DEFINES = __FILE__="sylar/log.cc"
 
+# Custom defines: CMakeFiles/sylar.dir/sylar/mutex.cc.o_DEFINES = __FILE__="sylar/mutex.cc"
+
 # Custom defines: CMakeFiles/sylar.dir/sylar/scheduler.cc.o_DEFINES = __FILE__="sylar/scheduler.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/socket.cc.o_DEFINES = __FILE__="sylar/socket.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/thread.cc.o_DEFINES = __FILE__="sylar/thread.cc"
 

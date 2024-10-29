@@ -67,6 +67,14 @@
         "condition_variable": "cpp",
         "mutex": "cpp",
         "executor": "cpp",
-        "io_context": "cpp"
+        "io_context": "cpp",
+        "codecvt": "cpp",
+        "forward_list": "cpp",
+        "netfwd": "cpp",
+        "optional": "cpp",
+        "timer": "cpp",
+        "future": "cpp",
+        "span": "cpp",
+        "variant": "cpp"
     }
 }

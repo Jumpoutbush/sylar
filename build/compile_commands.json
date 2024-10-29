@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/bytearray.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/bytearray.cc.o -c /home/yyc/sylar/sylar/bytearray.cc",
+  "file": "/home/yyc/sylar/sylar/bytearray.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/config.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/yyc/sylar/sylar/config.cc",
   "file": "/home/yyc/sylar/sylar/config.cc"
 },
@@ -36,8 +41,18 @@
 },
 {
   "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/mutex.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/mutex.cc.o -c /home/yyc/sylar/sylar/mutex.cc",
+  "file": "/home/yyc/sylar/sylar/mutex.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/scheduler.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/scheduler.cc.o -c /home/yyc/sylar/sylar/scheduler.cc",
   "file": "/home/yyc/sylar/sylar/scheduler.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/socket.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/socket.cc.o -c /home/yyc/sylar/sylar/socket.cc",
+  "file": "/home/yyc/sylar/sylar/socket.cc"
 },
 {
   "directory": "/home/yyc/sylar/build",
@@ -93,5 +108,15 @@
   "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_hook.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /home/yyc/sylar/tests/test_hook.cc",
   "file": "/home/yyc/sylar/tests/test_hook.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_address.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /home/yyc/sylar/tests/test_address.cc",
+  "file": "/home/yyc/sylar/tests/test_address.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_socket.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_socket.dir/tests/test_socket.cc.o -c /home/yyc/sylar/tests/test_socket.cc",
+  "file": "/home/yyc/sylar/tests/test_socket.cc"
 }
 ]

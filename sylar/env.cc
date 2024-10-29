@@ -1,5 +1,5 @@
 #include "env.h"
-#include "sylar/log.h"
+#include "log.h"
 #include <string.h>
 #include <iostream>
 #include <iomanip>
@@ -15,7 +15,9 @@ bool Env::init(int argc, char** argv) {
     char link[1024] = {0};
     char path[1024] = {0};
     sprintf(link, "/proc/%d/exe", getpid());
-    readlink(link, path, sizeof(path));
+    ssize_t bytes_read = readlink(link, path, sizeof(path));
+    if(bytes_read == -1)
+        perror("readlink error");
     // /path/xxx/exe
     m_exe = path;
 
