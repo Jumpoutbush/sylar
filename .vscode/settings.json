@@ -75,6 +75,7 @@
         "timer": "cpp",
         "future": "cpp",
         "span": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "cerrno": "cpp"
     }
 }

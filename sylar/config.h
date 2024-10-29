@@ -329,11 +329,11 @@ private:
     RWMutexType m_mutex;
     T m_val;    //m_name + m_val + m_description
     // 变更回调函数组, uint64_t key, 要求唯一, 可以用hash
-    std::map<uint64_t, on_change_cb> m_cbs;
-};
+    std::map<uint64_t, on_change_cb> m_cbs; 
+}; 
 
-//configvar这两个模板函数的泛化
-class Config{
+// configvar这两个模板函数的泛化 
+class Config {
 public:
     typedef std::unordered_map<std::string, ConfigVarBase::ptr> ConfigVarMap;
     typedef RWMutex RWMutexType;

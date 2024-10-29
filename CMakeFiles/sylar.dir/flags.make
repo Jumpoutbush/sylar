@@ -6,7 +6,7 @@ CXX_DEFINES = -Dsylar_EXPORTS
 
 CXX_INCLUDES = -I/home/yyc/sylar/. -I/home/yyc/sylar/../include
 
-CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
+CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/address.cc.o_DEFINES = __FILE__="sylar/address.cc"
 
@@ -15,6 +15,8 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-u
 # Custom defines: CMakeFiles/sylar.dir/sylar/config.cc.o_DEFINES = __FILE__="sylar/config.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/hook.cc.o_DEFINES = __FILE__="sylar/hook.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/http.cc.o_DEFINES = __FILE__="sylar/http.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/fd_manager.cc.o_DEFINES = __FILE__="sylar/fd_manager.cc"
 
@@ -35,4 +37,10 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-u
 # Custom defines: CMakeFiles/sylar.dir/sylar/timer.cc.o_DEFINES = __FILE__="sylar/timer.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/util.cc.o_DEFINES = __FILE__="sylar/util.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o_DEFINES = __FILE__="sylar/http/http11_parser.rl.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="sylar/http/httpclient_parser.rl.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o_DEFINES = __FILE__="sylar/http/http_parser.cc"
 

@@ -4,13 +4,14 @@ project(sylar)
 include(cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
 
 set(LIB_SRC
     sylar/address.cc
     sylar/bytearray.cc
     sylar/config.cc
     sylar/hook.cc
+    sylar/http.cc
     sylar/fd_manager.cc
     sylar/fiber.cc
     sylar/iomanager.cc
@@ -21,6 +22,10 @@ set(LIB_SRC
     sylar/thread.cc
     sylar/timer.cc
     sylar/util.cc
+
+    sylar/http/http11_parser.rl.cc
+    sylar/http/httpclient_parser.rl.cc
+    sylar/http/http_parser.cc
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -101,6 +106,16 @@ add_executable(test_socket tests/test_socket.cc)
 add_dependencies(test_socket sylar)
 force_redefine_file_macro_for_sources(test_socket)
 target_link_libraries(test_socket sylar ${LIB_LIB})
+
+add_executable(test_http tests/test_http.cc)
+add_dependencies(test_http sylar)
+force_redefine_file_macro_for_sources(test_http)
+target_link_libraries(test_http sylar ${LIB_LIB})
+
+add_executable(test_http_parser tests/test_http_parser.cc)
+add_dependencies(test_http_parser sylar)
+force_redefine_file_macro_for_sources(test_http_parser)
+target_link_libraries(test_http_parser sylar ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

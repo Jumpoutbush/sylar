@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/yyc/sylar/. -I/home/yyc/sylar/../include
 
-CXX_FLAGS =  -rdynamic -O3 -fPIC -ggdb -std=c++17 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations
+CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined
 
 # Custom defines: CMakeFiles/test_http.dir/tests/test_http.cc.o_DEFINES = __FILE__="tests/test_http.cc"
 

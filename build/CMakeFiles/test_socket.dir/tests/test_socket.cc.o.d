@@ -1,6 +1,6 @@
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /home/yyc/sylar/tests/test_socket.cc /usr/include/stdc-predef.h \
- /home/yyc/sylar/./sylar/socket.h /usr/include/c++/11/memory \
+ /home/yyc/sylar/tests/../sylar/socket.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -12,7 +12,6 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -113,9 +112,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/netinet/tcp.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/netinet/tcp.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
@@ -229,7 +226,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/local/openssl/include/openssl/dtls1.h \
  /usr/local/openssl/include/openssl/srtp.h \
  /usr/local/openssl/include/openssl/quic.h \
- /home/yyc/sylar/./sylar/address.h /usr/include/c++/11/string \
+ /home/yyc/sylar/tests/../sylar/address.h /usr/include/c++/11/string \
  /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
@@ -237,8 +234,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
  /usr/include/ctype.h /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
- /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/string_view.tcc \
+ /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
  /usr/include/c++/11/cerrno /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
@@ -272,65 +268,20 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/yyc/sylar/./sylar/noncopyable.h /home/yyc/sylar/./sylar/sylar.h \
- /home/yyc/sylar/./sylar/util.h /usr/include/c++/11/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/include/x86_64-linux-gnu/asm/unistd.h \
- /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/local/include/yaml-cpp/yaml.h \
- /usr/local/include/yaml-cpp/parser.h /usr/local/include/yaml-cpp/dll.h \
- /usr/local/include/yaml-cpp/noncopyable.h \
- /usr/local/include/yaml-cpp/emitter.h /usr/include/c++/11/cstddef \
- /usr/local/include/yaml-cpp/binary.h \
- /usr/local/include/yaml-cpp/emitterdef.h \
- /usr/local/include/yaml-cpp/emittermanip.h \
- /usr/local/include/yaml-cpp/null.h \
- /usr/local/include/yaml-cpp/ostream_wrapper.h \
- /usr/local/include/yaml-cpp/emitterstyle.h \
- /usr/local/include/yaml-cpp/stlemitter.h /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
- /usr/include/c++/11/bits/stl_multiset.h \
- /usr/local/include/yaml-cpp/exceptions.h \
- /usr/local/include/yaml-cpp/mark.h /usr/local/include/yaml-cpp/traits.h \
- /usr/local/include/yaml-cpp/node/node.h \
- /usr/local/include/yaml-cpp/node/detail/bool_type.h \
- /usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
- /usr/local/include/yaml-cpp/node/ptr.h \
- /usr/local/include/yaml-cpp/node/type.h \
- /usr/local/include/yaml-cpp/node/impl.h \
- /usr/local/include/yaml-cpp/node/iterator.h \
- /usr/local/include/yaml-cpp/node/detail/iterator.h \
- /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
- /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /usr/local/include/yaml-cpp/node/detail/memory.h \
- /usr/local/include/yaml-cpp/node/detail/node.h \
- /usr/local/include/yaml-cpp/node/detail/node_ref.h \
- /usr/local/include/yaml-cpp/node/detail/node_data.h \
- /usr/local/include/yaml-cpp/node/convert.h /usr/include/c++/11/limits \
- /usr/local/include/yaml-cpp/node/detail/impl.h \
- /usr/local/include/yaml-cpp/node/parse.h \
- /usr/local/include/yaml-cpp/node/emit.h \
+ /home/yyc/sylar/tests/../sylar/noncopyable.h \
+ /home/yyc/sylar/tests/../sylar/sylar.h \
+ /home/yyc/sylar/tests/../sylar/bytearray.h \
+ /home/yyc/sylar/tests/../sylar/config.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
  /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
  /usr/local/include/boost/config/user.hpp \
  /usr/local/include/boost/config/select_compiler_config.hpp \
  /usr/local/include/boost/config/compiler/gcc.hpp \
+ /usr/include/c++/11/cstddef \
  /usr/local/include/boost/config/select_stdlib_config.hpp \
  /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
  /usr/local/include/boost/config/select_platform_config.hpp \
@@ -342,6 +293,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/local/include/boost/assert.hpp /usr/include/assert.h \
  /usr/local/include/boost/iterator/iterator_traits.hpp \
  /usr/local/include/boost/detail/iterator.hpp \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/local/include/boost/iterator/iterator_facade.hpp \
  /usr/local/include/boost/iterator.hpp \
  /usr/local/include/boost/iterator/interoperable.hpp \
@@ -577,17 +529,11 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/local/include/boost/preprocessor/seq/enum.hpp \
  /usr/local/include/boost/concept/detail/concept_undef.hpp \
  /usr/local/include/boost/iterator/iterator_concepts.hpp \
- /usr/local/include/boost/limits.hpp /usr/include/c++/11/algorithm \
- /usr/include/c++/11/bits/stl_algo.h \
+ /usr/local/include/boost/limits.hpp /usr/include/c++/11/limits \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
  /usr/local/include/boost/range/value_type.hpp \
  /usr/local/include/boost/range/detail/misc_concept.hpp \
  /usr/local/include/boost/type_traits/make_unsigned.hpp \
@@ -689,18 +635,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/local/include/boost/numeric/conversion/detail/converter.hpp \
  /usr/local/include/boost/numeric/conversion/bounds.hpp \
  /usr/local/include/boost/numeric/conversion/detail/bounds.hpp \
@@ -723,7 +658,13 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/local/include/boost/move/detail/std_ns_begin.hpp \
  /usr/local/include/boost/move/detail/std_ns_end.hpp \
  /usr/local/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
- /usr/include/c++/11/cstring \
+ /usr/include/c++/11/cstring /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
  /usr/local/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
  /usr/local/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
  /usr/local/include/boost/lexical_cast/detail/inf_nan.hpp \
@@ -1006,21 +947,94 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
- /home/yyc/sylar/./sylar/log.h /usr/include/c++/11/fstream \
+ /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
+ /usr/local/include/yaml-cpp/dll.h \
+ /usr/local/include/yaml-cpp/noncopyable.h \
+ /usr/local/include/yaml-cpp/emitter.h \
+ /usr/local/include/yaml-cpp/binary.h \
+ /usr/local/include/yaml-cpp/emitterdef.h \
+ /usr/local/include/yaml-cpp/emittermanip.h \
+ /usr/local/include/yaml-cpp/null.h \
+ /usr/local/include/yaml-cpp/ostream_wrapper.h \
+ /usr/local/include/yaml-cpp/emitterstyle.h \
+ /usr/local/include/yaml-cpp/stlemitter.h /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/local/include/yaml-cpp/exceptions.h \
+ /usr/local/include/yaml-cpp/mark.h /usr/local/include/yaml-cpp/traits.h \
+ /usr/local/include/yaml-cpp/node/node.h \
+ /usr/local/include/yaml-cpp/node/detail/bool_type.h \
+ /usr/local/include/yaml-cpp/node/detail/iterator_fwd.h \
+ /usr/local/include/yaml-cpp/node/ptr.h \
+ /usr/local/include/yaml-cpp/node/type.h \
+ /usr/local/include/yaml-cpp/node/impl.h \
+ /usr/local/include/yaml-cpp/node/iterator.h \
+ /usr/local/include/yaml-cpp/node/detail/iterator.h \
+ /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
+ /usr/local/include/yaml-cpp/node/detail/memory.h \
+ /usr/local/include/yaml-cpp/node/detail/node.h \
+ /usr/local/include/yaml-cpp/node/detail/node_ref.h \
+ /usr/local/include/yaml-cpp/node/detail/node_data.h \
+ /usr/local/include/yaml-cpp/node/convert.h \
+ /usr/local/include/yaml-cpp/node/detail/impl.h \
+ /usr/local/include/yaml-cpp/node/parse.h \
+ /usr/local/include/yaml-cpp/node/emit.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /home/yyc/sylar/./sylar/singleton.h \
- /home/yyc/sylar/./sylar/thread.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/yyc/sylar/tests/../sylar/util.h /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/x86_64-linux-gnu/sys/syscall.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd.h \
+ /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/iomanip \
+ /usr/include/json/json.h /usr/include/json/config.h \
+ /usr/include/json/allocator.h /usr/include/json/version.h \
+ /usr/include/json/json_features.h /usr/include/json/forwards.h \
+ /usr/include/json/reader.h /usr/include/json/value.h \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/stack \
+ /usr/include/c++/11/bits/stl_stack.h /usr/include/json/writer.h \
+ /home/yyc/sylar/tests/../sylar/singleton.h \
+ /home/yyc/sylar/tests/../sylar/thread.h \
+ /home/yyc/sylar/tests/../sylar/mutex.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/atomic /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/yyc/sylar/./sylar/config.h /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h /home/yyc/sylar/./sylar/fiber.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/atomic /home/yyc/sylar/tests/../sylar/fiber.h \
  /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /home/yyc/sylar/./sylar/macro.h /home/yyc/sylar/./sylar/scheduler.h \
- /home/yyc/sylar/./sylar/iomanager.h /home/yyc/sylar/./sylar/timer.h
+ /home/yyc/sylar/tests/../sylar/endian.h /usr/include/byteswap.h \
+ /home/yyc/sylar/tests/../sylar/env.h \
+ /home/yyc/sylar/tests/../sylar/fd_manager.h \
+ /home/yyc/sylar/tests/../sylar/hook.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+ /home/yyc/sylar/tests/../sylar/iomanager.h \
+ /home/yyc/sylar/tests/../sylar/scheduler.h \
+ /home/yyc/sylar/tests/../sylar/timer.h \
+ /home/yyc/sylar/tests/../sylar/macro.h \
+ /home/yyc/sylar/tests/../sylar/socket.h \
+ /home/yyc/sylar/tests/../sylar/uri.h \
+ /home/yyc/sylar/tests/../sylar/iomanager.h

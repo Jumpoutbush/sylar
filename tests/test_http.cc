@@ -1,8 +1,8 @@
-#include "../sylar/http/http.h"
+#include "../sylar/http.h"
 #include "../sylar/log.h"
 void test_request() {
     sylar::http::HttpRequest::ptr req(new sylar::http::HttpRequest);
-    req->setHeader("host" , "www.sylar.top");
+    req->setHeader("host" , "www.baidu.com");
     req->setBody("hello sylar");
     req->dump(std::cout) << std::endl;
 }
