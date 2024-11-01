@@ -11,5 +11,8 @@
 /home/yyc/sylar/CMakeFiles/test_socket.dir
 /home/yyc/sylar/CMakeFiles/test_http.dir
 /home/yyc/sylar/CMakeFiles/test_http_parser.dir
+/home/yyc/sylar/CMakeFiles/test_tcp_server.dir
+/home/yyc/sylar/CMakeFiles/echo_server.dir
+/home/yyc/sylar/CMakeFiles/test_http_server.dir
 /home/yyc/sylar/CMakeFiles/edit_cache.dir
 /home/yyc/sylar/CMakeFiles/rebuild_cache.dir

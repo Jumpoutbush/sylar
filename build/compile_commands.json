@@ -61,6 +61,16 @@
 },
 {
   "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/stream.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/stream.cc.o -c /home/yyc/sylar/sylar/stream.cc",
+  "file": "/home/yyc/sylar/sylar/stream.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/tcp_server.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/tcp_server.cc.o -c /home/yyc/sylar/sylar/tcp_server.cc",
+  "file": "/home/yyc/sylar/sylar/tcp_server.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/yyc/sylar/sylar/thread.cc",
   "file": "/home/yyc/sylar/sylar/thread.cc"
 },
@@ -88,6 +98,26 @@
   "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_parser.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o -c /home/yyc/sylar/sylar/http/http_parser.cc",
   "file": "/home/yyc/sylar/sylar/http/http_parser.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_server.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_server.cc.o -c /home/yyc/sylar/sylar/http/http_server.cc",
+  "file": "/home/yyc/sylar/sylar/http/http_server.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http_session.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http_session.cc.o -c /home/yyc/sylar/sylar/http/http_session.cc",
+  "file": "/home/yyc/sylar/sylar/http/http_session.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/servlet.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/servlet.cc.o -c /home/yyc/sylar/sylar/http/servlet.cc",
+  "file": "/home/yyc/sylar/sylar/http/servlet.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/streams/socket_stream.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/streams/socket_stream.cc.o -c /home/yyc/sylar/sylar/streams/socket_stream.cc",
+  "file": "/home/yyc/sylar/sylar/streams/socket_stream.cc"
 },
 {
   "directory": "/home/yyc/sylar/build",
@@ -148,5 +178,20 @@
   "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_parser.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o -c /home/yyc/sylar/tests/test_http_parser.cc",
   "file": "/home/yyc/sylar/tests/test_http_parser.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_tcp_server.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/yyc/sylar/tests/test_tcp_server.cc",
+  "file": "/home/yyc/sylar/tests/test_tcp_server.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"examples/echo_server.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/yyc/sylar/examples/echo_server.cc",
+  "file": "/home/yyc/sylar/examples/echo_server.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++  -D__FILE__=\\\"tests/test_http_server.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o -c /home/yyc/sylar/tests/test_http_server.cc",
+  "file": "/home/yyc/sylar/tests/test_http_server.cc"
 }
 ]

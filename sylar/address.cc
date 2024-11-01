@@ -67,11 +67,12 @@ bool Address::Lookup(std::vector<Address::ptr>& result, const std::string& host,
     std::string node;
     const char* service = NULL;
 
-    //检查 ipv6address serivce
-    if(!host.empty() && host[0] == '[') {
+    //检查带端口的 ipv6address serivce
+    if(!host.empty() && host[0] == '[') { 
+        // 在host中查找 ] 字符的位置, 则可能是ipv6
         const char* endipv6 = (const char*)memchr(host.c_str() + 1, ']', host.size() - 1);
         if(endipv6) {
-            //TODO check out of range
+            // 再找:是否有端口
             if(*(endipv6 + 1) == ':') {
                 service = endipv6 + 2;
             }

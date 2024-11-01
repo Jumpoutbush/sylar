@@ -1,8 +1,9 @@
 CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /home/yyc/sylar/sylar/http/http_session.cc /usr/include/stdc-predef.h \
- /home/yyc/sylar/sylar/http/http_session.h sylar/streams/socket_stream.h \
- sylar/stream.h /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /home/yyc/sylar/sylar/http/http_session.h \
+ /home/yyc/sylar/sylar/http/../streams/socket_stream.h \
+ /home/yyc/sylar/sylar/http/../streams/../stream.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,7 +14,6 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -72,7 +72,6 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/refwrap.h \
@@ -116,8 +115,7 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h sylar/bytearray.h \
+ /home/yyc/sylar/sylar/http/../streams/../bytearray.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
@@ -125,8 +123,7 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
  /usr/include/ctype.h /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
- /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/string_view.tcc \
+ /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -136,20 +133,16 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
@@ -170,10 +163,10 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc sylar/socket.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/yyc/sylar/sylar/http/../streams/../socket.h \
  /usr/include/netinet/tcp.h /usr/local/openssl/include/openssl/err.h \
  /usr/local/openssl/include/openssl/macros.h \
  /usr/local/openssl/include/openssl/opensslconf.h \
@@ -219,10 +212,7 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/local/openssl/include/openssl/asn1err.h \
  /usr/local/openssl/include/openssl/objectserr.h \
  /usr/local/openssl/include/openssl/ec.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/local/openssl/include/openssl/ecerr.h \
+ /usr/include/strings.h /usr/local/openssl/include/openssl/ecerr.h \
  /usr/local/openssl/include/openssl/rsa.h \
  /usr/local/openssl/include/openssl/rsaerr.h \
  /usr/local/openssl/include/openssl/dsa.h \
@@ -253,7 +243,8 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/local/openssl/include/openssl/tls1.h \
  /usr/local/openssl/include/openssl/dtls1.h \
  /usr/local/openssl/include/openssl/srtp.h \
- /usr/local/openssl/include/openssl/quic.h sylar/address.h \
+ /usr/local/openssl/include/openssl/quic.h \
+ /home/yyc/sylar/sylar/http/../streams/../address.h \
  /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -261,7 +252,6 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
@@ -282,35 +272,31 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h sylar/noncopyable.h sylar/mutex.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/yyc/sylar/sylar/http/../streams/../noncopyable.h \
+ /home/yyc/sylar/sylar/http/../streams/../mutex.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- sylar/fiber.h /usr/include/ucontext.h \
+ /home/yyc/sylar/sylar/http/../streams/../fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h sylar/iomanager.h \
- sylar/scheduler.h sylar/thread.h sylar/mutex.h sylar/timer.h \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /home/yyc/sylar/sylar/http/../streams/../iomanager.h \
+ /home/yyc/sylar/sylar/http/../streams/../scheduler.h \
+ /home/yyc/sylar/sylar/http/../streams/../thread.h \
+ /home/yyc/sylar/sylar/http/../streams/../mutex.h \
+ /home/yyc/sylar/sylar/http/../streams/../timer.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /home/yyc/sylar/sylar/http/http.h /usr/include/c++/11/sstream \
+ /home/yyc/sylar/sylar/http/../http.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
@@ -566,7 +552,10 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/local/include/boost/concept/detail/concept_undef.hpp \
  /usr/local/include/boost/iterator/iterator_concepts.hpp \
  /usr/local/include/boost/limits.hpp /usr/include/c++/11/algorithm \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/local/include/boost/range/value_type.hpp \
  /usr/local/include/boost/range/detail/misc_concept.hpp \
  /usr/local/include/boost/type_traits/make_unsigned.hpp \
@@ -668,18 +657,6 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/local/include/boost/numeric/conversion/detail/converter.hpp \
  /usr/local/include/boost/numeric/conversion/bounds.hpp \
  /usr/local/include/boost/numeric/conversion/detail/bounds.hpp \
@@ -991,7 +968,9 @@ CMakeFiles/sylar.dir/sylar/http/http_session.cc.o: \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
+ /home/yyc/sylar/sylar/http/../http/http11_parser.h \
+ /home/yyc/sylar/sylar/http/../http/http11_common.h \
+ /home/yyc/sylar/sylar/http/../http/httpclient_parser.h \
  /home/yyc/sylar/sylar/http/http_parser.h \
  /home/yyc/sylar/sylar/http/http11_parser.h \
- /home/yyc/sylar/sylar/http/http11_common.h \
  /home/yyc/sylar/sylar/http/httpclient_parser.h
