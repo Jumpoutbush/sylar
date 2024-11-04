@@ -1034,5 +1034,7 @@ CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o: \
  /home/yyc/sylar/tests/../sylar/http/../http/http11_common.h \
  /home/yyc/sylar/tests/../sylar/http/../http/httpclient_parser.h \
  /home/yyc/sylar/tests/../sylar/http/servlet.h \
+ /home/yyc/sylar/tests/../sylar/http/../thread.h \
  /home/yyc/sylar/tests/../sylar/http/../mutex.h \
+ /home/yyc/sylar/tests/../sylar/http/../util.h \
  /home/yyc/sylar/tests/../sylar/log.h

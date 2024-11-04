@@ -1,8 +1,9 @@
 CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /home/yyc/sylar/sylar/http/http_connection.cc /usr/include/stdc-predef.h \
  /home/yyc/sylar/sylar/http/http_connection.h \
- sylar/streams/socket_stream.h sylar/stream.h /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /home/yyc/sylar/sylar/http/../streams/socket_stream.h \
+ /home/yyc/sylar/sylar/http/../streams/../stream.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,7 +14,6 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -72,7 +72,6 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/refwrap.h \
@@ -116,8 +115,7 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h sylar/bytearray.h \
+ /home/yyc/sylar/sylar/http/../streams/../bytearray.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
@@ -125,8 +123,7 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
  /usr/include/ctype.h /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
- /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/string_view.tcc \
+ /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -136,20 +133,16 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
@@ -170,10 +163,10 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc sylar/socket.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/yyc/sylar/sylar/http/../streams/../socket.h \
  /usr/include/netinet/tcp.h /usr/local/openssl/include/openssl/err.h \
  /usr/local/openssl/include/openssl/macros.h \
  /usr/local/openssl/include/openssl/opensslconf.h \
@@ -219,10 +212,7 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/local/openssl/include/openssl/asn1err.h \
  /usr/local/openssl/include/openssl/objectserr.h \
  /usr/local/openssl/include/openssl/ec.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/local/openssl/include/openssl/ecerr.h \
+ /usr/include/strings.h /usr/local/openssl/include/openssl/ecerr.h \
  /usr/local/openssl/include/openssl/rsa.h \
  /usr/local/openssl/include/openssl/rsaerr.h \
  /usr/local/openssl/include/openssl/dsa.h \
@@ -253,7 +243,8 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/local/openssl/include/openssl/tls1.h \
  /usr/local/openssl/include/openssl/dtls1.h \
  /usr/local/openssl/include/openssl/srtp.h \
- /usr/local/openssl/include/openssl/quic.h sylar/address.h \
+ /usr/local/openssl/include/openssl/quic.h \
+ /home/yyc/sylar/sylar/http/../streams/../address.h \
  /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -261,7 +252,6 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
@@ -282,35 +272,31 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h sylar/noncopyable.h sylar/mutex.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/yyc/sylar/sylar/http/../streams/../noncopyable.h \
+ /home/yyc/sylar/sylar/http/../streams/../mutex.h \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- sylar/fiber.h /usr/include/ucontext.h \
+ /home/yyc/sylar/sylar/http/../streams/../fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h sylar/iomanager.h \
- sylar/scheduler.h sylar/thread.h sylar/mutex.h sylar/timer.h \
- /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /home/yyc/sylar/sylar/http/../streams/../iomanager.h \
+ /home/yyc/sylar/sylar/http/../streams/../scheduler.h \
+ /home/yyc/sylar/sylar/http/../streams/../thread.h \
+ /home/yyc/sylar/sylar/http/../streams/../mutex.h \
+ /home/yyc/sylar/sylar/http/../streams/../timer.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /home/yyc/sylar/sylar/http/http.h /usr/include/c++/11/sstream \
+ /home/yyc/sylar/sylar/http/../http.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
@@ -566,7 +552,10 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/local/include/boost/concept/detail/concept_undef.hpp \
  /usr/local/include/boost/iterator/iterator_concepts.hpp \
  /usr/local/include/boost/limits.hpp /usr/include/c++/11/algorithm \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/local/include/boost/range/value_type.hpp \
  /usr/local/include/boost/range/detail/misc_concept.hpp \
  /usr/local/include/boost/type_traits/make_unsigned.hpp \
@@ -668,18 +657,6 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
- /usr/include/c++/11/tr1/special_function_util.h \
- /usr/include/c++/11/tr1/bessel_function.tcc \
- /usr/include/c++/11/tr1/beta_function.tcc \
- /usr/include/c++/11/tr1/ell_integral.tcc \
- /usr/include/c++/11/tr1/exp_integral.tcc \
- /usr/include/c++/11/tr1/hypergeometric.tcc \
- /usr/include/c++/11/tr1/legendre_function.tcc \
- /usr/include/c++/11/tr1/modified_bessel_func.tcc \
- /usr/include/c++/11/tr1/poly_hermite.tcc \
- /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/local/include/boost/numeric/conversion/detail/converter.hpp \
  /usr/local/include/boost/numeric/conversion/bounds.hpp \
  /usr/local/include/boost/numeric/conversion/detail/bounds.hpp \
@@ -990,30 +967,35 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/local/include/boost/math/tools/real_cast.hpp \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
- /usr/local/include/boost/detail/basic_pointerbuf.hpp sylar/uri.h \
- sylar/thread.h /home/yyc/sylar/sylar/http/http_parser.h \
+ /usr/local/include/boost/detail/basic_pointerbuf.hpp \
+ /home/yyc/sylar/sylar/http/../http/http11_parser.h \
+ /home/yyc/sylar/sylar/http/../http/http11_common.h \
+ /home/yyc/sylar/sylar/http/../http/httpclient_parser.h \
+ /home/yyc/sylar/sylar/http/../uri.h \
+ /home/yyc/sylar/sylar/http/../address.h \
+ /home/yyc/sylar/sylar/http/../thread.h \
+ /home/yyc/sylar/sylar/http/http_parser.h \
  /home/yyc/sylar/sylar/http/http11_parser.h \
- /home/yyc/sylar/sylar/http/http11_common.h \
- /home/yyc/sylar/sylar/http/httpclient_parser.h sylar/log.h \
- /usr/include/c++/11/fstream \
+ /home/yyc/sylar/sylar/http/httpclient_parser.h \
+ /home/yyc/sylar/sylar/http/../log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc sylar/util.h \
- /usr/include/c++/11/cxxabi.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /home/yyc/sylar/sylar/http/../util.h /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/json/json.h \
- /usr/include/json/config.h /usr/include/json/allocator.h \
- /usr/include/json/version.h /usr/include/json/json_features.h \
- /usr/include/json/forwards.h /usr/include/json/reader.h \
- /usr/include/json/value.h /usr/include/c++/11/deque \
- /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/stack /usr/include/c++/11/bits/stl_stack.h \
- /usr/include/json/writer.h /usr/local/include/yaml-cpp/yaml.h \
- /usr/local/include/yaml-cpp/parser.h /usr/local/include/yaml-cpp/dll.h \
+ /usr/include/json/json.h /usr/include/json/config.h \
+ /usr/include/json/allocator.h /usr/include/json/version.h \
+ /usr/include/json/json_features.h /usr/include/json/forwards.h \
+ /usr/include/json/reader.h /usr/include/json/value.h \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/stack \
+ /usr/include/c++/11/bits/stl_stack.h /usr/include/json/writer.h \
+ /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
+ /usr/local/include/yaml-cpp/dll.h \
  /usr/local/include/yaml-cpp/noncopyable.h \
  /usr/local/include/yaml-cpp/emitter.h \
  /usr/local/include/yaml-cpp/binary.h \
@@ -1042,208 +1024,9 @@ CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/message.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/attributes.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/config.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/options.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/policy_checks.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/call_once.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/invoke.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/low_level_scheduling.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/raw_logging.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/atomic_hook.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/log_severity.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/macros.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/optimization.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/port.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/scheduling_mode.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/spinlock_wait.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/nullability.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/nullability_impl.h \
- /home/yyc/Example/protobuf/install/release/include/absl/meta/type_traits.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/absl_check.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/check_impl.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/check_op.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/nullguard.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/nullstream.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/string_view.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/throw_delegate.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/strip.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/log_message.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/errno_saver.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/log_entry.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/config.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/time.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/civil_time.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/internal/cctz/include/cctz/civil_time.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/internal/cctz/include/cctz/time_zone.h \
- /home/yyc/Example/protobuf/install/release/include/absl/types/span.h \
- /home/yyc/Example/protobuf/install/release/include/absl/types/internal/span.h \
- /home/yyc/Example/protobuf/install/release/include/absl/algorithm/algorithm.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/log_sink.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/has_absl_stringify.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/conditions.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/voidify.h \
- /home/yyc/Example/protobuf/install/release/include/absl/memory/memory.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/cord.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/endian.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/casts.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/identity.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/unaligned_access.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/per_thread_tls.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/inlined_vector.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/inlined_vector.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/compressed_tuple.h \
- /home/yyc/Example/protobuf/install/release/include/absl/utility/utility.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/inline_variable.h \
- /home/yyc/Example/protobuf/install/release/include/absl/crc/internal/crc_cord_state.h \
- /home/yyc/Example/protobuf/install/release/include/absl/crc/crc32c.h \
- /home/yyc/Example/protobuf/install/release/include/absl/crc/internal/crc32c_inline.h \
- /home/yyc/Example/protobuf/install/release/include/absl/crc/internal/crc32_x86_arm_combined_simd.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/str_format.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/arg.h \
- /home/yyc/Example/protobuf/install/release/include/absl/numeric/int128.h \
- /home/yyc/Example/protobuf/install/release/include/absl/types/compare.h \
- /home/yyc/Example/protobuf/install/release/include/absl/numeric/int128_have_intrinsic.inc \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/extension.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/output.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/bind.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/checker.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/constexpr_parser.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/const_init.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/str_format/parser.h \
- /home/yyc/Example/protobuf/install/release/include/absl/functional/function_ref.h \
- /home/yyc/Example/protobuf/install/release/include/absl/functional/internal/function_ref.h \
- /home/yyc/Example/protobuf/install/release/include/absl/functional/any_invocable.h \
- /home/yyc/Example/protobuf/install/release/include/absl/functional/internal/any_invocable.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/cord_analysis.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_internal.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/container_memory.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/cord_buffer.h \
- /home/yyc/Example/protobuf/install/release/include/absl/numeric/bits.h \
- /home/yyc/Example/protobuf/install/release/include/absl/numeric/internal/bits.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_rep_flat.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_data_edge.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_rep_btree.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_rep_btree_reader.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_rep_btree_navigator.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cord_rep_crc.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_functions.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_info.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/spinlock.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/dynamic_annotations.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/dynamic_annotations.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/tsan_mutex_interface.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/thread_annotations.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_handle.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_statistics.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_update_tracker.h \
- /home/yyc/Example/protobuf/install/release/include/absl/synchronization/mutex.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/low_level_alloc.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/internal/thread_identity.h \
- /home/yyc/Example/protobuf/install/release/include/absl/synchronization/internal/kernel_timeout.h \
- /home/yyc/Example/protobuf/install/release/include/absl/time/clock.h \
- /home/yyc/Example/protobuf/install/release/include/absl/synchronization/internal/per_thread_sem.h \
- /home/yyc/Example/protobuf/install/release/include/absl/synchronization/internal/create_thread_identity.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/cordz_update_scope.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/resize_uninitialized.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/string_constant.h \
- /home/yyc/Example/protobuf/install/release/include/absl/types/optional.h \
- /usr/include/c++/11/optional \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arena.h \
- /home/yyc/Example/protobuf/install/release/include/absl/base/prefetch.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
- /home/yyc/Example/protobuf/install/release/include/absl/utility/internal/if_constexpr.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arena_align.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/port_def.inc \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/port_undef.inc \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arena_allocation_policy.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/port.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/serial_arena.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arena_cleanup.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/string_block.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/thread_safe_arena.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arenaz_sampler.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/descriptor.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/stubs/common.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/stubs/platform_macros.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/stubs/port.h \
- /usr/include/byteswap.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/btree_map.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/btree.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/common.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/common_policy_traits.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/layout.h \
- /home/yyc/Example/protobuf/install/release/include/absl/debugging/internal/demangle.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/str_cat.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/internal/stringify_sink.h \
- /home/yyc/Example/protobuf/install/release/include/absl/strings/numbers.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/btree_container.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/flat_hash_map.h \
- /home/yyc/Example/protobuf/install/release/include/absl/algorithm/container.h \
- /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
- /usr/include/c++/11/pstl/glue_numeric_defs.h /usr/include/c++/11/random \
- /usr/include/c++/11/bits/random.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
- /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/hash_container_defaults.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/hash_function_defaults.h \
- /home/yyc/Example/protobuf/install/release/include/absl/hash/hash.h \
- /home/yyc/Example/protobuf/install/release/include/absl/hash/internal/hash.h \
- /usr/include/c++/11/ciso646 /usr/include/c++/11/bitset \
- /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
- /usr/include/c++/11/bits/forward_list.tcc \
- /home/yyc/Example/protobuf/install/release/include/absl/container/fixed_array.h \
- /home/yyc/Example/protobuf/install/release/include/absl/hash/internal/city.h \
- /home/yyc/Example/protobuf/install/release/include/absl/hash/internal/low_level_hash.h \
- /home/yyc/Example/protobuf/install/release/include/absl/types/variant.h \
- /usr/include/c++/11/variant \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/raw_hash_map.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/raw_hash_set.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/hash_policy_traits.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/hashtable_debug_hooks.h \
- /home/yyc/Example/protobuf/install/release/include/absl/container/internal/hashtablez_sampler.h \
- /home/yyc/Example/protobuf/install/release/include/absl/profiling/internal/sample_recorder.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/absl_log.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/log_impl.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/absl_vlog_is_on.h \
- /home/yyc/Example/protobuf/install/release/include/absl/log/internal/vlog_config.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/descriptor_lite.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/extension_set.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/generated_enum_util.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/explicitly_constructed.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/message_lite.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/internal_visibility.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/io/coded_stream.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/endian.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/metadata_lite.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/parse_context.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/arenastring.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/inlined_string_field.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/io/zero_copy_stream.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/repeated_field.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/repeated_ptr_field.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/wire_format_lite.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/generated_message_reflection.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/generated_enum_reflection.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/unknown_field_set.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/stubs/callback.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/generated_message_tctable_decl.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/generated_message_util.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/any.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/has_bits.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/implicit_weak_message.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/map.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/map_type_handler.h \
- /home/yyc/Example/protobuf/install/release/include/google/protobuf/reflection.h \
- sylar/util/hash_util.h sylar/util/json_util.h sylar/util/crypto_util.h \
- sylar/singleton.h sylar/streams/zlib_stream.h \
+ /home/yyc/sylar/sylar/http/../singleton.h \
+ /home/yyc/sylar/sylar/http/../thread.h \
+ /home/yyc/sylar/sylar/http/../streams/zlib_stream.h \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h /usr/include/zlib.h \
  /usr/include/zconf.h

@@ -28,11 +28,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.22/Modules/FindPkgConfig.cmake"
+  "/usr/share/cmake-3.22/Modules/FindZLIB.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:
@@ -49,19 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sylar.dir/DependInfo.cmake"
-  "CMakeFiles/test.dir/DependInfo.cmake"
-  "CMakeFiles/test_config.dir/DependInfo.cmake"
-  "CMakeFiles/test_thread.dir/DependInfo.cmake"
-  "CMakeFiles/test_util.dir/DependInfo.cmake"
-  "CMakeFiles/test_fiber.dir/DependInfo.cmake"
-  "CMakeFiles/test_scheduler.dir/DependInfo.cmake"
-  "CMakeFiles/test_iomanager.dir/DependInfo.cmake"
-  "CMakeFiles/test_hook.dir/DependInfo.cmake"
-  "CMakeFiles/test_address.dir/DependInfo.cmake"
-  "CMakeFiles/test_socket.dir/DependInfo.cmake"
-  "CMakeFiles/test_http.dir/DependInfo.cmake"
-  "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
-  "CMakeFiles/test_tcp_server.dir/DependInfo.cmake"
-  "CMakeFiles/echo_server.dir/DependInfo.cmake"
-  "CMakeFiles/test_http_server.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_connection.dir/DependInfo.cmake"
   )

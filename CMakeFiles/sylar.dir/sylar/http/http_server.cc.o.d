@@ -1031,5 +1031,6 @@ CMakeFiles/sylar.dir/sylar/http/http_server.cc.o: \
  /home/yyc/sylar/sylar/http/../http/http11_common.h \
  /home/yyc/sylar/sylar/http/../http/httpclient_parser.h \
  /home/yyc/sylar/sylar/http/servlet.h \
+ /home/yyc/sylar/sylar/http/../thread.h \
  /home/yyc/sylar/sylar/http/../mutex.h \
- /home/yyc/sylar/sylar/http/../log.h
+ /home/yyc/sylar/sylar/http/../util.h /home/yyc/sylar/sylar/http/../log.h

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yyc/sylar/sylar/hook.cc" "CMakeFiles/sylar.dir/sylar/hook.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/hook.cc.o.d"
   "/home/yyc/sylar/sylar/http.cc" "CMakeFiles/sylar.dir/sylar/http.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http.cc.o.d"
   "/home/yyc/sylar/sylar/http/http11_parser.rl.cc" "CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o.d"
+  "/home/yyc/sylar/sylar/http/http_connection.cc" "CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o.d"
   "/home/yyc/sylar/sylar/http/http_parser.cc" "CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o.d"
   "/home/yyc/sylar/sylar/http/http_server.cc" "CMakeFiles/sylar.dir/sylar/http/http_server.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http/http_server.cc.o.d"
   "/home/yyc/sylar/sylar/http/http_session.cc" "CMakeFiles/sylar.dir/sylar/http/http_session.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/http/http_session.cc.o.d"
@@ -28,9 +29,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yyc/sylar/sylar/socket.cc" "CMakeFiles/sylar.dir/sylar/socket.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/socket.cc.o.d"
   "/home/yyc/sylar/sylar/stream.cc" "CMakeFiles/sylar.dir/sylar/stream.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/stream.cc.o.d"
   "/home/yyc/sylar/sylar/streams/socket_stream.cc" "CMakeFiles/sylar.dir/sylar/streams/socket_stream.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/streams/socket_stream.cc.o.d"
+  "/home/yyc/sylar/sylar/streams/zlib_stream.cc" "CMakeFiles/sylar.dir/sylar/streams/zlib_stream.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/streams/zlib_stream.cc.o.d"
   "/home/yyc/sylar/sylar/tcp_server.cc" "CMakeFiles/sylar.dir/sylar/tcp_server.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/tcp_server.cc.o.d"
   "/home/yyc/sylar/sylar/thread.cc" "CMakeFiles/sylar.dir/sylar/thread.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/thread.cc.o.d"
   "/home/yyc/sylar/sylar/timer.cc" "CMakeFiles/sylar.dir/sylar/timer.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/timer.cc.o.d"
+  "/home/yyc/sylar/sylar/uri.rl.cc" "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o.d"
   "/home/yyc/sylar/sylar/util.cc" "CMakeFiles/sylar.dir/sylar/util.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
   )
 

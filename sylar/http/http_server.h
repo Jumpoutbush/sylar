@@ -31,10 +31,11 @@ public:
      * @param[in] worker 工作调度器
      * @param[in] accept_worker 接收连接调度器
      */
-    HttpServer(sylar::IOManager* worker = sylar::IOManager::GetThis()
+    HttpServer(bool keepalive = false
+               ,sylar::IOManager* worker = sylar::IOManager::GetThis()
                ,sylar::IOManager* io_worker = sylar::IOManager::GetThis()
                ,sylar::IOManager* accept_worker = sylar::IOManager::GetThis()
-               ,bool keepalive = false);
+               );
 
     /**
      * @brief 获取ServletDispatch

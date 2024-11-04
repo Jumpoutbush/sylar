@@ -1116,6 +1116,8 @@ CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o
  /home/yyc/sylar/sylar/http/http11_common.h
  /home/yyc/sylar/sylar/http/httpclient_parser.h
  /home/yyc/sylar/sylar/http/servlet.h
+ /home/yyc/sylar/sylar/thread.h
  /home/yyc/sylar/sylar/mutex.h
+ /home/yyc/sylar/sylar/util.h
  /home/yyc/sylar/sylar/log.h
 
