@@ -897,8 +897,14 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/yyc/sylar/sylar/fiber.cc \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h /home/yyc/sylar/sylar/log.h \
- /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/unordered_set.h /home/yyc/sylar/sylar/thread.h \
+ /home/yyc/sylar/sylar/mutex.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/atomic /home/yyc/sylar/sylar/noncopyable.h \
+ /home/yyc/sylar/sylar/log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /home/yyc/sylar/sylar/util.h \
@@ -916,10 +922,4 @@ CMakeFiles/sylar.dir/sylar/fiber.cc.o: /home/yyc/sylar/sylar/fiber.cc \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/stack \
  /usr/include/c++/11/bits/stl_stack.h /usr/include/json/writer.h \
  /usr/include/c++/11/iostream /home/yyc/sylar/sylar/singleton.h \
- /home/yyc/sylar/sylar/thread.h /home/yyc/sylar/sylar/mutex.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/sylar/noncopyable.h \
  /home/yyc/sylar/sylar/macro.h /home/yyc/sylar/sylar/scheduler.h

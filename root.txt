@@ -1,0 +1,37 @@
+2024-11-07 15:51:52	on_logger_conf_changed
+2024-11-07 15:51:52	LoadConfFile file=/home/yyc/sylar/bin/conf/log2.yml ok
+2024-11-07 15:51:58	on_logger_conf_changed
+2024-11-07 15:51:58	LoadConfFile file=/home/yyc/sylar/bin/conf/log2.yml ok
+2024-11-07 15:51:58	main
+2024-11-07 15:51:58	name: sylar/1.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8090
+  - 127.0.0.1:8091
+  - /tmp/test.sock
+2024-11-07 15:51:58	name: sylar-rock/1.0
+keepalive: 0
+timeout: 1000
+address:
+  - 0.0.0.0:8062
+  - 0.0.0.0:8061
+2024-11-07 15:51:58	0x7fffa5c19db0 stopped
+2024-11-07 15:51:58	name: sylar/1.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8090
+  - 127.0.0.1:8091
+  - /tmp/test.sock
+2024-11-07 15:51:58	invalid address: /tmp/test.sock
+2024-11-07 15:51:58	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=8 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8090]
+2024-11-07 15:51:58	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=9 is_connected=0 family=2 type=1 protocol=0 local_address=127.0.0.1:8091]
+2024-11-07 15:51:58	name: sylar-rock/1.0
+keepalive: 0
+timeout: 1000
+address:
+  - 0.0.0.0:8062
+  - 0.0.0.0:8061
+2024-11-07 15:51:58	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=10 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8062]
+2024-11-07 15:51:58	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=11 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8061]

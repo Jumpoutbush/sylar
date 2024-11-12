@@ -4,12 +4,14 @@
 #include <functional>
 #include <time.h>
 #include <string.h>
-#include <string>
 #include "config.h"
-#include "macro.h"
 #include "util.h"
+#include "macro.h"
+#include "env.h"
 
 namespace sylar {
+
+static sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
 const char* LogLevel::ToString(LogLevel::Level level) {
     switch(level) {
@@ -252,7 +254,7 @@ void Logger::setFormatter(LogFormatter::ptr val) {
 }
 
 void Logger::setFormatter(const std::string& val) {
-    std::cout << "---" << val << std::endl;
+    // std::cout << "---" << val << std::endl;
     sylar::LogFormatter::ptr new_val(new sylar::LogFormatter(val));
     if(new_val->isError()) {
         std::cout << "Logger setFormatter name=" << m_name
@@ -361,10 +363,9 @@ void FileLogAppender::log(std::shared_ptr<Logger> logger, LogLevel::Level level,
             m_lastTime = now;
         }
         MutexType::Lock lock(m_mutex);
-        if(!(m_filestream << m_formatter->format(logger, level, event))) {
-            if(!m_formatter->format(m_filestream, logger, level, event)) {
-                std::cout << "error" << std::endl;
-            }
+        //if(!(m_filestream << m_formatter->format(logger, level, event))) {
+        if(!m_formatter->format(m_filestream, logger, level, event)) {
+            std::cout << "error" << std::endl;
         }
     }
 }
@@ -390,8 +391,7 @@ bool FileLogAppender::reopen() {
     if(m_filestream) {
         m_filestream.close();
     }
-     m_filestream.open(m_filename);
-    return !m_filestream;
+    return FSUtil::OpenForWrite(m_filestream, m_filename, std::ios::app);
 }
 
 void StdoutLogAppender::log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) {
@@ -734,7 +734,11 @@ struct LogIniter {
                     if(a.type == 1) {
                         ap.reset(new FileLogAppender(a.file));
                     } else if(a.type == 2) {
-                        ap.reset(new StdoutLogAppender);
+                        if(!sylar::EnvMgr::GetInstance()->has("d")) {
+                            ap.reset(new StdoutLogAppender);
+                        } else {
+                            continue;
+                        }
                     }
                     ap->setLevel(a.level);
                     if(!a.formatter.empty()) {

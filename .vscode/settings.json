@@ -76,6 +76,7 @@
         "future": "cpp",
         "span": "cpp",
         "variant": "cpp",
-        "cerrno": "cpp"
+        "cerrno": "cpp",
+        "*.inc": "cpp"
     }
 }

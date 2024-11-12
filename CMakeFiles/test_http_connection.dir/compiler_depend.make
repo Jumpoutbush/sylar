@@ -1109,8 +1109,22 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: tests/test_
   sylar/iomanager.h \
   sylar/http/http_parser.h \
   sylar/http/http11_parser.h \
-  sylar/http/httpclient_parser.h
+  sylar/http/httpclient_parser.h \
+  sylar/streams/zlib_stream.h \
+  sylar/stream.h \
+  /usr/include/x86_64-linux-gnu/sys/uio.h \
+  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
+  /usr/include/zlib.h \
+  /usr/include/zconf.h
 
+
+/usr/include/zconf.h:
+
+/usr/include/zlib.h:
+
+/usr/include/x86_64-linux-gnu/sys/uio.h:
+
+sylar/streams/zlib_stream.h:
 
 /usr/local/include/yaml-cpp/node/convert.h:
 
@@ -1279,6 +1293,8 @@ sylar/http/http_parser.h:
 /usr/local/include/boost/mpl/list/list10.hpp:
 
 /usr/local/include/boost/mpl/list.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/uio-ext.h:
 
 /usr/local/include/boost/math/tools/promotion.hpp:
 

@@ -959,6 +959,23 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
+  ../sylar/thread.h \
+  ../sylar/mutex.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  /usr/include/c++/11/atomic \
+  ../sylar/noncopyable.h \
+  ../sylar/fiber.h \
+  /usr/include/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   ../sylar/log.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -988,39 +1005,9 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
   /usr/include/json/writer.h \
   /usr/include/c++/11/iostream \
   ../sylar/singleton.h \
-  ../sylar/thread.h \
-  ../sylar/mutex.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/semaphore.h \
-  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
-  /usr/include/c++/11/atomic \
-  ../sylar/noncopyable.h \
-  ../sylar/fiber.h \
-  /usr/include/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  ../sylar/log.h
+  ../sylar/log.h \
+  ../sylar/env.h
 
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/ucontext.h:
-
-../sylar/fiber.h:
-
-/usr/include/c++/11/atomic:
-
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/chrono:
-
-../sylar/mutex.h:
 
 /usr/include/c++/11/bits/stl_stack.h:
 
@@ -1053,6 +1040,20 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/include/c++/11/fstream:
 
 ../sylar/log.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/ucontext.h:
+
+../sylar/fiber.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/chrono:
+
+../sylar/mutex.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -1779,6 +1780,8 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: ../tests/test_config.cc \
 /usr/local/include/boost/mpl/clear_fwd.hpp:
 
 /usr/local/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+../sylar/env.h:
 
 /usr/include/c++/11/bits/stl_heap.h:
 

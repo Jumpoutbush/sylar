@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = /home/yyc/sylar/build
 
 # The main recursive "all" target.
 all: CMakeFiles/sylar.dir/all
-all: CMakeFiles/test_http_connection.dir/all
+all: CMakeFiles/test_application.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,7 +76,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/sylar.dir/clean
-clean: CMakeFiles/test_http_connection.dir/clean
+clean: CMakeFiles/test_application.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -86,12 +86,12 @@ clean: CMakeFiles/test_http_connection.dir/clean
 CMakeFiles/sylar.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyc/sylar/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target sylar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyc/sylar/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target sylar"
 .PHONY : CMakeFiles/sylar.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sylar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sylar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 0
 .PHONY : CMakeFiles/sylar.dir/rule
@@ -106,30 +106,30 @@ CMakeFiles/sylar.dir/clean:
 .PHONY : CMakeFiles/sylar.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_http_connection.dir
+# Target rules for target CMakeFiles/test_application.dir
 
 # All Build rule for target.
-CMakeFiles/test_http_connection.dir/all: CMakeFiles/sylar.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyc/sylar/build/CMakeFiles --progress-num=32,33 "Built target test_http_connection"
-.PHONY : CMakeFiles/test_http_connection.dir/all
+CMakeFiles/test_application.dir/all: CMakeFiles/sylar.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yyc/sylar/build/CMakeFiles --progress-num=35,36 "Built target test_application"
+.PHONY : CMakeFiles/test_application.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_http_connection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 33
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http_connection.dir/all
+CMakeFiles/test_application.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 36
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_application.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yyc/sylar/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_http_connection.dir/rule
+.PHONY : CMakeFiles/test_application.dir/rule
 
 # Convenience name for target.
-test_http_connection: CMakeFiles/test_http_connection.dir/rule
-.PHONY : test_http_connection
+test_application: CMakeFiles/test_application.dir/rule
+.PHONY : test_application
 
 # clean rule for target.
-CMakeFiles/test_http_connection.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/clean
-.PHONY : CMakeFiles/test_http_connection.dir/clean
+CMakeFiles/test_application.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/clean
+.PHONY : CMakeFiles/test_application.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

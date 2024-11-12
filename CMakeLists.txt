@@ -8,8 +8,11 @@ set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-de
 
 set(LIB_SRC
     sylar/address.cc
+    sylar/application.cc
     sylar/bytearray.cc
     sylar/config.cc
+    sylar/daemon.cc
+    sylar/env.cc
     sylar/hook.cc
     sylar/http.cc
     sylar/fd_manager.cc
@@ -154,10 +157,25 @@ set(LIB_LIB
 # force_redefine_file_macro_for_sources(test_http_server)
 # target_link_libraries(test_http_server sylar ${LIB_LIB})
 
-add_executable(test_http_connection tests/test_http_connection.cc)
-add_dependencies(test_http_connection sylar)
-force_redefine_file_macro_for_sources(test_http_connection)
-target_link_libraries(test_http_connection sylar ${LIB_LIB})
+# add_executable(test_http_connection tests/test_http_connection.cc)
+# add_dependencies(test_http_connection sylar)
+# force_redefine_file_macro_for_sources(test_http_connection)
+# target_link_libraries(test_http_connection sylar ${LIB_LIB})
+
+# add_executable(test_daemon tests/test_daemon.cc)
+# add_dependencies(test_daemon sylar)
+# force_redefine_file_macro_for_sources(test_daemon)
+# target_link_libraries(test_daemon sylar ${LIB_LIB})
+
+# add_executable(test_env tests/test_env.cc)
+# add_dependencies(test_env sylar)
+# force_redefine_file_macro_for_sources(test_env)
+# target_link_libraries(test_env sylar ${LIB_LIB})
+
+add_executable(test_application tests/test_application.cc)
+add_dependencies(test_application sylar)
+force_redefine_file_macro_for_sources(test_application)
+target_link_libraries(test_application sylar ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

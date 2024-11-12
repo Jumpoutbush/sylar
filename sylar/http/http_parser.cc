@@ -134,7 +134,7 @@ void on_request_http_field(void *data, const char *field, size_t flen
                            ,const char *value, size_t vlen) {
     HttpRequestParser* parser = static_cast<HttpRequestParser*>(data);
     if(flen == 0) {
-        SYLAR_LOG_WARN(g_logger) << "invalid http request field length == 0";
+        // SYLAR_LOG_WARN(g_logger) << "invalid http request field length == 0";
         //parser->setError(1002);
         return;
     }

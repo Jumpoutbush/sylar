@@ -28,26 +28,44 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 44,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 50,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 51,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 45,
+				"line" : 48,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 4
 			},
 			{
 				"command" : 2,
@@ -260,7 +278,7 @@
 			[
 				{
 					"backtrace" : 6,
-					"define" : "__FILE__=\"sylar/bytearray.cc\""
+					"define" : "__FILE__=\"sylar/application.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -294,7 +312,7 @@
 			[
 				{
 					"backtrace" : 7,
-					"define" : "__FILE__=\"sylar/config.cc\""
+					"define" : "__FILE__=\"sylar/bytearray.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -328,7 +346,7 @@
 			[
 				{
 					"backtrace" : 8,
-					"define" : "__FILE__=\"sylar/hook.cc\""
+					"define" : "__FILE__=\"sylar/config.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -362,7 +380,7 @@
 			[
 				{
 					"backtrace" : 9,
-					"define" : "__FILE__=\"sylar/http.cc\""
+					"define" : "__FILE__=\"sylar/daemon.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -396,7 +414,7 @@
 			[
 				{
 					"backtrace" : 10,
-					"define" : "__FILE__=\"sylar/fd_manager.cc\""
+					"define" : "__FILE__=\"sylar/env.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -430,7 +448,7 @@
 			[
 				{
 					"backtrace" : 11,
-					"define" : "__FILE__=\"sylar/fiber.cc\""
+					"define" : "__FILE__=\"sylar/hook.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -464,7 +482,7 @@
 			[
 				{
 					"backtrace" : 12,
-					"define" : "__FILE__=\"sylar/iomanager.cc\""
+					"define" : "__FILE__=\"sylar/http.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -498,7 +516,7 @@
 			[
 				{
 					"backtrace" : 13,
-					"define" : "__FILE__=\"sylar/log.cc\""
+					"define" : "__FILE__=\"sylar/fd_manager.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -532,7 +550,7 @@
 			[
 				{
 					"backtrace" : 14,
-					"define" : "__FILE__=\"sylar/mutex.cc\""
+					"define" : "__FILE__=\"sylar/fiber.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -566,7 +584,7 @@
 			[
 				{
 					"backtrace" : 15,
-					"define" : "__FILE__=\"sylar/scheduler.cc\""
+					"define" : "__FILE__=\"sylar/iomanager.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -600,7 +618,7 @@
 			[
 				{
 					"backtrace" : 16,
-					"define" : "__FILE__=\"sylar/socket.cc\""
+					"define" : "__FILE__=\"sylar/log.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -634,7 +652,7 @@
 			[
 				{
 					"backtrace" : 17,
-					"define" : "__FILE__=\"sylar/stream.cc\""
+					"define" : "__FILE__=\"sylar/mutex.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -668,7 +686,7 @@
 			[
 				{
 					"backtrace" : 18,
-					"define" : "__FILE__=\"sylar/tcp_server.cc\""
+					"define" : "__FILE__=\"sylar/scheduler.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -702,7 +720,7 @@
 			[
 				{
 					"backtrace" : 19,
-					"define" : "__FILE__=\"sylar/thread.cc\""
+					"define" : "__FILE__=\"sylar/socket.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -736,7 +754,7 @@
 			[
 				{
 					"backtrace" : 20,
-					"define" : "__FILE__=\"sylar/timer.cc\""
+					"define" : "__FILE__=\"sylar/stream.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -770,7 +788,7 @@
 			[
 				{
 					"backtrace" : 21,
-					"define" : "__FILE__=\"sylar/util.cc\""
+					"define" : "__FILE__=\"sylar/tcp_server.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -804,7 +822,7 @@
 			[
 				{
 					"backtrace" : 22,
-					"define" : "__FILE__=\"sylar/http/http11_parser.rl.cc\""
+					"define" : "__FILE__=\"sylar/thread.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -838,7 +856,7 @@
 			[
 				{
 					"backtrace" : 23,
-					"define" : "__FILE__=\"sylar/http/httpclient_parser.rl.cc\""
+					"define" : "__FILE__=\"sylar/timer.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -872,7 +890,7 @@
 			[
 				{
 					"backtrace" : 24,
-					"define" : "__FILE__=\"sylar/http/http_connection.cc\""
+					"define" : "__FILE__=\"sylar/util.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -906,7 +924,7 @@
 			[
 				{
 					"backtrace" : 25,
-					"define" : "__FILE__=\"sylar/http/http_parser.cc\""
+					"define" : "__FILE__=\"sylar/http/http11_parser.rl.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -940,7 +958,7 @@
 			[
 				{
 					"backtrace" : 26,
-					"define" : "__FILE__=\"sylar/http/http_server.cc\""
+					"define" : "__FILE__=\"sylar/http/httpclient_parser.rl.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -974,7 +992,7 @@
 			[
 				{
 					"backtrace" : 27,
-					"define" : "__FILE__=\"sylar/http/http_session.cc\""
+					"define" : "__FILE__=\"sylar/http/http_connection.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -1008,7 +1026,7 @@
 			[
 				{
 					"backtrace" : 28,
-					"define" : "__FILE__=\"sylar/http/servlet.cc\""
+					"define" : "__FILE__=\"sylar/http/http_parser.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -1042,7 +1060,7 @@
 			[
 				{
 					"backtrace" : 29,
-					"define" : "__FILE__=\"sylar/streams/socket_stream.cc\""
+					"define" : "__FILE__=\"sylar/http/http_server.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -1076,7 +1094,7 @@
 			[
 				{
 					"backtrace" : 30,
-					"define" : "__FILE__=\"sylar/streams/zlib_stream.cc\""
+					"define" : "__FILE__=\"sylar/http/http_session.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -1110,7 +1128,7 @@
 			[
 				{
 					"backtrace" : 31,
-					"define" : "__FILE__=\"sylar/uri.rl.cc\""
+					"define" : "__FILE__=\"sylar/http/servlet.cc\""
 				},
 				{
 					"define" : "sylar_EXPORTS"
@@ -1131,6 +1149,108 @@
 			"sourceIndexes" : 
 			[
 				26
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 32,
+					"define" : "__FILE__=\"sylar/streams/socket_stream.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/yyc/sylar/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/yyc/sylar/../include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				27
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 33,
+					"define" : "__FILE__=\"sylar/streams/zlib_stream.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/yyc/sylar/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/yyc/sylar/../include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				28
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 34,
+					"define" : "__FILE__=\"sylar/uri.rl.cc\""
+				},
+				{
+					"define" : "sylar_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/yyc/sylar/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/yyc/sylar/../include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				29
 			]
 		}
 	],
@@ -1185,16 +1305,19 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27,
+				28,
+				29
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				27,
-				28,
-				29
+				30,
+				31,
+				32
 			]
 		}
 	],
@@ -1209,158 +1332,176 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "sylar/bytearray.cc",
+			"path" : "sylar/application.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 2,
-			"path" : "sylar/config.cc",
+			"path" : "sylar/bytearray.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 3,
-			"path" : "sylar/hook.cc",
+			"path" : "sylar/config.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 4,
-			"path" : "sylar/http.cc",
+			"path" : "sylar/daemon.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 5,
-			"path" : "sylar/fd_manager.cc",
+			"path" : "sylar/env.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 6,
-			"path" : "sylar/fiber.cc",
+			"path" : "sylar/hook.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 7,
-			"path" : "sylar/iomanager.cc",
+			"path" : "sylar/http.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 8,
-			"path" : "sylar/log.cc",
+			"path" : "sylar/fd_manager.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 9,
-			"path" : "sylar/mutex.cc",
+			"path" : "sylar/fiber.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 10,
-			"path" : "sylar/scheduler.cc",
+			"path" : "sylar/iomanager.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 11,
-			"path" : "sylar/socket.cc",
+			"path" : "sylar/log.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 12,
-			"path" : "sylar/stream.cc",
+			"path" : "sylar/mutex.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 13,
-			"path" : "sylar/tcp_server.cc",
+			"path" : "sylar/scheduler.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 14,
-			"path" : "sylar/thread.cc",
+			"path" : "sylar/socket.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 15,
-			"path" : "sylar/timer.cc",
+			"path" : "sylar/stream.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 16,
-			"path" : "sylar/util.cc",
+			"path" : "sylar/tcp_server.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 17,
+			"path" : "sylar/thread.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 18,
+			"path" : "sylar/timer.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 19,
+			"path" : "sylar/util.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 20,
 			"isGenerated" : true,
 			"path" : "sylar/http/http11_parser.rl.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 18,
+			"compileGroupIndex" : 21,
 			"isGenerated" : true,
 			"path" : "sylar/http/httpclient_parser.rl.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 19,
+			"compileGroupIndex" : 22,
 			"path" : "sylar/http/http_connection.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 20,
+			"compileGroupIndex" : 23,
 			"path" : "sylar/http/http_parser.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 21,
+			"compileGroupIndex" : 24,
 			"path" : "sylar/http/http_server.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 22,
+			"compileGroupIndex" : 25,
 			"path" : "sylar/http/http_session.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 23,
+			"compileGroupIndex" : 26,
 			"path" : "sylar/http/servlet.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 24,
+			"compileGroupIndex" : 27,
 			"path" : "sylar/streams/socket_stream.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 25,
+			"compileGroupIndex" : 28,
 			"path" : "sylar/streams/zlib_stream.cc",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 26,
+			"compileGroupIndex" : 29,
 			"isGenerated" : true,
 			"path" : "sylar/uri.rl.cc",
 			"sourceGroupIndex" : 0

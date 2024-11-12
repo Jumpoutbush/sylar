@@ -1,4 +1,4 @@
 /home/yyc/sylar/build/CMakeFiles/sylar.dir
-/home/yyc/sylar/build/CMakeFiles/test_http_connection.dir
+/home/yyc/sylar/build/CMakeFiles/test_application.dir
 /home/yyc/sylar/build/CMakeFiles/edit_cache.dir
 /home/yyc/sylar/build/CMakeFiles/rebuild_cache.dir

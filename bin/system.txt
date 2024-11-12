@@ -1,4 +1,18 @@
-2024-10-24 18:55:19	[INFO]	hello system
-
-2024-10-24 18:55:19	[INFO]	hello system
-
+2024-11-04 20:21:42	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:35:03	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:45:19	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:46:10	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:48:17	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:49:11	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 20:53:10	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-04 21:05:25	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-06 19:35:36	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-06 19:36:00	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:23:31	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:32:32	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:38:44	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:44:56	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:47:05	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:47:19	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:47:59	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-07 15:49:20	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok

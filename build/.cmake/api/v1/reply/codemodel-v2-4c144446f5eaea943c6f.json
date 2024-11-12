@@ -41,15 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sylar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sylar-Debug-5db99727529609a9345a.json",
+					"jsonFile" : "target-sylar-Debug-f4ce1478adaf5711b9ff.json",
 					"name" : "sylar",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "test_http_connection::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_http_connection-Debug-691226568954141233ae.json",
-					"name" : "test_http_connection",
+					"id" : "test_application::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_application-Debug-2bc02ec39ea4e5f0bc25.json",
+					"name" : "test_application",
 					"projectIndex" : 0
 				}
 			]

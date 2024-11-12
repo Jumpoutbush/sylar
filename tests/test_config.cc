@@ -1,14 +1,15 @@
 #include "../sylar/config.h"
 #include "../sylar/log.h"
 #include <yaml-cpp/yaml.h>
+#include "../sylar/env.h"
 #include <iostream>
 
 #if 1
 sylar::ConfigVar<int>::ptr g_int_value_config =
-    sylar::Config::Lookup("system.port", (int)8080, "system port");
+    sylar::Config::Lookup("system.port", (int)8020, "system port");
 
 sylar::ConfigVar<float>::ptr g_int_valuex_config =
-    sylar::Config::Lookup("system.port", (float)8080, "system port");
+    sylar::Config::Lookup("system.port", (float)8020, "system port");
 
 sylar::ConfigVar<float>::ptr g_float_value_config =
     sylar::Config::Lookup("system.value", (float)10.2f, "system value");
@@ -206,7 +207,7 @@ void test_log() {
     static sylar::Logger::ptr system_log = SYLAR_LOG_NAME("system");
     SYLAR_LOG_INFO(system_log) << "hello system" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
-    YAML::Node root = YAML::LoadFile("../bin/conf/test.yml");
+    YAML::Node root = YAML::LoadFile("../bin/conf/log.yml");
     sylar::Config::LoadFromYaml(root);
     std::cout << "=============" << std::endl;
     std::cout << sylar::LoggerMgr::GetInstance()->toYamlString() << std::endl;
@@ -218,17 +219,25 @@ void test_log() {
     SYLAR_LOG_INFO(system_log) << "hello system" << std::endl;
 }
 
+void test_loadconf() {
+    sylar::Config::LoadFromConfDir("conf");
+}
+
 int main(int argc, char** argv) {
     //test_yaml();
     //test_config();
     //test_class();
-    test_log();
-
-    sylar::Config::Visit([](sylar::ConfigVarBase::ptr var){
-        SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "name = " << var->getName()
-                                 << "description = " << var->getName()
-                                 << "typename = " << var->getTypeName()
-                                 << "value = " << var->toString();
+    //test_log();
+    sylar::EnvMgr::GetInstance()->init(argc, argv);
+    test_loadconf();
+    std::cout << " ==== " << std::endl;
+    test_loadconf();
+    return 0;
+    sylar::Config::Visit([](sylar::ConfigVarBase::ptr var) {
+        SYLAR_LOG_INFO(SYLAR_LOG_ROOT()) << "name=" << var->getName()
+                    << " description=" << var->getDescription()
+                    << " typename=" << var->getTypeName()
+                    << " value=" << var->toString();
     });
 
     return 0;

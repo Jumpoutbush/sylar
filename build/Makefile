@@ -133,17 +133,17 @@ sylar/fast:
 .PHONY : sylar/fast
 
 #=============================================================================
-# Target rules for targets named test_http_connection
+# Target rules for targets named test_application
 
 # Build rule for target.
-test_http_connection: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_connection
-.PHONY : test_http_connection
+test_application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
 
 # fast build rule for target.
-test_http_connection/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
-.PHONY : test_http_connection/fast
+test_application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
 
 sylar/address.o: sylar/address.cc.o
 .PHONY : sylar/address.o
@@ -168,6 +168,30 @@ sylar/address.s: sylar/address.cc.s
 sylar/address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/address.cc.s
 .PHONY : sylar/address.cc.s
+
+sylar/application.o: sylar/application.cc.o
+.PHONY : sylar/application.o
+
+# target to build an object file
+sylar/application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.o
+.PHONY : sylar/application.cc.o
+
+sylar/application.i: sylar/application.cc.i
+.PHONY : sylar/application.i
+
+# target to preprocess a source file
+sylar/application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.i
+.PHONY : sylar/application.cc.i
+
+sylar/application.s: sylar/application.cc.s
+.PHONY : sylar/application.s
+
+# target to generate assembly for a file
+sylar/application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/application.cc.s
+.PHONY : sylar/application.cc.s
 
 sylar/bytearray.o: sylar/bytearray.cc.o
 .PHONY : sylar/bytearray.o
@@ -216,6 +240,54 @@ sylar/config.s: sylar/config.cc.s
 sylar/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/config.cc.s
 .PHONY : sylar/config.cc.s
+
+sylar/daemon.o: sylar/daemon.cc.o
+.PHONY : sylar/daemon.o
+
+# target to build an object file
+sylar/daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/daemon.cc.o
+.PHONY : sylar/daemon.cc.o
+
+sylar/daemon.i: sylar/daemon.cc.i
+.PHONY : sylar/daemon.i
+
+# target to preprocess a source file
+sylar/daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/daemon.cc.i
+.PHONY : sylar/daemon.cc.i
+
+sylar/daemon.s: sylar/daemon.cc.s
+.PHONY : sylar/daemon.s
+
+# target to generate assembly for a file
+sylar/daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/daemon.cc.s
+.PHONY : sylar/daemon.cc.s
+
+sylar/env.o: sylar/env.cc.o
+.PHONY : sylar/env.o
+
+# target to build an object file
+sylar/env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.o
+.PHONY : sylar/env.cc.o
+
+sylar/env.i: sylar/env.cc.i
+.PHONY : sylar/env.i
+
+# target to preprocess a source file
+sylar/env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.i
+.PHONY : sylar/env.cc.i
+
+sylar/env.s: sylar/env.cc.s
+.PHONY : sylar/env.s
+
+# target to generate assembly for a file
+sylar/env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/env.cc.s
+.PHONY : sylar/env.cc.s
 
 sylar/fd_manager.o: sylar/fd_manager.cc.o
 .PHONY : sylar/fd_manager.o
@@ -793,29 +865,29 @@ sylar/util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/util.cc.s
 .PHONY : sylar/util.cc.s
 
-tests/test_http_connection.o: tests/test_http_connection.cc.o
-.PHONY : tests/test_http_connection.o
+tests/test_application.o: tests/test_application.cc.o
+.PHONY : tests/test_application.o
 
 # target to build an object file
-tests/test_http_connection.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o
-.PHONY : tests/test_http_connection.cc.o
+tests/test_application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
 
-tests/test_http_connection.i: tests/test_http_connection.cc.i
-.PHONY : tests/test_http_connection.i
+tests/test_application.i: tests/test_application.cc.i
+.PHONY : tests/test_application.i
 
 # target to preprocess a source file
-tests/test_http_connection.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.i
-.PHONY : tests/test_http_connection.cc.i
+tests/test_application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
 
-tests/test_http_connection.s: tests/test_http_connection.cc.s
-.PHONY : tests/test_http_connection.s
+tests/test_application.s: tests/test_application.cc.s
+.PHONY : tests/test_application.s
 
 # target to generate assembly for a file
-tests/test_http_connection.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.s
-.PHONY : tests/test_http_connection.cc.s
+tests/test_application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
 
 # Help Target
 help:
@@ -826,16 +898,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sylar"
-	@echo "... test_http_connection"
+	@echo "... test_application"
 	@echo "... sylar/address.o"
 	@echo "... sylar/address.i"
 	@echo "... sylar/address.s"
+	@echo "... sylar/application.o"
+	@echo "... sylar/application.i"
+	@echo "... sylar/application.s"
 	@echo "... sylar/bytearray.o"
 	@echo "... sylar/bytearray.i"
 	@echo "... sylar/bytearray.s"
 	@echo "... sylar/config.o"
 	@echo "... sylar/config.i"
 	@echo "... sylar/config.s"
+	@echo "... sylar/daemon.o"
+	@echo "... sylar/daemon.i"
+	@echo "... sylar/daemon.s"
+	@echo "... sylar/env.o"
+	@echo "... sylar/env.i"
+	@echo "... sylar/env.s"
 	@echo "... sylar/fd_manager.o"
 	@echo "... sylar/fd_manager.i"
 	@echo "... sylar/fd_manager.s"
@@ -908,9 +989,9 @@ help:
 	@echo "... sylar/util.o"
 	@echo "... sylar/util.i"
 	@echo "... sylar/util.s"
-	@echo "... tests/test_http_connection.o"
-	@echo "... tests/test_http_connection.i"
-	@echo "... tests/test_http_connection.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 .PHONY : help
 
 
