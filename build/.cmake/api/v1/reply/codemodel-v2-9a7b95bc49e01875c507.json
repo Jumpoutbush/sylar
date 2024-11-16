@@ -1,0 +1,231 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sylar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "echo_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echo_server-Debug-ae6704ab81f94a5996f4.json",
+					"name" : "echo_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sylar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sylar-Debug-5690d5536a27ddfbf3ba.json",
+					"name" : "sylar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-b2b1befaf41e40fffd6b.json",
+					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_address::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_address-Debug-6154e81aa603e50fc77b.json",
+					"name" : "test_address",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_application::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_application-Debug-b14e91acb1ddbbfbc934.json",
+					"name" : "test_application",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_config::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_config-Debug-40183af1c260309fb926.json",
+					"name" : "test_config",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_daemon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_daemon-Debug-1a00b405033429c23e5e.json",
+					"name" : "test_daemon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_env::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_env-Debug-257890a1c87e76566c31.json",
+					"name" : "test_env",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_fiber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_fiber-Debug-981a931863f117dc8b13.json",
+					"name" : "test_fiber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_hook::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_hook-Debug-5bba28d340efd86c54c8.json",
+					"name" : "test_hook",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_http::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_http-Debug-5177a01c66ff1bc035d0.json",
+					"name" : "test_http",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_http_connection::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_http_connection-Debug-0c32bb4d5d45dfd96579.json",
+					"name" : "test_http_connection",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_http_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_http_parser-Debug-c3d97cbdf5ba1e66792f.json",
+					"name" : "test_http_parser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_http_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_http_server-Debug-8d0c619c78f984cce93c.json",
+					"name" : "test_http_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_iomanager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_iomanager-Debug-a98ba728f68d74624ffd.json",
+					"name" : "test_iomanager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_scheduler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_scheduler-Debug-428e98255c10e0ca3a16.json",
+					"name" : "test_scheduler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_socket::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_socket-Debug-cb590875390ae080e3fd.json",
+					"name" : "test_socket",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_tcp_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_tcp_server-Debug-134dd8ab844a9d11860e.json",
+					"name" : "test_tcp_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_thread-Debug-465a6436a4383db6b98b.json",
+					"name" : "test_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_util::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_util-Debug-e0456eabb57a75364fea.json",
+					"name" : "test_util",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yyc/sylar/build",
+		"source" : "/home/yyc/sylar"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -101,6 +101,11 @@
 },
 {
   "directory": "/home/yyc/sylar/build",
+  "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/worker.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/worker.cc.o -c /home/yyc/sylar/sylar/worker.cc",
+  "file": "/home/yyc/sylar/sylar/worker.cc"
+},
+{
+  "directory": "/home/yyc/sylar/build",
   "command": "/usr/bin/g++ -Dsylar_EXPORTS -D__FILE__=\\\"sylar/http/http11_parser.rl.cc\\\" -I/home/yyc/sylar/. -I/home/yyc/sylar/../include  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o -c /home/yyc/sylar/sylar/http/http11_parser.rl.cc",
   "file": "/home/yyc/sylar/sylar/http/http11_parser.rl.cc"
 },

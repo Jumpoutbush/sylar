@@ -27,6 +27,7 @@ set(LIB_SRC
     sylar/thread.cc
     sylar/timer.cc
     sylar/util.cc
+    sylar/worker.cc
 
     sylar/http/http11_parser.rl.cc
     sylar/http/httpclient_parser.rl.cc

@@ -64,6 +64,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o.d"
   "CMakeFiles/sylar.dir/sylar/util.cc.o"
   "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
+  "CMakeFiles/sylar.dir/sylar/worker.cc.o"
+  "CMakeFiles/sylar.dir/sylar/worker.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
