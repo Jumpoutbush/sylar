@@ -16,3 +16,6 @@
 2024-11-07 15:47:19	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
 2024-11-07 15:47:59	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
 2024-11-07 15:49:20	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-16 18:32:21	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-16 18:32:21	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2024-11-16 18:32:21	LoadConfFile file=/home/yyc/sylar/bin/conf/server.yml ok
