@@ -43,11 +43,11 @@ public:
     virtual bool onServerReady();
     virtual bool onServerUp();
 
-    virtual bool handleRequest(sylar::Message::ptr req
-                               ,sylar::Message::ptr rsp
-                               ,sylar::Stream::ptr stream);
-    virtual bool handleNotify(sylar::Message::ptr notify
-                              ,sylar::Stream::ptr stream);
+    // virtual bool handleRequest(sylar::Message::ptr req
+    //                            ,sylar::Message::ptr rsp
+    //                            ,sylar::Stream::ptr stream);
+    // virtual bool handleNotify(sylar::Message::ptr notify
+    //                           ,sylar::Stream::ptr stream);
 
     virtual std::string statusString();
 
