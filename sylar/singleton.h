@@ -10,6 +10,7 @@
 #define __SYLAR_SINGLETON_H__
 
 #include <memory>
+#include <atomic>
 
 namespace sylar {
 

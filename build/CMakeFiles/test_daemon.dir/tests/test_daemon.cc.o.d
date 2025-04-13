@@ -119,7 +119,7 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/atomic \
  /home/yyc/sylar/tests/../sylar/iomanager.h \
  /home/yyc/sylar/tests/../sylar/scheduler.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_vector.h \
@@ -186,7 +186,7 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: \
  /usr/include/c++/11/ratio /usr/include/c++/11/limits \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/tests/../sylar/noncopyable.h \
+ /home/yyc/sylar/tests/../sylar/noncopyable.h \
  /home/yyc/sylar/tests/../sylar/timer.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \

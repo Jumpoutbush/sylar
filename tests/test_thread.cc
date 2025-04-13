@@ -15,8 +15,8 @@ void func1() {
                        << " id: " << sylar::GetThreadId()
                        << " this.id: " << sylar::Thread::GetThis()->getId();
     for(int i = 0; i < 5; ++i) {
-        sylar::RWMutex::WriteLock lock(rw_mutex);
-        //sylar::Mutex::Lock lock(s_mutex);
+        // sylar::RWMutex::WriteLock lock(rw_mutex);
+        sylar::Mutex::Lock lock(s_mutex);
         ++count;
     }
 }

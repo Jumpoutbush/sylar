@@ -1010,4 +1010,5 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: \
  /usr/local/include/openssl/prov_ssl.h /usr/local/include/openssl/ssl2.h \
  /usr/local/include/openssl/ssl3.h /usr/local/include/openssl/tls1.h \
  /usr/local/include/openssl/dtls1.h /usr/local/include/openssl/srtp.h \
- /home/yyc/sylar/tests/../sylar/uri.h
+ /home/yyc/sylar/tests/../sylar/uri.h \
+ /home/yyc/sylar/tests/../sylar/mutex.h

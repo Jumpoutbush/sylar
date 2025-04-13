@@ -112,9 +112,9 @@ CMakeFiles/sylar.dir/sylar/env.cc.o: /home/yyc/sylar/sylar/env.cc \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h /home/yyc/sylar/sylar/thread.h \
- /home/yyc/sylar/sylar/mutex.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/atomic \
+ /home/yyc/sylar/sylar/thread.h /home/yyc/sylar/sylar/mutex.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/cstdint \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
@@ -130,8 +130,7 @@ CMakeFiles/sylar.dir/sylar/env.cc.o: /home/yyc/sylar/sylar/env.cc \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/list \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
  /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/localefwd.h \

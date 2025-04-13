@@ -65,3 +65,7 @@ address:
 2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=5
 2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=6
 2024-11-22 13:29:27	[DEBUG]	idle
+2025-03-19 15:07:38	14489	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2025-03-19 15:07:38	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2025-03-19 15:07:48	14523	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2025-03-19 15:07:48	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok

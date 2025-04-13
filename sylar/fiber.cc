@@ -1,23 +1,28 @@
-#include "fiber.h"
-#include "config.h"
-#include "macro.h"
-#include "log.h"
-#include "scheduler.h"
-#include <atomic>
+#include "fiber.h"          // 包含协程相关的头文件
+#include "config.h"         // 包含配置相关的头文件
+#include "macro.h"          // 包含宏定义相关的头文件
+#include "log.h"            // 包含日志相关的头文件
+#include "scheduler.h"      // 包含调度器相关的头文件
+#include <atomic>           // 包含原子操作相关的头文件
 
 namespace sylar {
 
+// 定义全局日志器
 static Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
-static std::atomic<uint64_t> s_fiber_id {0};
-static std::atomic<uint64_t> s_fiber_count {0};
+// 定义全局协程ID和协程计数器的原子变量
+static std::atomic<uint64_t> s_fiber_id {0}; // 全局协程ID
+static std::atomic<uint64_t> s_fiber_count {0}; // 全局协程计数器
 
+// 定义线程局部变量，用于存储当前线程的协程和主协程
 static thread_local Fiber* t_fiber = nullptr;
 static thread_local Fiber::ptr t_threadFiber = nullptr;
 
+// 定义配置变量，用于存储协程栈大小
 static ConfigVar<uint32_t>::ptr g_fiber_stack_size =
     Config::Lookup<uint32_t>("fiber.stack_size", 128 * 1024, "fiber stack size");
 
+// 定义栈分配器类，使用malloc和free进行栈的分配和释放
 class MallocStackAllocator {
 public:
     static void* Alloc(size_t size) {
@@ -29,8 +34,10 @@ public:
     }
 };
 
+// 使用MallocStackAllocator作为默认的栈分配器
 using StackAllocator = MallocStackAllocator;
 
+// 获取当前协程的ID
 uint64_t Fiber::GetFiberId() {
     if(t_fiber) {
         return t_fiber->getId();
@@ -38,11 +45,12 @@ uint64_t Fiber::GetFiberId() {
     return 0;
 }
 
+// 构造函数，用于创建主协程
 Fiber::Fiber() {
-    m_state = EXEC;
-    SetThis(this);
+    m_state = EXEC; // 设置协程状态为执行中
+    SetThis(this); // 设置当前协程为this
 
-    if(getcontext(&m_ctx)) {
+    if(getcontext(&m_ctx)) { // 获取当前上下文
         SYLAR_ASSERT2(false, "getcontext");
     }
 
@@ -135,9 +143,13 @@ void Fiber::swapIn() {
     SetThis(this);
     SYLAR_ASSERT(m_state != EXEC);
     m_state = EXEC;
-    if(swapcontext(&Scheduler::GetMainFiber()->m_ctx, &m_ctx)) {
+    if(swapcontext(&(Scheduler::GetMainFiber())->m_ctx, &m_ctx)) {
         SYLAR_ASSERT2(false, "swapcontext");
     }
+    //SYLAR_LOG_INFO(g_logger) << "swapIn, Fiber ID = " << getId();
+    // if(swapcontext(&(t_threadFiber->m_ctx), &m_ctx)) {
+    //     SYLAR_ASSERT2(false, "swapcontext");
+    // }
 }
 
 //切换到后台执行
@@ -146,6 +158,10 @@ void Fiber::swapOut() {
     if(swapcontext(&m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
         SYLAR_ASSERT2(false, "swapcontext");
     }
+    //SYLAR_LOG_INFO(g_logger) << "swapOut, Fiber ID = " << getId();
+    // if(swapcontext(&m_ctx, &(t_threadFiber)->m_ctx)) {
+    //     SYLAR_ASSERT2(false, "swapcontext");
+    // }
 }
 
 //设置当前协程
@@ -176,7 +192,7 @@ void Fiber::YieldToReady() {
 void Fiber::YieldToHold() {
     Fiber::ptr cur = GetThis();
     SYLAR_ASSERT(cur->m_state == EXEC);
-    //cur->m_state = HOLD;
+    cur->m_state = HOLD;
     cur->swapOut();
 }
 
@@ -188,23 +204,23 @@ uint64_t Fiber::TotalFibers() {
 void Fiber::MainFunc() {
     Fiber::ptr cur = GetThis();
     SYLAR_ASSERT(cur);
-    // try {
+    try {
         cur->m_cb();
         cur->m_cb = nullptr;
         cur->m_state = TERM;
-    // } catch (std::exception& ex) {
-    //     cur->m_state = EXCEPT;
-    //     SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what()
-    //         << " fiber_id=" << cur->getId()
-    //         << std::endl
-    //         << sylar::BacktraceToString();
-    // } catch (...) {
-    //     cur->m_state = EXCEPT;
-    //     SYLAR_LOG_ERROR(g_logger) << "Fiber Except"
-    //         << " fiber_id=" << cur->getId()
-    //         << std::endl
-    //         << sylar::BacktraceToString();
-    // }
+    } catch (std::exception& ex) {
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what()
+            << " fiber_id=" << cur->getId()
+            << std::endl
+            << sylar::BacktraceToString();
+    } catch (...) {
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except"
+            << " fiber_id=" << cur->getId()
+            << std::endl
+            << sylar::BacktraceToString();
+    }
 
     auto raw_ptr = cur.get();
     cur.reset();

@@ -104,15 +104,15 @@ IOManager::IOManager(size_t threads, bool use_caller, const std::string& name)
     int rt = pipe(m_tickleFds);
     SYLAR_ASSERT(!rt);
 
-    epoll_event event;
-    memset(&event, 0, sizeof(epoll_event));
+    epoll_event event;  // 创建一个epoll_event结构体
+    memset(&event, 0, sizeof(epoll_event));     // 初始化event
     event.events = EPOLLIN | EPOLLET;
     event.data.fd = m_tickleFds[0];
 
-    rt = fcntl(m_tickleFds[0], F_SETFL, O_NONBLOCK);
+    rt = fcntl(m_tickleFds[0], F_SETFL, O_NONBLOCK);    // 设置为非阻塞
     SYLAR_ASSERT(!rt);
 
-    rt = epoll_ctl(m_epfd, EPOLL_CTL_ADD, m_tickleFds[0], &event);
+    rt = epoll_ctl(m_epfd, EPOLL_CTL_ADD, m_tickleFds[0], &event);  // 将管道的读端加入epoll
     SYLAR_ASSERT(!rt);
 
     contextResize(32);
@@ -146,18 +146,19 @@ void IOManager::contextResize(size_t size) {
 
 int IOManager::addEvent(int fd, Event event, std::function<void()> cb) {
     FdContext* fd_ctx = nullptr;
-    RWMutexType::ReadLock lock(m_mutex);
-    if((int)m_fdContexts.size() > fd) {
+    RWMutexType::ReadLock lock(m_mutex);    // 先读锁
+    if((int)m_fdContexts.size() > fd) { // 如果fd大于m_fdContexts的大小，则说明fd不存在
         fd_ctx = m_fdContexts[fd];
         lock.unlock();
     } else {
         lock.unlock();
-        RWMutexType::WriteLock lock2(m_mutex);
-        contextResize(fd * 1.5);
-        fd_ctx = m_fdContexts[fd];
+        RWMutexType::WriteLock lock2(m_mutex);  // 读锁升级为写锁
+        contextResize(fd * 1.5);    // 扩容
+        fd_ctx = m_fdContexts[fd];  // 扩容后重新获取fd
+        lock.unlock();
     }
 
-    FdContext::MutexType::Lock lock2(fd_ctx->mutex);
+    FdContext::MutexType::Lock lock2(fd_ctx->mutex);    // one fd one lock
     if(SYLAR_UNLIKELY(fd_ctx->events & event)) {
         SYLAR_LOG_ERROR(g_logger) << "addEvent assert fd=" << fd
                     << " event=" << (EPOLL_EVENTS)event
@@ -165,12 +166,12 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb) {
         SYLAR_ASSERT(!(fd_ctx->events & event));
     }
 
-    int op = fd_ctx->events ? EPOLL_CTL_MOD : EPOLL_CTL_ADD;
-    epoll_event epevent;
-    epevent.events = EPOLLET | fd_ctx->events | event;
+    int op = fd_ctx->events ? EPOLL_CTL_MOD : EPOLL_CTL_ADD;    // 如果fd_ctx->events有事件，则修改，否则添加
+    epoll_event epevent;    // epoll_event结构体
+    epevent.events = EPOLLET | fd_ctx->events | event;  // EPOLLET:边缘触发, fd_ctx->events:之前的事件, event:当前事件
     epevent.data.ptr = fd_ctx;
 
-    int rt = epoll_ctl(m_epfd, op, fd, &epevent);
+    int rt = epoll_ctl(m_epfd, op, fd, &epevent);   
     if(rt) {
         SYLAR_LOG_ERROR(g_logger) << "epoll_ctl(" << m_epfd << ", "
             << (EpollCtlOp)op << ", " << fd << ", " << (EPOLL_EVENTS)epevent.events << "):"
@@ -334,7 +335,12 @@ void IOManager::idle() {
     std::shared_ptr<epoll_event> shared_events(events, [](epoll_event* ptr){
         delete[] ptr;
     });
-
+    // while(true){
+    //     if(stopping()){
+    //         SYLAR_LOG_INFO(g_logger) << "name" << m_name << "idle stopping exit";
+    //         break;
+    //     }
+    // }
     while(true) {
         uint64_t next_timeout = 0;
         if(SYLAR_UNLIKELY(stopping(next_timeout))) {

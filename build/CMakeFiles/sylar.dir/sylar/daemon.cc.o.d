@@ -119,9 +119,10 @@ CMakeFiles/sylar.dir/sylar/daemon.cc.o: /home/yyc/sylar/sylar/daemon.cc \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h /home/yyc/sylar/./sylar/log.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/char_traits.h \
- /usr/include/c++/11/cstdint /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/atomic \
+ /home/yyc/sylar/./sylar/log.h /usr/include/c++/11/string \
+ /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
+ /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/cctype \
@@ -909,8 +910,8 @@ CMakeFiles/sylar.dir/sylar/daemon.cc.o: /home/yyc/sylar/sylar/daemon.cc \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/./sylar/noncopyable.h \
- /home/yyc/sylar/./sylar/fiber.h /usr/include/ucontext.h \
+ /home/yyc/sylar/./sylar/noncopyable.h /home/yyc/sylar/./sylar/fiber.h \
+ /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \

@@ -1,20 +1,18 @@
 #include "../sylar/sylar.h"
-
+#include <chrono>
 static sylar::Logger::ptr g_logger = SYLAR_LOG_ROOT();
 
 void test_fiber() {
-    static int s_count = 5;
+    static int s_count = 3;
     SYLAR_LOG_INFO(g_logger) << "test in fiber s_count=" << s_count;
-
-    sleep(1);
-    if(--s_count >= 0) {
+    // std::this_thread::sleep_for(std::chrono::seconds(1));
+    if(--s_count) {
         sylar::Scheduler::GetThis()->schedule(&test_fiber, sylar::GetThreadId());
     }
 }
-
+// m fibers swap among n threads
 int main(int argc, char** argv) {
-    SYLAR_LOG_INFO(g_logger) << "main";
-    sylar::Scheduler sc(3, false, "test");
+    sylar::Scheduler sc(3, true, "test");  
     sc.start();
     SYLAR_LOG_INFO(g_logger) << "schedule";
     sc.schedule(&test_fiber);

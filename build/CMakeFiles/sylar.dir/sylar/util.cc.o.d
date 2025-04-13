@@ -953,11 +953,12 @@ CMakeFiles/sylar.dir/sylar/util.cc.o: /home/yyc/sylar/sylar/util.cc \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /home/yyc/sylar/sylar/singleton.h \
- /home/yyc/sylar/sylar/thread.h /home/yyc/sylar/sylar/mutex.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/atomic /home/yyc/sylar/sylar/thread.h \
+ /home/yyc/sylar/sylar/mutex.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/sylar/noncopyable.h \
- /home/yyc/sylar/sylar/fiber.h /usr/include/ucontext.h \
+ /home/yyc/sylar/sylar/noncopyable.h /home/yyc/sylar/sylar/fiber.h \
+ /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h

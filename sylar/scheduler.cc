@@ -133,7 +133,7 @@ void Scheduler::setThis() {
     t_scheduler = this;
 }
 
-void Scheduler::run() {
+void Scheduler:: run() {
     SYLAR_LOG_DEBUG(g_logger) << m_name << " run";
     set_hook_enable(true);
     setThis();

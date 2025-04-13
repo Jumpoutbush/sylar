@@ -912,14 +912,14 @@ CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
- /home/yyc/sylar/tests/../sylar/singleton.h \
+ /home/yyc/sylar/tests/../sylar/singleton.h /usr/include/c++/11/atomic \
  /home/yyc/sylar/tests/../sylar/thread.h \
  /home/yyc/sylar/tests/../sylar/mutex.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/tests/../sylar/noncopyable.h \
+ /home/yyc/sylar/tests/../sylar/noncopyable.h \
  /home/yyc/sylar/tests/../sylar/fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
