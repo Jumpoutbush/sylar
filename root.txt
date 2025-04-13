@@ -1,0 +1,3 @@
+2024-12-08 19:23:34	3393	UNKNOW	0	[INFO]	[root]	sylar/log.cc:709	on_logger_conf_changed
+2024-12-08 19:23:34	3393	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log2.yml ok
+2024-12-08 19:23:34	3393	UNKNOW	0	[INFO]	[root]	sylar/log.cc:709	on_logger_conf_changed

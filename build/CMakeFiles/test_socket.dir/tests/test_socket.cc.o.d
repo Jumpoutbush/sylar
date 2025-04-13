@@ -135,13 +135,11 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/local/openssl/include/openssl/err.h \
- /usr/local/openssl/include/openssl/macros.h \
- /usr/local/openssl/include/openssl/opensslconf.h \
- /usr/local/openssl/include/openssl/configuration.h \
- /usr/local/openssl/include/openssl/opensslv.h \
- /usr/local/openssl/include/openssl/e_os2.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/local/include/openssl/err.h /usr/local/include/openssl/macros.h \
+ /usr/local/include/openssl/opensslconf.h \
+ /usr/local/include/openssl/configuration.h \
+ /usr/local/include/openssl/opensslv.h /usr/local/include/openssl/e_os2.h \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -150,8 +148,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/11/bits/std_abs.h \
- /usr/local/openssl/include/openssl/types.h \
+ /usr/include/c++/11/bits/std_abs.h /usr/local/include/openssl/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -160,72 +157,50 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/local/openssl/include/openssl/safestack.h \
- /usr/local/openssl/include/openssl/stack.h \
- /usr/local/openssl/include/openssl/bio.h \
- /usr/local/openssl/include/openssl/crypto.h \
- /usr/local/openssl/include/openssl/cryptoerr.h \
- /usr/local/openssl/include/openssl/symhacks.h \
- /usr/local/openssl/include/openssl/cryptoerr_legacy.h \
- /usr/local/openssl/include/openssl/core.h \
- /usr/local/openssl/include/openssl/bioerr.h \
- /usr/local/openssl/include/openssl/lhash.h /usr/include/errno.h \
+ /usr/local/include/openssl/safestack.h \
+ /usr/local/include/openssl/stack.h /usr/local/include/openssl/bio.h \
+ /usr/local/include/openssl/crypto.h \
+ /usr/local/include/openssl/cryptoerr.h \
+ /usr/local/include/openssl/symhacks.h \
+ /usr/local/include/openssl/cryptoerr_legacy.h \
+ /usr/local/include/openssl/core.h /usr/local/include/openssl/bioerr.h \
+ /usr/local/include/openssl/lhash.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/local/openssl/include/openssl/ssl.h \
- /usr/local/openssl/include/openssl/e_ostime.h \
- /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/local/openssl/include/openssl/comp.h \
- /usr/local/openssl/include/openssl/comperr.h \
- /usr/local/openssl/include/openssl/x509.h \
- /usr/local/openssl/include/openssl/buffer.h \
- /usr/local/openssl/include/openssl/buffererr.h \
- /usr/local/openssl/include/openssl/evp.h \
- /usr/local/openssl/include/openssl/core_dispatch.h \
- /usr/local/openssl/include/openssl/evperr.h \
- /usr/local/openssl/include/openssl/params.h \
- /usr/local/openssl/include/openssl/bn.h \
- /usr/local/openssl/include/openssl/bnerr.h \
- /usr/local/openssl/include/openssl/objects.h \
- /usr/local/openssl/include/openssl/obj_mac.h \
- /usr/local/openssl/include/openssl/asn1.h \
- /usr/local/openssl/include/openssl/asn1err.h \
- /usr/local/openssl/include/openssl/objectserr.h \
- /usr/local/openssl/include/openssl/ec.h /usr/include/string.h \
- /usr/include/strings.h /usr/local/openssl/include/openssl/ecerr.h \
- /usr/local/openssl/include/openssl/rsa.h \
- /usr/local/openssl/include/openssl/rsaerr.h \
- /usr/local/openssl/include/openssl/dsa.h \
- /usr/local/openssl/include/openssl/dh.h \
- /usr/local/openssl/include/openssl/dherr.h \
- /usr/local/openssl/include/openssl/dsaerr.h \
- /usr/local/openssl/include/openssl/sha.h \
- /usr/local/openssl/include/openssl/x509err.h \
- /usr/local/openssl/include/openssl/x509_vfy.h \
- /usr/local/openssl/include/openssl/pkcs7.h \
- /usr/local/openssl/include/openssl/pkcs7err.h \
- /usr/local/openssl/include/openssl/http.h \
- /usr/local/openssl/include/openssl/conf.h \
- /usr/local/openssl/include/openssl/conferr.h \
- /usr/local/openssl/include/openssl/conftypes.h \
- /usr/local/openssl/include/openssl/pem.h \
- /usr/local/openssl/include/openssl/pemerr.h \
- /usr/local/openssl/include/openssl/hmac.h \
- /usr/local/openssl/include/openssl/async.h \
- /usr/local/openssl/include/openssl/asyncerr.h \
- /usr/local/openssl/include/openssl/ct.h \
- /usr/local/openssl/include/openssl/cterr.h \
- /usr/local/openssl/include/openssl/sslerr.h \
- /usr/local/openssl/include/openssl/sslerr_legacy.h \
- /usr/local/openssl/include/openssl/prov_ssl.h \
- /usr/local/openssl/include/openssl/ssl2.h \
- /usr/local/openssl/include/openssl/ssl3.h \
- /usr/local/openssl/include/openssl/tls1.h \
- /usr/local/openssl/include/openssl/dtls1.h \
- /usr/local/openssl/include/openssl/srtp.h \
- /usr/local/openssl/include/openssl/quic.h \
+ /usr/local/include/openssl/ssl.h /usr/local/include/openssl/comp.h \
+ /usr/local/include/openssl/comperr.h /usr/local/include/openssl/x509.h \
+ /usr/local/include/openssl/buffer.h \
+ /usr/local/include/openssl/buffererr.h /usr/local/include/openssl/evp.h \
+ /usr/local/include/openssl/core_dispatch.h \
+ /usr/local/include/openssl/evperr.h /usr/local/include/openssl/params.h \
+ /usr/local/include/openssl/bn.h /usr/local/include/openssl/bnerr.h \
+ /usr/local/include/openssl/objects.h \
+ /usr/local/include/openssl/obj_mac.h /usr/local/include/openssl/asn1.h \
+ /usr/local/include/openssl/asn1err.h \
+ /usr/local/include/openssl/objectserr.h /usr/local/include/openssl/ec.h \
+ /usr/local/include/openssl/ecerr.h /usr/local/include/openssl/rsa.h \
+ /usr/local/include/openssl/rsaerr.h /usr/local/include/openssl/dsa.h \
+ /usr/local/include/openssl/dh.h /usr/local/include/openssl/dherr.h \
+ /usr/local/include/openssl/dsaerr.h /usr/local/include/openssl/sha.h \
+ /usr/local/include/openssl/x509err.h \
+ /usr/local/include/openssl/x509_vfy.h /usr/local/include/openssl/pkcs7.h \
+ /usr/local/include/openssl/pkcs7err.h /usr/local/include/openssl/ocsp.h \
+ /usr/local/include/openssl/http.h /usr/local/include/openssl/conf.h \
+ /usr/local/include/openssl/conferr.h \
+ /usr/local/include/openssl/conftypes.h \
+ /usr/local/include/openssl/x509v3.h \
+ /usr/local/include/openssl/x509v3err.h \
+ /usr/local/include/openssl/ocsperr.h /usr/local/include/openssl/pem.h \
+ /usr/local/include/openssl/pemerr.h /usr/local/include/openssl/hmac.h \
+ /usr/local/include/openssl/async.h /usr/local/include/openssl/asyncerr.h \
+ /usr/local/include/openssl/ct.h /usr/local/include/openssl/cterr.h \
+ /usr/local/include/openssl/sslerr.h \
+ /usr/local/include/openssl/sslerr_legacy.h \
+ /usr/local/include/openssl/prov_ssl.h /usr/local/include/openssl/ssl2.h \
+ /usr/local/include/openssl/ssl3.h /usr/local/include/openssl/tls1.h \
+ /usr/local/include/openssl/dtls1.h /usr/local/include/openssl/srtp.h \
  /home/yyc/sylar/tests/../sylar/address.h /usr/include/c++/11/string \
  /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
  /usr/include/c++/11/bits/localefwd.h \
@@ -238,7 +213,8 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
  /usr/include/c++/11/cerrno /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/arpa/inet.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/arpa/inet.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \

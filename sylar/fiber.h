@@ -12,7 +12,7 @@
 #include <memory>
 #include <functional>
 #include <ucontext.h>
-
+/*get,set,swapcontext*/
 namespace sylar {
 
 class Scheduler;
@@ -24,7 +24,7 @@ class Fiber : public std::enable_shared_from_this<Fiber> {
 friend class Scheduler;
 public:
     typedef std::shared_ptr<Fiber> ptr;
-
+    
     /**
      * @brief 协程状态
      */
@@ -54,7 +54,7 @@ public:
      * @brief 构造函数
      * @param[in] cb 协程执行的函数
      * @param[in] stacksize 协程栈大小
-     * @param[in] use_caller 是否在MainFiber上调度
+    ++s_fiber_count; // 增加协程计数器
      */
     Fiber(std::function<void()> cb, size_t stacksize = 0, bool use_caller = false);
 
@@ -68,7 +68,7 @@ public:
      * @pre getState() 为 INIT, TERM, EXCEPT
      * @post getState() = INIT
      */
-    void reset(std::function<void()> cb);
+    void reset(std::function<void()> cb);   
 
     /**
      * @brief 将当前协程切换到运行状态

@@ -1,0 +1,2 @@
+2024-12-08 19:23:34	3393	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2024-12-08 19:23:34	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok

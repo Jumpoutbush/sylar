@@ -19,3 +19,49 @@
 2024-11-16 18:32:21	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
 2024-11-16 18:32:21	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
 2024-11-16 18:32:21	LoadConfFile file=/home/yyc/sylar/bin/conf/server.yml ok
+2024-11-22 13:29:23	85106	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2024-11-22 13:29:23	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-22 13:29:27	85107	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log.yml ok
+2024-11-22 13:29:27	[INFO]	LoadConfFile file=/home/yyc/sylar/bin/conf/test.yml ok
+2024-11-22 13:29:27	[INFO]	main
+2024-11-22 13:29:27	[INFO]	name: sylar/1.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8090
+  - 127.0.0.1:8091
+  - /tmp/test.sock
+2024-11-22 13:29:27	[INFO]	name: sylar-rock/1.0
+keepalive: 0
+timeout: 1000
+address:
+  - 0.0.0.0:8062
+  - 0.0.0.0:8061
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber main
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=1
+2024-11-22 13:29:27	[INFO]	0x7ffc83d42eb0 stopped
+2024-11-22 13:29:27	[DEBUG]	 run
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=2
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=3
+2024-11-22 13:29:27	[INFO]	name: sylar/1.1
+keepalive: 1
+timeout: 1000
+address:
+  - 0.0.0.0:8090
+  - 127.0.0.1:8091
+  - /tmp/test.sock
+2024-11-22 13:29:27	[ERROR]	invalid address: /tmp/test.sock
+2024-11-22 13:29:27	[INFO]	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=9 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8090]
+2024-11-22 13:29:27	[INFO]	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=10 is_connected=0 family=2 type=1 protocol=0 local_address=127.0.0.1:8091]
+2024-11-22 13:29:27	[INFO]	name: sylar-rock/1.0
+keepalive: 0
+timeout: 1000
+address:
+  - 0.0.0.0:8062
+  - 0.0.0.0:8061
+2024-11-22 13:29:27	[INFO]	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=11 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8062]
+2024-11-22 13:29:27	[INFO]	type=tcp name=sylar/1.0.0 ssl=0 server bind success: [Socket sock=12 is_connected=0 family=2 type=1 protocol=0 local_address=0.0.0.0:8061]
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=4
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=5
+2024-11-22 13:29:27	[DEBUG]	Fiber::Fiber id=6
+2024-11-22 13:29:27	[DEBUG]	idle

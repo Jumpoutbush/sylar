@@ -77,6 +77,8 @@
         "span": "cpp",
         "variant": "cpp",
         "cerrno": "cpp",
-        "*.inc": "cpp"
-    }
+        "*.inc": "cpp",
+        "shared_mutex": "cpp"
+    },
+    "Codegeex.RepoIndex": true
 }

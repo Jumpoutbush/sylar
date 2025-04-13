@@ -38,7 +38,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yyc/sylar/sylar/timer.cc" "CMakeFiles/sylar.dir/sylar/timer.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/timer.cc.o.d"
   "/home/yyc/sylar/sylar/uri.rl.cc" "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/uri.rl.cc.o.d"
   "/home/yyc/sylar/sylar/util.cc" "CMakeFiles/sylar.dir/sylar/util.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/util.cc.o.d"
-  "/home/yyc/sylar/sylar/worker.cc" "CMakeFiles/sylar.dir/sylar/worker.cc.o" "gcc" "CMakeFiles/sylar.dir/sylar/worker.cc.o.d"
   )
 
 # Targets to which this target links.
