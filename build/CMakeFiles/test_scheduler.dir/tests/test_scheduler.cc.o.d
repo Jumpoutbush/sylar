@@ -1,7 +1,7 @@
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /home/yyc/sylar/tests/test_scheduler.cc /usr/include/stdc-predef.h \
- /home/yyc/sylar/tests/../sylar/sylar.h \
- /home/yyc/sylar/tests/../sylar/address.h /usr/include/c++/11/memory \
+ /home/yyc/sylar/tests/../frame/sylar.h \
+ /home/yyc/sylar/tests/../frame/address.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -195,8 +195,8 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/yyc/sylar/tests/../sylar/bytearray.h \
- /home/yyc/sylar/tests/../sylar/config.h /usr/include/c++/11/sstream \
+ /home/yyc/sylar/tests/../frame/bytearray.h \
+ /home/yyc/sylar/tests/../frame/config.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /usr/local/include/boost/lexical_cast.hpp \
  /usr/local/include/boost/config.hpp \
@@ -916,22 +916,22 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/yyc/sylar/tests/../sylar/thread.h \
- /home/yyc/sylar/tests/../sylar/mutex.h /usr/include/c++/11/thread \
+ /home/yyc/sylar/tests/../frame/thread.h \
+ /home/yyc/sylar/tests/../frame/mutex.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/atomic /home/yyc/sylar/tests/../sylar/noncopyable.h \
- /home/yyc/sylar/tests/../sylar/fiber.h /usr/include/ucontext.h \
+ /usr/include/c++/11/atomic /home/yyc/sylar/tests/../frame/noncopyable.h \
+ /home/yyc/sylar/tests/../frame/fiber.h /usr/include/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/indirect-return.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /home/yyc/sylar/tests/../sylar/log.h /usr/include/c++/11/fstream \
+ /home/yyc/sylar/tests/../frame/log.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/yyc/sylar/tests/../sylar/util.h /usr/include/c++/11/cxxabi.h \
+ /home/yyc/sylar/tests/../frame/util.h /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
@@ -944,11 +944,11 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/stack \
  /usr/include/c++/11/bits/stl_stack.h /usr/include/json/writer.h \
- /home/yyc/sylar/tests/../sylar/singleton.h \
- /home/yyc/sylar/tests/../sylar/endian.h /usr/include/byteswap.h \
- /home/yyc/sylar/tests/../sylar/env.h \
- /home/yyc/sylar/tests/../sylar/fd_manager.h \
- /home/yyc/sylar/tests/../sylar/hook.h /usr/include/fcntl.h \
+ /home/yyc/sylar/tests/../frame/singleton.h \
+ /home/yyc/sylar/tests/../frame/endian.h /usr/include/byteswap.h \
+ /home/yyc/sylar/tests/../frame/env.h \
+ /home/yyc/sylar/tests/../frame/fd_manager.h \
+ /home/yyc/sylar/tests/../frame/hook.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
@@ -961,11 +961,11 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/yyc/sylar/tests/../sylar/iomanager.h \
- /home/yyc/sylar/tests/../sylar/scheduler.h \
- /home/yyc/sylar/tests/../sylar/timer.h \
- /home/yyc/sylar/tests/../sylar/macro.h \
- /home/yyc/sylar/tests/../sylar/socket.h /usr/include/netinet/tcp.h \
+ /home/yyc/sylar/tests/../frame/iomanager.h \
+ /home/yyc/sylar/tests/../frame/scheduler.h \
+ /home/yyc/sylar/tests/../frame/timer.h \
+ /home/yyc/sylar/tests/../frame/macro.h \
+ /home/yyc/sylar/tests/../frame/socket.h /usr/include/netinet/tcp.h \
  /usr/local/include/openssl/err.h /usr/local/include/openssl/macros.h \
  /usr/local/include/openssl/opensslconf.h \
  /usr/local/include/openssl/configuration.h \
@@ -1010,4 +1010,4 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: \
  /usr/local/include/openssl/prov_ssl.h /usr/local/include/openssl/ssl2.h \
  /usr/local/include/openssl/ssl3.h /usr/local/include/openssl/tls1.h \
  /usr/local/include/openssl/dtls1.h /usr/local/include/openssl/srtp.h \
- /home/yyc/sylar/tests/../sylar/uri.h
+ /home/yyc/sylar/tests/../frame/uri.h

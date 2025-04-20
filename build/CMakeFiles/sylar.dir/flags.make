@@ -8,63 +8,67 @@ CXX_INCLUDES = -I/home/yyc/sylar/. -I/home/yyc/sylar/../include
 
 CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/address.cc.o_DEFINES = __FILE__="sylar/address.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/address.cc.o_DEFINES = __FILE__="frame/address.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/application.cc.o_DEFINES = __FILE__="sylar/application.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/application.cc.o_DEFINES = __FILE__="frame/application.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/bytearray.cc.o_DEFINES = __FILE__="sylar/bytearray.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/bytearray.cc.o_DEFINES = __FILE__="frame/bytearray.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/config.cc.o_DEFINES = __FILE__="sylar/config.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/config.cc.o_DEFINES = __FILE__="frame/config.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/daemon.cc.o_DEFINES = __FILE__="sylar/daemon.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/daemon.cc.o_DEFINES = __FILE__="frame/daemon.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/env.cc.o_DEFINES = __FILE__="sylar/env.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/env.cc.o_DEFINES = __FILE__="frame/env.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/hook.cc.o_DEFINES = __FILE__="sylar/hook.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/hook.cc.o_DEFINES = __FILE__="frame/hook.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http.cc.o_DEFINES = __FILE__="sylar/http.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http.cc.o_DEFINES = __FILE__="frame/http.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/fd_manager.cc.o_DEFINES = __FILE__="sylar/fd_manager.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/fd_manager.cc.o_DEFINES = __FILE__="frame/fd_manager.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/fiber.cc.o_DEFINES = __FILE__="sylar/fiber.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/fiber.cc.o_DEFINES = __FILE__="frame/fiber.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/iomanager.cc.o_DEFINES = __FILE__="sylar/iomanager.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/iomanager.cc.o_DEFINES = __FILE__="frame/iomanager.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/log.cc.o_DEFINES = __FILE__="sylar/log.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/log.cc.o_DEFINES = __FILE__="frame/log.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/mutex.cc.o_DEFINES = __FILE__="sylar/mutex.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/mutex.cc.o_DEFINES = __FILE__="frame/mutex.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/scheduler.cc.o_DEFINES = __FILE__="sylar/scheduler.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/scheduler.cc.o_DEFINES = __FILE__="frame/scheduler.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/socket.cc.o_DEFINES = __FILE__="sylar/socket.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/socket.cc.o_DEFINES = __FILE__="frame/socket.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/stream.cc.o_DEFINES = __FILE__="sylar/stream.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/stream.cc.o_DEFINES = __FILE__="frame/stream.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/tcp_server.cc.o_DEFINES = __FILE__="sylar/tcp_server.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/tcp_server.cc.o_DEFINES = __FILE__="frame/tcp_server.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/thread.cc.o_DEFINES = __FILE__="sylar/thread.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/thread.cc.o_DEFINES = __FILE__="frame/thread.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/timer.cc.o_DEFINES = __FILE__="sylar/timer.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/timer.cc.o_DEFINES = __FILE__="frame/timer.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/util.cc.o_DEFINES = __FILE__="sylar/util.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/util.cc.o_DEFINES = __FILE__="frame/util.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/http11_parser.rl.cc.o_DEFINES = __FILE__="sylar/http/http11_parser.rl.cc";__FILE__="sylar/http/http11_parser.rl.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/http11_parser.rl.cc.o_DEFINES = __FILE__="frame/http/http11_parser.rl.cc";__FILE__="frame/http/http11_parser.rl.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="sylar/http/httpclient_parser.rl.cc";__FILE__="sylar/http/httpclient_parser.rl.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/httpclient_parser.rl.cc.o_DEFINES = __FILE__="frame/http/httpclient_parser.rl.cc";__FILE__="frame/http/httpclient_parser.rl.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/http_connection.cc.o_DEFINES = __FILE__="sylar/http/http_connection.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/http_connection.cc.o_DEFINES = __FILE__="frame/http/http_connection.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/http_parser.cc.o_DEFINES = __FILE__="sylar/http/http_parser.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/http_parser.cc.o_DEFINES = __FILE__="frame/http/http_parser.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/http_server.cc.o_DEFINES = __FILE__="sylar/http/http_server.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/http_server.cc.o_DEFINES = __FILE__="frame/http/http_server.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/http_session.cc.o_DEFINES = __FILE__="sylar/http/http_session.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/http_session.cc.o_DEFINES = __FILE__="frame/http/http_session.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/http/servlet.cc.o_DEFINES = __FILE__="sylar/http/servlet.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/http/servlet.cc.o_DEFINES = __FILE__="frame/http/servlet.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/streams/socket_stream.cc.o_DEFINES = __FILE__="sylar/streams/socket_stream.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/streams/socket_stream.cc.o_DEFINES = __FILE__="frame/streams/socket_stream.cc"
 
-# Custom defines: CMakeFiles/sylar.dir/sylar/streams/zlib_stream.cc.o_DEFINES = __FILE__="sylar/streams/zlib_stream.cc"
+# Custom defines: CMakeFiles/sylar.dir/frame/streams/zlib_stream.cc.o_DEFINES = __FILE__="frame/streams/zlib_stream.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/frame/mprpc/rpcprovider.cc.o_DEFINES = __FILE__="frame/mprpc/rpcprovider.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/frame/mprpc/mprpcapplication.cc.o_DEFINES = __FILE__="frame/mprpc/mprpcapplication.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/uri.rl.cc.o_DEFINES = __FILE__="sylar/uri.rl.cc"
 

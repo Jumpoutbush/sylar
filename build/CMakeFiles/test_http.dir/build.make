@@ -95,7 +95,7 @@ test_http_EXTERNAL_OBJECTS =
 
 ../bin/test_http: CMakeFiles/test_http.dir/tests/test_http.cc.o
 ../bin/test_http: CMakeFiles/test_http.dir/build.make
-../bin/test_http: ../lib/libsylar.so
+../bin/test_http: ../lib/libframe.so
 ../bin/test_http: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/test_http: /usr/lib/x86_64-linux-gnu/libssl.so
 ../bin/test_http: /usr/lib/x86_64-linux-gnu/libcrypto.so

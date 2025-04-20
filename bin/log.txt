@@ -16,3 +16,5 @@
 2024-11-07 15:48:04	on_logger_conf_changed
 2024-11-07 15:49:58	on_logger_conf_changed
 2024-11-16 18:32:21	on_logger_conf_changed
+2025-04-13 13:08:39	ERROR	test macro error
+2025-04-13 13:08:39	ERROR	test macro fmt error aa

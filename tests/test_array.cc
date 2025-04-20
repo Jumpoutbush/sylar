@@ -1,5 +1,5 @@
-#include "../sylar/sylar.h"
-#include "../sylar/ds/array.h"
+#include "../frame/sylar.h"
+#include "../frame/ds/array.h"
 
 static sylar::Logger::ptr g_logger = SYLAR_LOG_ROOT();
 

@@ -95,7 +95,7 @@ test_address_EXTERNAL_OBJECTS =
 
 ../bin/test_address: CMakeFiles/test_address.dir/tests/test_address.cc.o
 ../bin/test_address: CMakeFiles/test_address.dir/build.make
-../bin/test_address: ../lib/libsylar.so
+../bin/test_address: ../lib/libframe.so
 ../bin/test_address: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/test_address: /usr/lib/x86_64-linux-gnu/libssl.so
 ../bin/test_address: /usr/lib/x86_64-linux-gnu/libcrypto.so

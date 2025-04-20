@@ -95,7 +95,7 @@ test_application_EXTERNAL_OBJECTS =
 
 ../bin/test_application: CMakeFiles/test_application.dir/tests/test_application.cc.o
 ../bin/test_application: CMakeFiles/test_application.dir/build.make
-../bin/test_application: ../lib/libsylar.so
+../bin/test_application: ../lib/libframe.so
 ../bin/test_application: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/test_application: /usr/lib/x86_64-linux-gnu/libssl.so
 ../bin/test_application: /usr/lib/x86_64-linux-gnu/libcrypto.so

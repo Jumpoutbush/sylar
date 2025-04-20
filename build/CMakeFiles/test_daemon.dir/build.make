@@ -95,7 +95,7 @@ test_daemon_EXTERNAL_OBJECTS =
 
 ../bin/test_daemon: CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
 ../bin/test_daemon: CMakeFiles/test_daemon.dir/build.make
-../bin/test_daemon: ../lib/libsylar.so
+../bin/test_daemon: ../lib/libframe.so
 ../bin/test_daemon: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/test_daemon: /usr/lib/x86_64-linux-gnu/libssl.so
 ../bin/test_daemon: /usr/lib/x86_64-linux-gnu/libcrypto.so

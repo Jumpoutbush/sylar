@@ -32929,3 +32929,6 @@
 2025-03-22 23:31:36	30981	name_1	0	[INFO]	[root]	tests/test_thread.cc:26	xxxxxxxxxxxxxxxxxxxx
 2025-03-22 23:31:36	30983	name_3	0	[INFO]	[root]	tests/test_thread.cc:26	xxxxxxxxxxxxxxxxxxxx
 2025-03-22 23:31:36	30983	name_3	0	[INFO]	[root]	tests/test_thread.cc:26	xxxxxxxxxxxxxxxxxxxx
+2025-04-13 13:08:42	31316	UNKNOW	0	[INFO]	[root]	sylar/log.cc:709	on_logger_conf_changed
+2025-04-13 13:08:42	31316	UNKNOW	0	[INFO]	[system]	sylar/config.cc:87	LoadConfFile file=/home/yyc/sylar/bin/conf/log2.yml ok
+2025-04-13 13:08:42	31316	UNKNOW	0	[INFO]	[root]	sylar/log.cc:709	on_logger_conf_changed

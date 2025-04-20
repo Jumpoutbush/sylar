@@ -1,6 +1,6 @@
-#include "../sylar/sylar.h"
-#include "../sylar/ds/bitmap.h"
-#include "../sylar/ds/roaring_bitmap.h"
+#include "../frame/sylar.h"
+#include "../frame/ds/bitmap.h"
+#include "../frame/ds/roaring_bitmap.h"
 
 static sylar::Logger::ptr g_logger = SYLAR_LOG_ROOT();
 #if 0

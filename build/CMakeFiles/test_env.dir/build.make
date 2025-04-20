@@ -95,7 +95,7 @@ test_env_EXTERNAL_OBJECTS =
 
 ../bin/test_env: CMakeFiles/test_env.dir/tests/test_env.cc.o
 ../bin/test_env: CMakeFiles/test_env.dir/build.make
-../bin/test_env: ../lib/libsylar.so
+../bin/test_env: ../lib/libframe.so
 ../bin/test_env: /usr/lib/x86_64-linux-gnu/libz.so
 ../bin/test_env: /usr/lib/x86_64-linux-gnu/libssl.so
 ../bin/test_env: /usr/lib/x86_64-linux-gnu/libcrypto.so
